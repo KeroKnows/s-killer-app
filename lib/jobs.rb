@@ -33,32 +33,34 @@ module Skiller
     end
   end
 
-  # Job information of jobs from Reed API
-  class ReedJobInfo < JobInfo
-    def initialize(data, api = nil)
-      super(data)
-      @api = api
-      @has_full_info = false
-    end
+  module Reed
+    # Job information of jobs from Reed API
+    class ReedJobInfo < JobInfo
+      def initialize(data, api = nil)
+        super(data)
+        @api = api
+        @has_full_info = false
+      end
 
-    def full_info?
-      @has_full_info
-    end
+      def full_info?
+        @has_full_info
+      end
 
-    def request_full_info
-      details = @api.details(job_id)
-      @data['description'] = details['jobDescription']
-      @has_full_info = true
-      full_info?
-    end
+      def request_full_info
+        details = @api.details(job_id)
+        @data['description'] = details['jobDescription']
+        @has_full_info = true
+        full_info?
+      end
 
-    def parse_job(job)
-      {
-        'job_id' => job['jobId'].to_s,
-        'title' => job['jobTitle'],
-        'description' => job['jobDescription'],
-        'location' => job['locationName']
-      }
+      def parse_job(job)
+        {
+          'job_id' => job['jobId'].to_s,
+          'title' => job['jobTitle'],
+          'description' => job['jobDescription'],
+          'location' => job['locationName']
+        }
+      end
     end
   end
 end
