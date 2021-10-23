@@ -33,22 +33,24 @@ module Skiller
     def search(keyword)
       response = HTTP.basic_auth(:user => @reed_token, :pass => '')
                      .get(SEARCH_API_PATH, :params => {:keywords => keyword})
-      raise(HTTP_ERROR[response.code]) unless successful?(response)
-      response = response.parse
-      raise(HTTP_ERROR[500]) unless valid?(response)
+      response = parse_response(response)
       response['results']
     end
 
     def details(job_id)
       response = HTTP.basic_auth(:user => @reed_token, :pass => '')
                     .get(File.join(DETAILS_API_PATH, job_id))
+      parse_response(response)
+    end
+
+    private
+
+    def parse_response(response)
       raise(HTTP_ERROR[response.code]) unless successful?(response)
       response = response.parse
       raise(HTTP_ERROR[500]) unless valid?(response)
       response
     end
-
-    private
 
     def successful?(result)
       !HTTP_ERROR.keys.include?(result.code)
