@@ -6,24 +6,10 @@ module Skiller
     # abstract class
     # Considering there may be multiple job info sources,
     # I abstracted the method, parse_job(job), and implement it in different classes of sources.
+    attr_reader :job_id, :title, :description, :location
+
     def initialize(data)
-      @data = parse_job(data)
-    end
-
-    def job_id
-      @data['job_id']
-    end
-
-    def title
-      @data['title']
-    end
-
-    def description
-      @data['description']
-    end
-
-    def location
-      @data['location']
+      parse_job(data)
     end
 
     private
@@ -48,18 +34,16 @@ module Skiller
 
       def request_full_info
         details = @details_api.details(job_id)
-        @data['description'] = details['jobDescription']
+        @description = details['jobDescription']
         @has_full_info = true
         full_info?
       end
 
       def parse_job(job)
-        {
-          'job_id' => job['jobId'].to_s,
-          'title' => job['jobTitle'],
-          'description' => job['jobDescription'],
-          'location' => job['locationName']
-        }
+        @job_id = job['jobId'].to_s
+        @title = job['jobTitle']
+        @description = job['jobDescription']
+        @location = job['locationName']
       end
     end
   end

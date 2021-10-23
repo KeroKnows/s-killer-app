@@ -9,9 +9,13 @@ module Skiller
   module Reed
     # Errors for Reed API Handling
     module Errors
+      # for HTTP 404 not found
       class NotFound < StandardError; end
+      # for HTTP 401 invalid token
       class InvalidToken < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
+      # for HTTP 400 occured when invalid job_id passed to Reed Details API
       class InvalidJobId < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
+      # for HTTP 500
       class InternalError < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
     end
 
