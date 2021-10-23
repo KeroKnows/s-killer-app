@@ -16,18 +16,27 @@ end
 
 reed_search_response = {}
 reed_details_response = {}
+
 reed_search_results = {}
 reed_details_results = {}
 
-url = get_searchAPI_url("engineer")
+job_results = {}
 
-reed_search_response[url] = send_request(url)
-reed_search_results[url] = reed_search_response[url].parse
+search_url = get_searchAPI_url("engineer")
 
-puts reed_search_results[url]['results'][0]
+reed_search_response[search_url] = send_request(search_url)
+job_list = reed_search_response[search_url].parse['results']
 
-url = get_detailsAPI_url("44413283")
-reed_details_response[url] = send_request(url)
-reed_details_results[url] = reed_details_response[url].parse
+for job in job_list[1..10]
+    jobID = job["jobId"]
 
-puts reed_details_results[url]["jobDescription"]
+    details_url = get_detailsAPI_url(jobID)
+    reed_details_response[details_url] = send_request(details_url)
+    reed_details_results[details_url] = reed_details_response[details_url].parse
+
+    job_results[jobID] = {}
+    job_results[jobID]["jobTitle"] = job["jobTitle"]
+    job_results[jobID]["jobDescription"] = reed_details_results[details_url]["jobDescription"]
+end
+
+File.write('../spec/fixtures/job_results.yml', job_results.to_yaml)
