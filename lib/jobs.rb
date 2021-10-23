@@ -47,7 +47,7 @@ module Skiller
 
     def parse_job(job)
       {
-        'job_id' => job['jobId'],
+        'job_id' => job['jobId'].to_s,
         'title' => job['jobTitle'],
         'description' => job['jobDescription'],
         'location' => job['locationName'],
