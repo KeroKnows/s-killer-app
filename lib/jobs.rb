@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+
 module Skiller
+  # Library for job information
   class JobInfo
     # abstract class
     # Considering there may be multiple job info sources,
@@ -25,11 +28,12 @@ module Skiller
 
     private
 
-    def parse_job(job)
-      raise NotImplementedError, "Implement this method in a child class"
+    def parse_job(_job)
+      raise NotImplementedError, 'Implement this method in a child class'
     end
   end
 
+  # Job information of jobs from Reed API
   class ReedJobInfo < JobInfo
     def initialize(data, api = nil)
       super(data)
@@ -37,7 +41,7 @@ module Skiller
       @has_full_info = false
     end
 
-    def has_full_info?
+    def full_info?
       @has_full_info
     end
 
@@ -45,7 +49,7 @@ module Skiller
       details = @api.details(job_id)
       @data['description'] = details['jobDescription']
       @has_full_info = true
-      has_full_info?
+      full_info?
     end
 
     def parse_job(job)
@@ -53,7 +57,7 @@ module Skiller
         'job_id' => job['jobId'].to_s,
         'title' => job['jobTitle'],
         'description' => job['jobDescription'],
-        'location' => job['locationName'],
+        'location' => job['locationName']
       }
     end
   end

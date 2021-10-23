@@ -5,10 +5,8 @@ require 'minitest/rg'
 require 'yaml'
 require_relative '../lib/reed_api'
 
-
 KEYWORD = 'backend'
 REED_TOKEN = YAML.safe_load(File.read('config/secrets.yml'))
-
 
 describe 'Test ReedApi library' do
   describe 'HTTP communication' do
@@ -24,7 +22,7 @@ describe 'Test ReedApi library' do
 
     it 'SAD: should raise exception on invalid token' do
       _(proc do
-        Skiller::ReedApi.new("INVALID TOKEN").search(KEYWORD)
+        Skiller::ReedApi.new('INVALID TOKEN').search(KEYWORD)
       end).must_raise Skiller::ReedApi::Errors::InvalidToken
     end
 
@@ -37,10 +35,9 @@ describe 'Test ReedApi library' do
 
     it 'SAD: should raise exception on invalid job_id' do
       _(proc do
-        Skiller::ReedApi.new(REED_TOKEN).details("INVALID JOB_ID")
+        Skiller::ReedApi.new(REED_TOKEN).details('INVALID JOB_ID')
       end).must_raise Skiller::ReedApi::Errors::InvalidJobId
     end
-
   end
 
   describe 'JobInfo' do
@@ -56,14 +53,14 @@ describe 'Test ReedApi library' do
     it 'HAPPY: should have location' do
       _(@job).must_respond_to :location
     end
-    
+
     it 'HAPPY: should have title' do
       _(@job).must_respond_to :title
     end
 
     it 'HAPPY: should be able to request full job info' do
       @job.request_full_info
-      _(@job.has_full_info?).must_equal true
+      _(@job.full_info?).must_equal true
     end
 
     it 'HAPPY: should have description' do
