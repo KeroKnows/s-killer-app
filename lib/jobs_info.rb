@@ -1,9 +1,13 @@
 # frozen_string_literal: true
 
+# Exploring reed API
+
 require 'http'
 require 'yaml'
 
 config = YAML.safe_load(File.read('../config/secrets.yml'))
+api_response = {}
+job_results = {}
 
 def get_searchapi_url(job_title)
   "https://www.reed.co.uk/api/1.0/search?keywords=#{job_title}"
@@ -14,16 +18,17 @@ def get_detailsapi_url(job_id)
 end
 
 def send_request(config, url)
-  HTTP.basic_auth(user: "#{config['API_KEY']}", pass: '').get(url)
+  # HTTP.basic_auth(user: "#{config['API_KEY']}", pass: '').get(url)
+  HTTP.basic_auth(user: config['API_KEY'].to_s, pass: '').get(url)
 end
 
 def get_detail_jd(config, job_results, api_response, job)
   job_id = job['jobId']
 
   # send request to details api
-  details_url = get_detailsapi_url(job_id)
-  api_response[details_url] = send_request(config, details_url)
-  details_result = api_response[details_url].parse
+  url = get_detailsapi_url(job_id)
+  api_response[url] = send_request(config, url)
+  details_result = api_response[url].parse
 
   # get needed information
   job_results[job_id] = {
@@ -32,18 +37,16 @@ def get_detail_jd(config, job_results, api_response, job)
   }
 end
 
-api_response = {}
-job_results = {}
-
-# Happy request
-search_url = get_searchapi_url('engineer')
-api_response[search_url] = send_request(config, search_url)
-job_list = api_response[search_url].parse['results']
+## Happy request
+url = get_searchapi_url('engineer')
+api_response[url] = send_request(config, url)
+job_list = api_response[url].parse['results']
 
 # request only 5 jobs for explore usage
 job_list[1..5].map { |job| get_detail_jd(config, job_results, api_response, job) }
 
+# output file
 File.write('../spec/fixtures/job_results.yml', job_results.to_yaml)
 
-# Bad request
-api_response['no_auth'] = send_request({}, search_url)
+## Bad request
+api_response['no_auth'] = send_request({}, url)
