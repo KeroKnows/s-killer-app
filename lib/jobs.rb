@@ -36,9 +36,9 @@ module Skiller
   module Reed
     # Job information of jobs from Reed API
     class ReedJobInfo < JobInfo
-      def initialize(data, api = nil)
+      def initialize(data, details_api = nil)
         super(data)
-        @api = api
+        @details_api = details_api
         @has_full_info = false
       end
 
@@ -47,7 +47,7 @@ module Skiller
       end
 
       def request_full_info
-        details = @api.details(job_id)
+        details = @details_api.details(job_id)
         @data['description'] = details['jobDescription']
         @has_full_info = true
         full_info?

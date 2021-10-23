@@ -15,9 +15,44 @@ module Skiller
       class InternalError < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
     end
 
-    # Represents Reed API and fetch most of the data from Reed
+    # incorporate ReedSearchApi and ReedDetailsApi
     class ReedApi
+      def initialize(token)
+        @reed_token = token
+        @search_api = ReedSearchApi.new(token)
+        @details_api = ReedDetailsApi.new(token)
+      end
+
+      def job_list(keyword)
+        jobs_data = @search_api.search(keyword)
+        jobs_data.map { |job| ReedJobInfo.new(job, @details_api) }
+      end
+    end
+
+    # Represents Reed Search API and fetch most of the data from Reed
+    class ReedSearchApi
       SEARCH_API_PATH = 'https://www.reed.co.uk/api/1.0/search'
+
+      HTTP_ERROR = {
+        401 => Reed::Errors::InvalidToken,
+        404 => Reed::Errors::NotFound,
+        500 => Reed::Errors::InternalError
+      }.freeze
+
+      def initialize(token)
+        @reed_token = token
+      end
+
+      def search(keyword)
+        response = HTTP.basic_auth(user: @reed_token, pass: '')
+                       .get(SEARCH_API_PATH, params: { keywords: keyword })
+        response = HttpResponse.new(response, HTTP_ERROR).parse
+        response['results']
+      end
+    end
+
+    # Represents Reed Details API and fetch details of a job
+    class ReedDetailsApi
       DETAILS_API_PATH = 'https://www.reed.co.uk/api/1.0/jobs'
 
       HTTP_ERROR = {
@@ -29,18 +64,6 @@ module Skiller
 
       def initialize(token)
         @reed_token = token
-      end
-
-      def job_list(keyword)
-        jobs_data = search(keyword)
-        jobs_data.map { |job| ReedJobInfo.new(job, self) }
-      end
-
-      def search(keyword)
-        response = HTTP.basic_auth(user: @reed_token, pass: '')
-                       .get(SEARCH_API_PATH, params: { keywords: keyword })
-        response = HttpResponse.new(response, HTTP_ERROR).parse
-        response['results']
       end
 
       def details(job_id)
