@@ -37,6 +37,8 @@ module Skiller
       response['results']
     end
 
+    private
+
     def successful?(result)
       !HTTP_ERROR.keys.include?(result.code)
     end
