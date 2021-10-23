@@ -42,6 +42,9 @@ module Skiller
     end
 
     def request_full_info
+      details = @api.details(job_id)
+      @data['description'] = details['jobDescription']
+      @has_full_info = true
       has_full_info?
     end
 
