@@ -10,10 +10,12 @@ module Skiller
     module Errors
       class NotFound < StandardError; end
       class InvalidToken < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
+      class InvalidJobId < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
       class InternalError < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
     end
 
     HTTP_ERROR = {
+        400 => Errors::InvalidJobId,
         401 => Errors::InvalidToken,
         404 => Errors::NotFound,
         500 => Errors::InternalError
@@ -35,6 +37,15 @@ module Skiller
       response = response.parse
       raise(HTTP_ERROR[500]) unless valid?(response)
       response['results']
+    end
+
+    def details(job_id)
+      response = HTTP.basic_auth(:user => @reed_token, :pass => '')
+                    .get(File.join(DETAILS_API_PATH, job_id))
+      raise(HTTP_ERROR[response.code]) unless successful?(response)
+      response = response.parse
+      raise(HTTP_ERROR[500]) unless valid?(response)
+      response
     end
 
     private

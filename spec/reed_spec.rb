@@ -27,6 +27,20 @@ describe 'Test ReedApi library' do
         Skiller::ReedApi.new("INVALID TOKEN").search(KEYWORD)
       end).must_raise Skiller::ReedApi::Errors::InvalidToken
     end
+
+    it 'HAPPY: should fetch details with correct job_id' do
+      reed_api = Skiller::ReedApi.new(REED_TOKEN)
+      jobs = reed_api.job_list(KEYWORD)
+      details = reed_api.details(jobs.first.job_id)
+      _(details).wont_be_empty
+    end
+
+    it 'SAD: should raise exception on invalid job_id' do
+      _(proc do
+        Skiller::ReedApi.new(REED_TOKEN).details("INVALID JOB_ID")
+      end).must_raise Skiller::ReedApi::Errors::InvalidJobId
+    end
+
   end
 
   describe 'JobInfo' do
