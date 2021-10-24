@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'simplecov'
+SimpleCov.start
+
 require 'cgi'
 require 'minitest/autorun'
 require 'minitest/rg'

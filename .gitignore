@@ -1,2 +1,7 @@
 config/secrets.yml
 spec/fixtures/
+coverage/
+!coverage/.resultset.json
+
+# environment dump
+.DS_Store
