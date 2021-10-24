@@ -1,35 +1,29 @@
 # frozen_string_literal: true
 
-require 'minitest/autorun'
-require 'minitest/rg'
-require 'yaml'
-require_relative '../lib/reed_api'
-
-KEYWORD = 'backend'
-REED_TOKEN = YAML.safe_load(File.read('config/secrets.yml'))
+require_relative 'spec_helper'
 
 describe 'Test Reed library' do
   describe 'HTTP communication of Reed Search API' do
     it 'HAPPY: should fetch with correct keyword' do
-      result = Skiller::Reed::ReedSearchApi.new(REED_TOKEN).search(KEYWORD)
+      result = Skiller::Reed::ReedSearchApi.new(REED_TOKEN).search(TEST_KEYWORD)
       _(result).wont_be_empty
     end
 
     it 'SAD: should raise exception on invalid token' do
       _(proc do
-        Skiller::Reed::ReedSearchApi.new('INVALID TOKEN').search(KEYWORD)
+        Skiller::Reed::ReedSearchApi.new('INVALID TOKEN').search(TEST_KEYWORD)
       end).must_raise Skiller::Reed::Errors::InvalidToken
     end
   end
 
   it 'HAPPY: job list should be JobInfo' do
-    jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(KEYWORD)
+    jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(TEST_KEYWORD)
     jobs.each { |job| _(job).must_be_instance_of Skiller::Reed::ReedJobInfo }
   end
 
   describe 'HTTP communication of Reed Details API' do
     it 'HAPPY: should fetch details with correct job_id' do
-      jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(KEYWORD)
+      jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(TEST_KEYWORD)
       details = Skiller::Reed::ReedDetailsApi.new(REED_TOKEN).details(jobs.first.job_id)
       _(details).wont_be_empty
     end
@@ -43,7 +37,7 @@ describe 'Test Reed library' do
 
   describe 'JobInfo' do
     before do
-      @jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(KEYWORD)
+      @jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(TEST_KEYWORD)
       @job = @jobs.first
     end
 
