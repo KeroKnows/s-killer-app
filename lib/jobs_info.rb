@@ -20,7 +20,7 @@ def get_detailsapi_url(job_id)
 end
 
 def send_request(config, url)
-  HTTP.basic_auth(user: config['API_KEY'].to_s, pass: '').get(url)
+  HTTP.basic_auth(user: config['REED_TOKEN'].to_s, pass: '').get(url)
 end
 
 def get_detail_jd(config, job_results, api_response, job_id)
