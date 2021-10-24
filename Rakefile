@@ -18,7 +18,7 @@ namespace :quality do
   task all: %i[flog reek rubocop]
 
   task :flog do
-    sh 'flog #{CODE}'
+    sh "flog #{CODE}"
   end
 
   task :reek do
