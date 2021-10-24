@@ -31,8 +31,8 @@ def get_detail_jd(config, job_results, api_response, job_id)
 
   # get needed information
   job_results[job_id] = {
-    "jobTitle": details_result['jobTitle'],
-    "jobDescription": details_result['jobDescription']
+    jobTitle: details_result['jobTitle'],
+    jobDescription: details_result['jobDescription']
   }
 end
 
