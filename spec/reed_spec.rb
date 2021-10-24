@@ -6,7 +6,8 @@ require 'yaml'
 require_relative '../lib/reed_api'
 
 KEYWORD = 'backend'
-REED_TOKEN = YAML.safe_load(File.read('config/secrets.yml'))
+CONFIG = YAML.safe_load(File.read('config/secrets.yml'))
+REED_TOKEN = CONFIG['REED_TOKEN']
 
 describe 'Test Reed library' do
   describe 'HTTP communication of Reed Search API' do
