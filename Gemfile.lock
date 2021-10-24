@@ -85,6 +85,7 @@ DEPENDENCIES
   http (~> 5.0)
   minitest (~> 5.0)
   minitest-rg (~> 5.0)
+  rake
   reek
   rubocop
   simplecov (~> 0)
