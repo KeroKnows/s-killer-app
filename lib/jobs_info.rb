@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 # Exploring reed API
+# job_results stores data from API, with jobId as key
+# api_response stores responses from API, with url as key
 
 require 'http'
 require 'yaml'
@@ -18,13 +20,10 @@ def get_detailsapi_url(job_id)
 end
 
 def send_request(config, url)
-  # HTTP.basic_auth(user: "#{config['API_KEY']}", pass: '').get(url)
   HTTP.basic_auth(user: config['API_KEY'].to_s, pass: '').get(url)
 end
 
-def get_detail_jd(config, job_results, api_response, job)
-  job_id = job['jobId']
-
+def get_detail_jd(config, job_results, api_response, job_id)
   # send request to details api
   url = get_detailsapi_url(job_id)
   api_response[url] = send_request(config, url)
@@ -32,7 +31,7 @@ def get_detail_jd(config, job_results, api_response, job)
 
   # get needed information
   job_results[job_id] = {
-    "jobTitle": job['jobTitle'],
+    "jobTitle": details_result['jobTitle'],
     "jobDescription": details_result['jobDescription']
   }
 end
@@ -43,7 +42,7 @@ api_response[url] = send_request(config, url)
 job_list = api_response[url].parse['results']
 
 # request only 5 jobs for explore usage
-job_list[1..5].map { |job| get_detail_jd(config, job_results, api_response, job) }
+job_list[1..5].map { |job| get_detail_jd(config, job_results, api_response, job['jobId']) }
 
 # output file
 File.write('../spec/fixtures/job_results.yml', job_results.to_yaml)
