@@ -13,18 +13,23 @@ task :spec do
   sh 'ruby spec/reed_spec.rb'
 end
 
-namespace :quality do
-  desc 'run all quality checks'
-  task all: %i[flog reek rubocop]
+desc 'run all quality checks'
+task quality: 'quality:all'
 
+namespace :quality do
+  task all: %i[rubocop flog reek]
+
+  desc "flog: check #{CODE}"
   task :flog do
     sh "flog #{CODE}"
   end
 
+  desc 'reek check'
   task :reek do
     sh 'reek'
   end
 
+  desc 'rubocop check'
   task :rubocop do
     sh 'rubocop'
   end
