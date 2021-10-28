@@ -1,0 +1,5 @@
+# frozen_string_literal: true
+
+%w[controllers].each do |folder|
+  require_relative "#{folder}/init"
+end
