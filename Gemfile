@@ -24,3 +24,12 @@ gem 'rake'
 gem 'flog'
 gem 'reek'
 gem 'rubocop'
+
+# Development
+def os_is(re)
+  RbConfig::CONFIG['host_os'] =~ re ? true : false
+end
+
+gem 'rerun'
+gem 'rb-fsevent', platforms: :ruby, install_if: os_is(/darwin/)
+gem 'rb-kqueue', platforms: :ruby, install_if: os_is(/linux/)

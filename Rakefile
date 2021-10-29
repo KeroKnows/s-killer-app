@@ -13,6 +13,11 @@ task :spec do
   sh 'ruby spec/reed_spec.rb'
 end
 
+desc 'start the app with file chages watched'
+task :dev do
+  sh "rerun -c 'rackup -p 4001' --ignore 'coverage/*' --ignore 'spec/*'"
+end
+
 desc 'run all quality checks'
 task quality: 'quality:all'
 
