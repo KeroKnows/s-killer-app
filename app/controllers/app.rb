@@ -12,13 +12,15 @@ module Skiller
     route do |router|
       # GET /
       router.root do
-        view 'index'
+        query = router.params['query']
+
+        view 'index', locals: { query: query }
       end
 
       # GET /index
       router.on 'index' do
         router.is do
-          view 'index'
+          router.redirect('/')
         end
       end
 
