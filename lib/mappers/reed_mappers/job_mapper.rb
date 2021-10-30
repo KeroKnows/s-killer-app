@@ -58,7 +58,11 @@ module Skiller
             id: @data['jobId'].to_s,
             title: @data['jobTitle'],
             description: @data['jobDescription'],
-            location: @data['locationName']
+            location: @data['locationName'],
+            min_year_salary: @data['yearlyMinimumSalary'],
+            max_year_salary: @data['yearlyMaximumSalary'],
+            currency: @data['currency'],
+            url: @data['jobUrl']
           )
         end
       end

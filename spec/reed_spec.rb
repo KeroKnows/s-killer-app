@@ -55,8 +55,9 @@ describe 'Test Reed library' do
 
   describe 'JobInfo' do
     before do
-      @jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
-      @job = @jobs.first
+      partial_jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+      @partial_job = partial_jobs.first
+      @job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@partial_job.id)
     end
 
     it 'HAPPY: should have job ID' do
@@ -71,14 +72,28 @@ describe 'Test Reed library' do
       _(@job).must_respond_to :title
     end
 
+    it 'HAPPY: should have yearly minimum salary' do
+      _(@job).must_respond_to :min_year_salary
+    end
+
+    it 'HAPPY: should have yearly maximum salary' do
+      _(@job).must_respond_to :max_year_salary
+    end
+
+    it 'HAPPY: should have currency' do
+      _(@job).must_respond_to :currency
+    end
+
+    it 'HAPPY: should have url to the job application' do
+      _(@job).must_respond_to :url
+    end
+
     it 'HAPPY: JobMapper should generate Job' do
-      new_job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@job.id)
-      _(new_job).must_be_instance_of Skiller::Entity::Job
+      _(@job).must_be_instance_of Skiller::Entity::Job
     end
 
     it 'HAPPY: should be able to request full job info' do
-      new_job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@job.id)
-      assert_operator new_job.description.length, :>=, @job.description.length
+      assert_operator @job.description.length, :>=, @partial_job.description.length
     end
 
     it 'HAPPY: should have description' do
