@@ -36,7 +36,7 @@ describe 'Test Reed library' do
 
   it 'HAPPY: job list should be JobInfo' do
     jobs = Skiller::Reed::Api.new(REED_TOKEN).job_list(TEST_KEYWORD)
-    jobs.each { |job| _(job).must_be_instance_of Skiller::Reed::ReedJobInfo }
+    jobs.each { |job| _(job).must_be_instance_of Skiller::Reed::ReedJob }
   end
 
   describe 'HTTP communication of Reed Details API' do

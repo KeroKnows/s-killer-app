@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative '../entities/jobs'
+require_relative '../entities/job'
 require_relative 'http_response'
 
 module Skiller
@@ -29,7 +29,7 @@ module Skiller
 
       def job_list(keyword)
         jobs_data = @search_api.search(keyword)
-        jobs_data.map { |job| ReedJobInfo.new(job, @details_api) }
+        jobs_data.map { |job| ReedJob.new(job, @details_api) }
       end
     end
 

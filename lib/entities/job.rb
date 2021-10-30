@@ -2,7 +2,7 @@
 
 module Skiller
   # Library for job information
-  class JobInfo
+  class Job
     # abstract class
     # Considering there may be multiple job info sources,
     # I abstracted the method, parse_job(job), and implement it in different classes of sources.
@@ -21,7 +21,7 @@ module Skiller
 
   module Reed
     # Job information of jobs from Reed API
-    class ReedJobInfo < JobInfo
+    class ReedJob < Job
       def initialize(data, details_api = nil)
         super(data)
         @details_api = details_api
