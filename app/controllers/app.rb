@@ -2,14 +2,15 @@
 
 require 'roda'
 require 'slim'
-# require 'yaml' # develop
+require 'yaml' # develop
 
 module Skiller
+  # Web Application for S-killer
   class App < Roda
     plugin :render, engine: 'slim', views: 'app/views'
     plugin :halt
 
-    route do |router| 
+    route do |router|
       # GET /
       router.root do
         view 'index'
@@ -29,8 +30,8 @@ module Skiller
             router.halt 400 unless router.params.include? 'query'
 
             query = router.params['query']
-            jobs = Reed::ReedApi.new(REED_TOKEN).job_list(query)
-            # jobs = YAML.safe_load(File.read('spec/fixtures/job_lists.yml'))
+            # jobs = Reed::ReedApi.new(REED_TOKEN).job_list(query)
+            jobs = YAML.safe_load(File.read('spec/fixtures/job_lists.yml'))
 
             # data = [{
             #   'query' => query,
@@ -40,7 +41,6 @@ module Skiller
             view 'details', locals: { query: query, jobs: jobs }
           end
         end
-        
       end
     end
   end
