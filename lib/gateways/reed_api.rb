@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative '../entities/job'
 require_relative 'http_response'
 
 module Skiller
@@ -27,9 +26,12 @@ module Skiller
         @details_api = DetailsApi.new(token)
       end
 
-      def job_list(keyword)
-        jobs_data = @search_api.search(keyword)
-        jobs_data.map { |job| ReedJob.new(job, @details_api) }
+      def search(keyword)
+        @search_api.search(keyword)
+      end
+
+      def details(job_id)
+        @details_api.details(job_id)
       end
     end
 
@@ -50,8 +52,7 @@ module Skiller
       def search(keyword)
         response = HTTP.basic_auth(user: @reed_token, pass: '')
                        .get(API_PATH, params: { keywords: keyword })
-        response = HttpResponse.new(response, HTTP_ERROR).parse
-        response['results']
+        HttpResponse.new(response, HTTP_ERROR).parse
       end
     end
 

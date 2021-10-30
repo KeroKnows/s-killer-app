@@ -35,18 +35,18 @@ describe 'Test Reed library' do
   end
 
   it 'HAPPY: job list should be JobInfo' do
-    jobs = Skiller::Reed::Api.new(REED_TOKEN).job_list(TEST_KEYWORD)
-    jobs.each { |job| _(job).must_be_instance_of Skiller::Reed::ReedJob }
+    jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+    jobs.each { |job| _(job).must_be_instance_of Skiller::Entity::ReedJob }
   end
 
   describe 'HTTP communication of Reed Details API' do
-    it 'HAPPY: should fetch details with correct job_id' do
-      jobs = Skiller::Reed::Api.new(REED_TOKEN).job_list(TEST_KEYWORD)
-      details = Skiller::Reed::DetailsApi.new(REED_TOKEN).details(jobs.first.job_id)
+    it 'HAPPY: should fetch details with correct job id' do
+      jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+      details = Skiller::Reed::DetailsApi.new(REED_TOKEN).details(jobs.first.id)
       _(details).wont_be_empty
     end
 
-    it 'SAD: should raise exception on invalid job_id' do
+    it 'SAD: should raise exception on invalid job id' do
       _(proc do
         Skiller::Reed::DetailsApi.new(REED_TOKEN).details('INVALID JOB_ID')
       end).must_raise Skiller::Reed::Errors::InvalidJobId
@@ -55,12 +55,12 @@ describe 'Test Reed library' do
 
   describe 'JobInfo' do
     before do
-      @jobs = Skiller::Reed::Api.new(REED_TOKEN).job_list(TEST_KEYWORD)
+      @jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
       @job = @jobs.first
     end
 
     it 'HAPPY: should have job ID' do
-      _(@job).must_respond_to :job_id
+      _(@job).must_respond_to :id
     end
 
     it 'HAPPY: should have location' do
@@ -72,8 +72,8 @@ describe 'Test Reed library' do
     end
 
     it 'HAPPY: should be able to request full job info' do
-      @job.request_full_info
-      _(@job.full_info?).must_equal true
+      new_job = @job.request_full_info
+      assert_operator new_job.description.length, :>=, @job.description.length
     end
 
     it 'HAPPY: should have description' do
