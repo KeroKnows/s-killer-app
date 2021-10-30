@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'http'
+require 'forwardable'
 require_relative 'http_response'
 
 module Skiller
@@ -20,18 +21,15 @@ module Skiller
 
     # incorporate SearchApi and DetailsApi
     class Api
+      extend Forwardable
+
+      def_delegator :@search_api, :search
+      def_delegator :@details_api, :details
+
       def initialize(token)
         @reed_token = token
         @search_api = SearchApi.new(token)
         @details_api = DetailsApi.new(token)
-      end
-
-      def search(keyword)
-        @search_api.search(keyword)
-      end
-
-      def details(job_id)
-        @details_api.details(job_id)
       end
     end
 
