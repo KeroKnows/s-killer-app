@@ -35,7 +35,7 @@ module Skiller
 
     # Represents Reed Search API and fetch most of the data from Reed
     class SearchApi
-      SEARCH_API_PATH = 'https://www.reed.co.uk/api/1.0/search'
+      API_PATH = 'https://www.reed.co.uk/api/1.0/search'
 
       HTTP_ERROR = {
         401 => Reed::Errors::InvalidToken,
@@ -49,7 +49,7 @@ module Skiller
 
       def search(keyword)
         response = HTTP.basic_auth(user: @reed_token, pass: '')
-                       .get(SEARCH_API_PATH, params: { keywords: keyword })
+                       .get(API_PATH, params: { keywords: keyword })
         response = HttpResponse.new(response, HTTP_ERROR).parse
         response['results']
       end
@@ -57,7 +57,7 @@ module Skiller
 
     # Represents Reed Details API and fetch details of a job
     class DetailsApi
-      DETAILS_API_PATH = 'https://www.reed.co.uk/api/1.0/jobs'
+      API_PATH = 'https://www.reed.co.uk/api/1.0/jobs'
 
       HTTP_ERROR = {
         400 => Reed::Errors::InvalidJobId,
@@ -72,7 +72,7 @@ module Skiller
 
       def details(job_id)
         response = HTTP.basic_auth(user: @reed_token, pass: '')
-                       .get(File.join(DETAILS_API_PATH, job_id))
+                       .get(File.join(API_PATH, job_id))
         HttpResponse.new(response, HTTP_ERROR).parse
       end
     end
