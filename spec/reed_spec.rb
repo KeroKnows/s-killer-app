@@ -34,14 +34,14 @@ describe 'Test Reed library' do
     end
   end
 
-  it 'HAPPY: job list should be JobInfo' do
-    jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
-    jobs.each { |job| _(job).must_be_instance_of Skiller::Entity::ReedJob }
+  it 'HAPPY: job list should be PartialJob' do
+    jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+    jobs.each { |job| _(job).must_be_instance_of Skiller::Entity::PartialJob }
   end
 
   describe 'HTTP communication of Reed Details API' do
     it 'HAPPY: should fetch details with correct job id' do
-      jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+      jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
       details = Skiller::Reed::DetailsApi.new(REED_TOKEN).details(jobs.first.id)
       _(details).wont_be_empty
     end
@@ -55,7 +55,7 @@ describe 'Test Reed library' do
 
   describe 'JobInfo' do
     before do
-      @jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+      @jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
       @job = @jobs.first
     end
 
@@ -71,8 +71,13 @@ describe 'Test Reed library' do
       _(@job).must_respond_to :title
     end
 
+    it 'HAPPY: JobMapper should generate Job' do
+      new_job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@job.id)
+      _(new_job).must_be_instance_of Skiller::Entity::Job
+    end
+
     it 'HAPPY: should be able to request full job info' do
-      new_job = @job.request_full_info
+      new_job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@job.id)
       assert_operator new_job.description.length, :>=, @job.description.length
     end
 
