@@ -2,7 +2,7 @@
 
 require 'rake/testtask'
 
-CODE = 'lib/'
+CODE = 'config/ app/'
 
 task :default do
   puts `rake -T`
@@ -26,7 +26,7 @@ namespace :quality do
 
   desc "flog: check #{CODE}"
   task :flog do
-    sh "flog #{CODE}"
+    sh "flog -m #{CODE}"
   end
 
   desc 'reek check'
