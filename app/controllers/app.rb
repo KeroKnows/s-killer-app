@@ -2,7 +2,6 @@
 
 require 'roda'
 require 'slim'
-require 'yaml' # develop
 
 module Skiller
   # Web Application for S-killer
@@ -30,14 +29,8 @@ module Skiller
             router.halt 400 unless router.params.include? 'query'
 
             query = router.params['query']
-            # jobs = Reed::ReedApi.new(REED_TOKEN).job_list(query)
-            jobs = YAML.safe_load(File.read('spec/fixtures/job_lists.yml'))
+            jobs = Reed::ReedApi.new(REED_TOKEN).job_list(query)
 
-            # data = [{
-            #   'query' => query,
-            #   'title' => jobs.first['title'],
-            #   'description' => jobs.first['description']
-            # }]
             view 'details', locals: { query: query, jobs: jobs }
           end
         end
