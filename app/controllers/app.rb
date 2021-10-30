@@ -31,7 +31,7 @@ module Skiller
             router.halt 400 unless router.params.include? 'query'
 
             query = router.params['query']
-            jobs = Reed::ReedApi.new(REED_TOKEN).job_list(query)
+            jobs = Reed::PartialJobMapper.new(CONFIG).job_list(query)
 
             view 'details', locals: { query: query, jobs: jobs }
           end

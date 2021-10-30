@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative 'jobs'
+require 'forwardable'
 require_relative 'http_response'
 
 module Skiller
@@ -19,23 +19,23 @@ module Skiller
       class InternalError < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
     end
 
-    # incorporate ReedSearchApi and ReedDetailsApi
-    class ReedApi
+    # incorporate SearchApi and DetailsApi
+    class Api
+      extend Forwardable
+
+      def_delegator :@search_api, :search
+      def_delegator :@details_api, :details
+
       def initialize(token)
         @reed_token = token
-        @search_api = ReedSearchApi.new(token)
-        @details_api = ReedDetailsApi.new(token)
-      end
-
-      def job_list(keyword)
-        jobs_data = @search_api.search(keyword)
-        jobs_data.map { |job| ReedJobInfo.new(job, @details_api) }
+        @search_api = SearchApi.new(token)
+        @details_api = DetailsApi.new(token)
       end
     end
 
     # Represents Reed Search API and fetch most of the data from Reed
-    class ReedSearchApi
-      SEARCH_API_PATH = 'https://www.reed.co.uk/api/1.0/search'
+    class SearchApi
+      API_PATH = 'https://www.reed.co.uk/api/1.0/search'
 
       HTTP_ERROR = {
         401 => Reed::Errors::InvalidToken,
@@ -49,15 +49,14 @@ module Skiller
 
       def search(keyword)
         response = HTTP.basic_auth(user: @reed_token, pass: '')
-                       .get(SEARCH_API_PATH, params: { keywords: keyword })
-        response = HttpResponse.new(response, HTTP_ERROR).parse
-        response['results']
+                       .get(API_PATH, params: { keywords: keyword })
+        HttpResponse.new(response, HTTP_ERROR).parse
       end
     end
 
     # Represents Reed Details API and fetch details of a job
-    class ReedDetailsApi
-      DETAILS_API_PATH = 'https://www.reed.co.uk/api/1.0/jobs'
+    class DetailsApi
+      API_PATH = 'https://www.reed.co.uk/api/1.0/jobs'
 
       HTTP_ERROR = {
         400 => Reed::Errors::InvalidJobId,
@@ -72,7 +71,7 @@ module Skiller
 
       def details(job_id)
         response = HTTP.basic_auth(user: @reed_token, pass: '')
-                       .get(File.join(DETAILS_API_PATH, job_id))
+                       .get(File.join(API_PATH, job_id))
         HttpResponse.new(response, HTTP_ERROR).parse
       end
     end
