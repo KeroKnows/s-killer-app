@@ -19,12 +19,12 @@ module Skiller
       class InternalError < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
     end
 
-    # incorporate ReedSearchApi and ReedDetailsApi
-    class ReedApi
+    # incorporate SearchApi and DetailsApi
+    class Api
       def initialize(token)
         @reed_token = token
-        @search_api = ReedSearchApi.new(token)
-        @details_api = ReedDetailsApi.new(token)
+        @search_api = SearchApi.new(token)
+        @details_api = DetailsApi.new(token)
       end
 
       def job_list(keyword)
@@ -34,7 +34,7 @@ module Skiller
     end
 
     # Represents Reed Search API and fetch most of the data from Reed
-    class ReedSearchApi
+    class SearchApi
       SEARCH_API_PATH = 'https://www.reed.co.uk/api/1.0/search'
 
       HTTP_ERROR = {
@@ -56,7 +56,7 @@ module Skiller
     end
 
     # Represents Reed Details API and fetch details of a job
-    class ReedDetailsApi
+    class DetailsApi
       DETAILS_API_PATH = 'https://www.reed.co.uk/api/1.0/jobs'
 
       HTTP_ERROR = {

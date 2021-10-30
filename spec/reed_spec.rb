@@ -23,39 +23,39 @@ describe 'Test Reed library' do
 
   describe 'HTTP communication of Reed Search API' do
     it 'HAPPY: should fetch with correct keyword' do
-      result = Skiller::Reed::ReedSearchApi.new(REED_TOKEN).search(TEST_KEYWORD)
+      result = Skiller::Reed::SearchApi.new(REED_TOKEN).search(TEST_KEYWORD)
       _(result).wont_be_empty
     end
 
     it 'SAD: should raise exception on invalid token' do
       _(proc do
-        Skiller::Reed::ReedSearchApi.new('INVALID TOKEN').search(TEST_KEYWORD)
+        Skiller::Reed::SearchApi.new('INVALID TOKEN').search(TEST_KEYWORD)
       end).must_raise Skiller::Reed::Errors::InvalidToken
     end
   end
 
   it 'HAPPY: job list should be JobInfo' do
-    jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(TEST_KEYWORD)
+    jobs = Skiller::Reed::Api.new(REED_TOKEN).job_list(TEST_KEYWORD)
     jobs.each { |job| _(job).must_be_instance_of Skiller::Reed::ReedJobInfo }
   end
 
   describe 'HTTP communication of Reed Details API' do
     it 'HAPPY: should fetch details with correct job_id' do
-      jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(TEST_KEYWORD)
-      details = Skiller::Reed::ReedDetailsApi.new(REED_TOKEN).details(jobs.first.job_id)
+      jobs = Skiller::Reed::Api.new(REED_TOKEN).job_list(TEST_KEYWORD)
+      details = Skiller::Reed::DetailsApi.new(REED_TOKEN).details(jobs.first.job_id)
       _(details).wont_be_empty
     end
 
     it 'SAD: should raise exception on invalid job_id' do
       _(proc do
-        Skiller::Reed::ReedDetailsApi.new(REED_TOKEN).details('INVALID JOB_ID')
+        Skiller::Reed::DetailsApi.new(REED_TOKEN).details('INVALID JOB_ID')
       end).must_raise Skiller::Reed::Errors::InvalidJobId
     end
   end
 
   describe 'JobInfo' do
     before do
-      @jobs = Skiller::Reed::ReedApi.new(REED_TOKEN).job_list(TEST_KEYWORD)
+      @jobs = Skiller::Reed::Api.new(REED_TOKEN).job_list(TEST_KEYWORD)
       @job = @jobs.first
     end
 
