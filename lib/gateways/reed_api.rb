@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'http'
-require_relative 'jobs'
+require_relative '../jobs'
 require_relative 'http_response'
 
 module Skiller
