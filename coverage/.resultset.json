@@ -1,7 +1,55 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/joaw/workspace/SOA2021/s-killer/lib/reed_api.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/init.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/config/init.rb": {
+        "lines": [
+          null,
+          null,
+          1
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/config/environment.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/init.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/models/init.rb": {
+        "lines": [
+          null,
+          null,
+          1
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/models/reed_api.rb": {
         "lines": [
           null,
           null,
@@ -85,7 +133,7 @@
           null
         ]
       },
-      "/Users/joaw/workspace/SOA2021/s-killer/lib/jobs.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/models/jobs.rb": {
         "lines": [
           null,
           null,
@@ -139,7 +187,7 @@
           null
         ]
       },
-      "/Users/joaw/workspace/SOA2021/s-killer/lib/http_response.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/models/http_response.rb": {
         "lines": [
           null,
           null,
@@ -161,8 +209,61 @@
           null,
           null
         ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/controllers/init.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/controllers/app.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1635058485
+    "timestamp": 1635593162
   }
 }
