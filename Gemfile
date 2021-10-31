@@ -2,6 +2,15 @@
 
 source 'https://rubygems.org'
 
+# Web App
+gem 'puma', '~> 5.5'
+gem 'roda', '~> 3.49'
+gem 'slim', '~> 4.1'
+
+# Validation
+gem 'dry-struct', '~> 1.4'
+gem 'dry-types', '~> 1.5'
+
 # Networking
 gem 'http', '~> 5.0'
 
@@ -19,3 +28,12 @@ gem 'rake'
 gem 'flog'
 gem 'reek'
 gem 'rubocop'
+
+# Development
+def os_is(pattern)
+  RbConfig::CONFIG['host_os'] =~ pattern ? true : false
+end
+
+gem 'rb-fsevent', platforms: :ruby, install_if: os_is(/darwin/)
+gem 'rb-kqueue', platforms: :ruby, install_if: os_is(/linux/)
+gem 'rerun'

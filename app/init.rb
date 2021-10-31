@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-%w[config app].each do |folder|
+%w[models controllers].each do |folder|
   require_relative "#{folder}/init"
 end

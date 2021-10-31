@@ -2,7 +2,7 @@
 
 require 'rake/testtask'
 
-CODE = 'lib/'
+CODE = 'config/ app/'
 
 task :default do
   puts `rake -T`
@@ -13,6 +13,11 @@ task :spec do
   sh 'ruby spec/reed_spec.rb'
 end
 
+desc 'start the app with file chages watched'
+task :dev do
+  sh "rerun -c 'rackup -p 4001' --ignore 'coverage/*' --ignore 'spec/*' --ignore '*.slim'"
+end
+
 desc 'run all quality checks'
 task quality: 'quality:all'
 
@@ -21,7 +26,7 @@ namespace :quality do
 
   desc "flog: check #{CODE}"
   task :flog do
-    sh "flog #{CODE}"
+    sh "flog -m #{CODE}"
   end
 
   desc 'reek check'

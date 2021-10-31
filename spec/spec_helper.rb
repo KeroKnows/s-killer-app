@@ -10,7 +10,7 @@ require 'vcr'
 require 'webmock'
 require 'yaml'
 
-require_relative '../lib/init'
+require_relative '../init'
 
 TEST_KEYWORD = 'backend'
 
