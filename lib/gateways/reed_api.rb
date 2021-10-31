@@ -19,7 +19,7 @@ module Skiller
       class InternalError < StandardError; end # rubocop:disable Layout/EmptyLineBetweenDefs
     end
 
-    # incorporate SearchApi and DetailsApi
+    # Incorporate SearchApi and DetailsApi
     class Api
       extend Forwardable
 
@@ -47,6 +47,7 @@ module Skiller
         @reed_token = token
       end
 
+      # Send request to Reed Job API
       def search(keyword)
         response = HTTP.basic_auth(user: @reed_token, pass: '')
                        .get(API_PATH, params: { keywords: keyword })
@@ -69,6 +70,7 @@ module Skiller
         @reed_token = token
       end
 
+      # Send request to Reed Details API
       def details(job_id)
         response = HTTP.basic_auth(user: @reed_token, pass: '')
                        .get(File.join(API_PATH, job_id))

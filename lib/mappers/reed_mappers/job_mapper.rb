@@ -4,14 +4,14 @@ require_relative '../../entities/job'
 
 module Skiller
   module Reed
-    # get an array of `PartialJob` using Reed::Api
+    # Get an array of `PartialJob` using Reed::Api
     class PartialJobMapper
       def initialize(config, gateway_class = Reed::Api)
         @config = config
-        @gateway_class = gateway_class
-        @gateway = @gateway_class.new(@config['REED_TOKEN'])
+        @gateway = gateway_class.new(@config['REED_TOKEN'])
       end
 
+      # Get job_list from Reed::API and make each job a DataMapper class
       def job_list(keyword)
         data = @gateway.search(keyword)['results']
         data.map { |job_data| DataMapper.new(job_data).build_entity }
@@ -34,14 +34,14 @@ module Skiller
       end
     end
 
-    # get an array of `Job` using Reed::Api
+    # Get an array of `Job` using Reed::Api
     class JobMapper
       def initialize(config, gateway_class = Reed::Api)
         @config = config
-        @gateway_class = gateway_class
-        @gateway = @gateway_class.new(@config['REED_TOKEN'])
+        @gateway = gateway_class.new(@config['REED_TOKEN'])
       end
 
+      # Get job from Reed::API and make the job a DataMapper class
       def job(job_id)
         data = @gateway.details(job_id)
         DataMapper.new(data).build_entity
