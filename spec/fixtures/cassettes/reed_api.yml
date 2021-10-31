@@ -1,0 +1,1110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.reed.co.uk/api/1.0/search?keywords=backend
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Basic NDhhNjBmYmYtNTQ0Zi00ZWIzLWEyY2QtODNmZGJkNGE3MmFiOg==
+      Connection:
+      - close
+      Host:
+      - www.reed.co.uk
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 31 Oct 2021 08:34:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '86222'
+      Connection:
+      - close
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      Set-Cookie:
+      - ".ASPXANONYMOUS=17aSlFl32Q4SEWtI7uegD7Ye_l6r5o-Mq6rQkTa0_T80tYTkzshJdtMeOSS4AYBhlEGeNCQ9flfAFRpYxybmYnEgbN9J46sfGPfIC3fvnIONLH_NS65AmsQw1zJ09zNM1j-26Q2;
+        expires=Sun, 31-Oct-2021 10:04:16 GMT; path=/; HttpOnly"
+      - __cf_bm=D3l0yqe9rzfudQdfGAQbSC4zFkHIN.Qcic8W7fIolaw-1635669256-0-AXBAmF8wkC+UKzBfFUB9dETBt4TcqO3fOelB6N7E2Vyu1F0OEVXDJLUTqB7Afti48OjRqQJ+TlYqUfrQixB6U08=;
+        path=/; expires=Sun, 31-Oct-21 09:04:16 GMT; domain=.reed.co.uk; HttpOnly;
+        Secure; SameSite=None
+      - __cfruid=ea3be20b0ad0f096a481d473db080d3871bb7847-1635669256; path=/; domain=.reed.co.uk;
+        HttpOnly; Secure; SameSite=None
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - frame-src 'self' 'unsafe-eval' 'unsafe-inline' player.vimeo.com *.vimeo.com
+        googletagmanager.com *.googletagmanager.com youtube.com *.youtube.com facebook.com
+        *.facebook.com google.com *.google.com *.googlesyndication.com ff.doubleclick.net
+        *.doubleclick.net *.criteo.com *.hotjar.com;
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6a6b8b0bada46b60-TPE
+    body:
+      encoding: UTF-8
+      string: '{"results":[{"jobId":44489464,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Java
+        Developer Backend Technologist","locationName":"London","minimumSalary":75000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"24/11/2021","date":"27/10/2021","jobDescription":"Java
+        Developer / Backend Software Engineer *Remote UK / Work from Home*. Would
+        you like to progress your career working on a modern tech stack where you''ll
+        be continually learning? You could be progressing your career at a market
+        leading SaaS software  house that specialise in communications recording and
+        management for regulated environments such as trade floors.As a Java Developer
+        you will design and develop new features and enhanc... ","applications":4,"jobUrl":"https://www.reed.co.uk/jobs/java-developer-backend-technologist/44489464"},{"jobId":44489444,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"C#
+        Developer - Work from Home","locationName":"Camden","minimumSalary":65000.00,"maximumSalary":75000.00,"currency":"GBP","expirationDate":"24/11/2021","date":"27/10/2021","jobDescription":"C#
+        Developer / Backend Software Engineer (.Net Core AWS microservices) *Hybrid
+        WfH / Remote*. Are you a technologist C# Developer seeking a role where you
+        can work a modern microservices tech stack, continually learning and progressing
+        your career? You could be joining a growing start-up that is viewed as a leading
+        FinTech disruptor.As a C# Developer you''ll design and develop performant
+        and highly scalable solutions utili... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/c-developer-work-from-home/44489444"},{"jobId":44411229,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Java Spring - Remote","locationName":"London","minimumSalary":70000.00,"maximumSalary":85000.00,"currency":"GBP","expirationDate":"16/11/2021","date":"19/10/2021","jobDescription":"Backend
+        Software Engineer / Java Developer *Remote Working UK*. Skilled Java backend
+        technologist sought by scale-up technology company that produce a suite of
+        innovative cloud based Contact Centre software solutions for a range of big
+        name clients.As a Backend Software Engineer you''ll work fairly autonomously
+        as part of a remote team to design and develop key features for the communications
+        platform that integrates a variety of serv... ","applications":7,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-java-spring-remote/44411229"},{"jobId":44488384,"employerId":549408,"employerName":"Premier
+        IT","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer","locationName":"Nidd","minimumSalary":35000.00,"maximumSalary":45000.00,"currency":"GBP","expirationDate":"07/12/2021","date":"26/10/2021","jobDescription":"Backend
+        Developer &#163;35,000-&#163;45,000Hybrid role – Yorkshire An amazing Ecommerce
+        Agency are on the lookout for a adaptable Backend Developer to join their
+        team of highly talented developers. They want someone to collaborate well
+        with their stake holders and scrum teams to work in an agile environment.
+        They would ideally  love someone who has got a back ground... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer/44488384"},{"jobId":44486837,"employerId":456333,"employerName":"Xigen
+        Limited","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Magento Developer","locationName":"Bedford","minimumSalary":35000.00,"maximumSalary":40000.00,"currency":"GBP","expirationDate":"07/12/2021","date":"26/10/2021","jobDescription":"
+        About Xigen Xigen is an award-winning UK eCommerce agency with two decades
+        of experience under its belt in creating high performance websites for a diverse
+        client base of well-known global brands, multinational blue-chips, enterprise
+        and SMB clients across multiple  sectors.   Who we are When it comes to us
+        as individuals our moto, ''normal gets you nowhere'', is particularly resonant.
+        Our... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-magento-developer/44486837"},{"jobId":44457828,"employerId":520034,"employerName":"Sanderson","employerProfileId":null,"employerProfileName":null,"jobTitle":"Software
+        Engineer Backend","locationName":"London","minimumSalary":52000.00,"maximumSalary":55000.00,"currency":"GBP","expirationDate":"03/12/2021","date":"22/10/2021","jobDescription":"
+        Software Engineer (Backend) - Homeworking - &#163;55,000 A well-known global
+        brand are looking for a full time software engineer to help develop multiple
+        software''s from UI to back end database. This is a great opportunity for
+        an engineer who is interested in exploring software technologies throughout
+        the stack  to contribute and deliver business applications for their customers.
+        Responsibilities</stron... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/software-engineer-backend/44457828"},{"jobId":44457734,"employerId":626368,"employerName":"Amber
+        Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Engineer","locationName":"London","minimumSalary":null,"maximumSalary":null,"currency":null,"expirationDate":"03/12/2021","date":"22/10/2021","jobDescription":"
+        Senior Software Developer |Senior Software Engineer | Golang | AWS | PostgreSQL
+        | Music | London| Salary - 60 - 80k New Golang position with a flourishing
+        music tech start-up! In this role, you will be actively building new software
+        products alongside company stakeholders to create robust new features you
+        and the team can be proud of. The position is for a Senior Software Engineer
+        to enhance the technical found... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-engineer/44457734"},{"jobId":44457641,"employerId":626368,"employerName":"Amber
+        Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Engineer - Go","locationName":"London","minimumSalary":80000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"03/12/2021","date":"22/10/2021","jobDescription":"
+        Software Developer | Software Engineer | Golang | Python | React | Devops
+        | Architecture | London | Remote Hybrid | Salary - 80k - 90k New Golang position
+        with an innovative analytics company that have recently been acquired by a
+        Global brand. This means they''re looking to expand their development team.
+        As Senior, you will be:  Designing an array of web services for web/mobile
+        appli... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-engineer-go/44457641"},{"jobId":44406278,"employerId":535504,"employerName":"TEC
+        PARTNERS LIMITED","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        JavaScript Developer","locationName":"London","minimumSalary":40000.00,"maximumSalary":65000.00,"currency":"GBP","expirationDate":"29/11/2021","date":"18/10/2021","jobDescription":"Node
+        Developer London Technology has undoubtedly disrupted the music industry Spotify
+        was a game-changer for how we consume music but technology is yet to truly
+        enable aspiring artists the platform to understand and grow their fan base,
+        moneitise their music and build a global brand. TEC Partners are working with
+        a significantly funded start-up that are completely changing the way musicia...
+        ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-javascript-developer/44406278"},{"jobId":44484138,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Software
+        Developer C# .Net Core Backend","locationName":"London","minimumSalary":65000.00,"maximumSalary":80000.00,"currency":"GBP","expirationDate":"23/11/2021","date":"26/10/2021","jobDescription":"Software
+        Developer / Engineer (.Net Core Backend) *Hybrid WfH*. Do you have expertise
+        with backend .Net development? You could be progressing your career working
+        on complex and challenging &quot;tech for good&quot; systems within a successful
+        and growing HealthTech  company.As a Software Developer you''ll design and
+        develop new features and enhancements to the company''s core product that
+        utilises Computer Vision concepts to map the us... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/software-developer-c-net-core-backend/44484138"},{"jobId":44404924,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Scala SQL Linux","locationName":"London","minimumSalary":70000.00,"maximumSalary":85000.00,"currency":"GBP","expirationDate":"15/11/2021","date":"18/10/2021","jobDescription":"Backend
+        Software Engineer / Developer (Scala Akka SQL Linux) *Remote Interview WfH*.
+        Would you like to work on a complex Greenfield project, quickly see the results
+        of your work and be able to influence technical decisions?You could be joining
+        a FinTech solutions provider that produces a highly functional suite of software
+        products to support post-trade processing for clients including most of the
+        financial institutions across the gl... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-scala-sql-linux/44404924"},{"jobId":43346272,"employerId":250945,"employerName":"Eligo
+        Recruitment","employerProfileId":null,"employerProfileName":null,"jobTitle":"Python
+        Backend Engineer - Machine Learning","locationName":"Birmingham","minimumSalary":50000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"07/12/2021","date":"13/07/2021","jobDescription":"
+        100% Remote position currently, plan on occasional office work when safe to
+        return, based on individuals.  Machine Learning technology startup in Central
+        Birmingham are hiring for an additional Python Backend Engineer to join the
+        existing tech team of 20 technologists solving the hard problem of getting
+        computers to understand conversations. This tech team  have significant funding
+        and are growing very fast.  You w... ","applications":22,"jobUrl":"https://www.reed.co.uk/jobs/python-backend-engineer-machine-learning/43346272"},{"jobId":44482037,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer / DevOps - Node.js API CI/CD AWS","locationName":"Cambridge","minimumSalary":55000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"23/11/2021","date":"26/10/2021","jobDescription":"Backend
+        Software Engineer / DevOps (Node.js API CI/CD AWS) *Hybrid WFH*. Are you a
+        skilled backend technologist with Node.js? You could be progressing your career
+        at one of the world''s most advanced Cybersecurity technology companies. As
+        a DevOps Engineer you''ll develop new Node based APIs and CI/CD systems. You''ll
+        join a collaborative and supportive Agile team working on a wide variety of
+        projects with a diverse toolset and will hav... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-devops-nodejs-api-ci-cd-aws/44482037"},{"jobId":44452233,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"C#
+        Developer .Net Core Backend","locationName":"Basingstoke","minimumSalary":60000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"19/11/2021","date":"22/10/2021","jobDescription":"C#
+        Developer / Backend Software Engineer (C# .Net Core Agile AWS) *Hybrid WfH*.
+        Are you a skilled C# Developer looking for an opportunity to progress your
+        career whilst working on complex and challenging systems using a range of
+        modern technology?You could be joining a global SaaS software house that is
+        disrupting the business telephony / call centre market with its advanced technology
+        solutions. As C# Developer you''ll be... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/c-developer-net-core-backend/44452233"},{"jobId":44451941,"employerId":346427,"employerName":"Understanding
+        Recruitment","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend DeveloperNode.js - 6 month Contract - Remote","locationName":"London","minimumSalary":600.00,"maximumSalary":650.00,"currency":"GBP","expirationDate":"03/12/2021","date":"22/10/2021","jobDescription":"
+        Senior Backend Developer(Node.js)|6 month contract |&#163;600-&#163;650 per
+        day |Outside IR35 |Remote Understanding Recruitment are currently working
+        in partnership with a global technology company in the recruitment of a Senior
+        Backend Developer(Node.js) with lead experience to join the business on an
+        initial 6 month assignment which sits outside IR35. As the Senior Backend
+        Developer(Node.js) you will assist i... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-developernodejs-6-month-contract-remote/44451941"},{"jobId":44401521,"employerId":436122,"employerName":"Salt
+        Search","employerProfileId":null,"employerProfileName":null,"jobTitle":"AWS
+        Solution Architect - Remote","locationName":"London","minimumSalary":500.00,"maximumSalary":850.00,"currency":"EUR","expirationDate":"29/11/2021","date":"18/10/2021","jobDescription":"
+        AWS Solutions Architect - Remote  Freelance/contract Rate: €550 - €850 Duration:
+        3 - 6 months Start: ASAP  My client is looking for AWS Solution Architect
+        to create and implement AWS native tools due to the fact that these tools
+        and the architecture is currently unknown to the team. Description of services   The
+        contractor is supposed to work independent... ","applications":13,"jobUrl":"https://www.reed.co.uk/jobs/aws-solution-architect-remote/44401521"},{"jobId":44450142,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Python Cloud API","locationName":"London","minimumSalary":65000.00,"maximumSalary":80000.00,"currency":"GBP","expirationDate":"19/11/2021","date":"22/10/2021","jobDescription":"Backend
+        Software Engineer / Python Developer *Hybrid WfH*. Would you like to progress
+        your career at a fast growing &quot;Tech for Good&quot; start-up? You could
+        be working on a product that is set to disrupt the Life Assurance space via
+        its advanced AI data platform,  rewarding customers for a healthy lifestyle.
+        As a Backend Software Engineer you design and develop for the core platform;
+        the service consists of a cloud based API tha... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-python-cloud-api/44450142"},{"jobId":44450134,"employerId":346427,"employerName":"Understanding
+        Recruitment","employerProfileId":null,"employerProfileName":null,"jobTitle":"Lead
+        Backend DeveloperNode.js - 6 month Contract - Remote","locationName":"London","minimumSalary":600.00,"maximumSalary":650.00,"currency":"GBP","expirationDate":"03/12/2021","date":"22/10/2021","jobDescription":"
+        Lead Backend Developer(Node.js)|6 month contract |&#163;600-&#163;650 per
+        day |Outside IR35 |Remote Understanding Recruitment are currently working
+        in partnership with a global technology company in the recruitment of a Lead
+        Backend Developer(Node.js) to join the business on an initial 6 month assignment
+        which sits outside IR35. As the Lead Backend Developer(Node.js) you will assist
+        in guiding and managing the ... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/lead-backend-developernodejs-6-month-contract-remote/44450134"},{"jobId":44399381,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Software
+        Developer Backend Golang Cloud IoT","locationName":"Canary Wharf","minimumSalary":80000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"15/11/2021","date":"18/10/2021","jobDescription":"Software
+        Developer / Backend Software Engineer (Golang Cloud IoT) *Hybrid WfH*. Are
+        you a skilled backend technologist seeking a role where you''ll be challenged
+        and continually learning, working on complex systems at the cutting edge of
+        IoT technology?You could be progressing your career in a senior role at a
+        technology company that prides data centric software that enables the management
+        and control of machines via IoT. ... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/software-developer-backend-golang-cloud-iot/44399381"},{"jobId":44478616,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer - Java Kotlin","locationName":"London","minimumSalary":75000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"23/11/2021","date":"26/10/2021","jobDescription":"Backend
+        Software Engineer / Developer (Java Kotlin AWS) *UK Remote WFH*. Are you a
+        technologist with a range of backend programming experience? You could be
+        progressing your career at a pioneering search technology start-up, in a supportive
+        environment with training allowance and 10% personal development time.As a
+        Backend Software Engineer you will build features across the ecosystem of
+        products and services, both interna... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-java-kotlin/44478616"},{"jobId":44335005,"employerId":390546,"employerName":"Profectus
+        Recruitment","employerProfileId":null,"employerProfileName":null,"jobTitle":"Remote
+        Backend Developer","locationName":"London","minimumSalary":60000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"22/11/2021","date":"11/10/2021","jobDescription":"
+        At Profectus we have an exciting role with a Start-up for a Backend Developer.
+        Ideally looking for Three-plus years of commercial experience. You must have
+        a strong development background in Docker and java, Python, Node, or GO. It
+        will be advantageous to  have worked with SaaS products in a production environment.  You
+        will be working for an impressive Start-up that really promotes a positive
+        work culture. Being a dynamic organisatio... ","applications":6,"jobUrl":"https://www.reed.co.uk/jobs/remote-backend-developer/44335005"},{"jobId":44477579,"employerId":408461,"employerName":"X4
+        Group","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer","locationName":"London","minimumSalary":45000.00,"maximumSalary":55000.00,"currency":"GBP","expirationDate":"24/11/2021","date":"25/10/2021","jobDescription":"
+        A cloud-first gaming and gambling technology platform is looking for a Backend
+        Developer with Node and TypeScript experience to join the team to work on
+        a host of greenfield projects, as they rapidly expand into new international
+        territories. This is an  exciting opportunity to join an expanding team and
+        have real ownership of your code. Developer responsibilities:  Building, maintaining
+        and deploying inte... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer/44477579"},{"jobId":44448029,"employerId":612379,"employerName":"CREATIVE
+        PERSONNEL Ltd","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Developer  Mobile Games","locationName":"London","minimumSalary":null,"maximumSalary":null,"currency":null,"expirationDate":"18/11/2021","date":"21/10/2021","jobDescription":"If
+        you are a talented Backend Developer with a passion for games and you would
+        love to make a positive impact on the growth of a leading mobile game studio
+        then this may be for you.The StudioThe studio has a very simple belief and
+        that is to develop talented teams and give them the autonomy to innovate and
+        create really successful games for the mobile market. Everyone has a great
+        amount of ownership, equa... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-developer-mobile-games/44448029"},{"jobId":44447851,"employerId":457888,"employerName":"Chassam
+        Recruitment","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend PHP Developer","locationName":"Salford Quays","minimumSalary":50000.00,"maximumSalary":65000.00,"currency":"GBP","expirationDate":"02/12/2021","date":"21/10/2021","jobDescription":"
+        Senior Backend PHP DeveloperManchesterUp to &#163;65,000 Interested in microservice
+        architecture, API’s and backend development? Looking for a role where you
+        can get your teeth stuck into big projects and help modernise and shape the
+        technical direction of the team? Yes and yes? Well it’s a good job you’ve
+        landed on this advert as I am recruiting for an award winnin... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-php-developer/44447851"},{"jobId":44521237,"employerId":7337,"employerName":"Ashdown
+        Group","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Developer","locationName":"Wandsworth","minimumSalary":60000.00,"maximumSalary":75000.00,"currency":"GBP","expirationDate":"12/11/2021","date":"29/10/2021","jobDescription":"
+        A market-leading software company based in South West London&nbsp;is seeking
+        a Senior Backend Developer to be a senior part of a team responsible for the
+        development of the company’s software products.  &nbsp;This is a great opportunity
+        to join a growing company boasting some of the world''s biggest tech companies
+        as customers, and to work in a truly collaborative Development team. The role
+        is predominantly office based (Wandsworth/Eas... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-developer/44521237"},{"jobId":44397932,"employerId":346427,"employerName":"Understanding
+        Recruitment","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer","locationName":"London","minimumSalary":80000.00,"maximumSalary":120000.00,"currency":"GBP","expirationDate":"28/11/2021","date":"17/10/2021","jobDescription":"
+        Would you like to re-invent payments and develop breakthrough technology?
+        I am looking for Backend developers to help develop breakthrough technology
+        and re-invent payments at one of the most well-backed DeFi start-ups in the
+        world. With over $24 million in funding from some of the top crypto investors
+        such as Coinbase, this company is scaling blockchains such as Ethereum to
+        100''s of millions of users whilst fo... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer/44397932"},{"jobId":44520527,"employerId":12543,"employerName":"Aspire","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer - Python","locationName":"London","minimumSalary":60000.00,"maximumSalary":110000.00,"currency":"GBP","expirationDate":"26/11/2021","date":"29/10/2021","jobDescription":"
+        Do you want to work on disruptive fin-tech software? Do you want to build
+        large scale platforms with Python If so then this Backend Developer opportunity
+        is one for you.  This Backend Developer opportunity will have you working
+        with a UK-based Fin-tech up who''s technology is truly disrupting the financial
+        space. They are currently helping with a number of platforms which helps smaller
+        business get loans to help grow their... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer-python/44520527"},{"jobId":44446303,"employerId":306165,"employerName":"Propel
+        London","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Engineer - Machine Learning","locationName":"London","minimumSalary":80000.00,"maximumSalary":110000.00,"currency":"GBP","expirationDate":"02/12/2021","date":"21/10/2021","jobDescription":"
+        The Company Senior Backend Engineer (Go Python C&#43;&#43; Java) - Machine
+        Learning - Is required to join a $20 Million backed AI/ML Cyber security and
+        Compliance platform that is scaling into the UK. This is a great opportunity
+        for a senior backend engineer to get further  commercial exposure to machine
+        learning while working on complex cloud native backend Systems. Founded in
+        2017 this company has grown to ov... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-engineer-machine-learning/44446303"},{"jobId":44473150,"employerId":589026,"employerName":"Jefferson
+        Frank ","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Java/Kotlin Developer","locationName":"Finland","minimumSalary":78000.00,"maximumSalary":78000.00,"currency":"EUR","expirationDate":"06/12/2021","date":"25/10/2021","jobDescription":"
+        Senior Backend Developer: Our client is a big data and analytics company that
+        tracks tens of billions of ads per day for some of the largest companies in
+        the world including Apple, Nike, AT&amp;T, Vodafone and most of the Fortune
+        500 companies. This means if you have ever seen an ad  online there''s a good
+        chance it was tracked and analysed by them. Their product stops false advertising,
+        viruses, malware and creates sa... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-java-kotlin-developer/44473150"},{"jobId":44129074,"employerId":362637,"employerName":"Richard
+        Wheeler Associates","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Developer, Big Data Analytics","locationName":"London","minimumSalary":75000.00,"maximumSalary":85000.00,"currency":"GBP","expirationDate":"02/11/2021","date":"21/09/2021","jobDescription":"
+        Senior Backend Developer / Full Stack Developer - Big Data Analytics, Java,
+        JavaScript, Python, C&#43;&#43;, SQL London - office based This well-funded
+        start-up provides Location Intelligence technologies through unique products
+        and tailored solutions that utilize AI and advanced analytics to extract insights
+        from geospatial data to drive business growth. The Senior Backend Developer
+        wil... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-developer-big-data-analytics/44129074"},{"jobId":44444179,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Software Engineer Backend Golang C++","locationName":"London","minimumSalary":90000.00,"maximumSalary":110000.00,"currency":"GBP","expirationDate":"18/11/2021","date":"21/10/2021","jobDescription":"Senior
+        Software Engineer / Backend Developer (Golang C&#43;&#43; Java Python) *Remote
+        / Hybrid WfH*. Are you a technologist seeking a role where you''ll be challenged,
+        collaborating to solve real world problems and continually learning on a modern
+        tech stack? You  could be joining a fast growing FinTech banking solutions
+        provider and gaining valuable knowledge of Open Banking technology.As a Senior
+        Software Engineer you will focus on ... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/senior-software-engineer-backend-golang-c/44444179"},{"jobId":44443387,"employerId":624770,"employerName":"Arco
+        Recruitment","employerProfileId":null,"employerProfileName":null,"jobTitle":"Full
+        Stack Magento 2 Developer - Remote Working","locationName":"Dagenham","minimumSalary":45000.00,"maximumSalary":50000.00,"currency":"GBP","expirationDate":"02/12/2021","date":"21/10/2021","jobDescription":"
+        Our client are one of the leading Plumbing and Heating merchants located throughout
+        the UK in nine regional locations. They are now looking for a Full Stack Magento
+        2 Developer to work fully remote from home. The role is to assist with continued
+        Magento  2 improvements and full stack development of our Magento 2 E-commerce
+        platform that is the core function of our business. You''ll be tasked to work
+        with our talented in-house team, from disco... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/full-stack-magento-2-developer-remote-working/44443387"},{"jobId":44471471,"employerId":415711,"employerName":"Explore
+        Group","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Engineer","locationName":"London","minimumSalary":85000.00,"maximumSalary":85000.00,"currency":"GBP","expirationDate":"06/12/2021","date":"25/10/2021","jobDescription":"
+        Backend Engineer (Java/Kotlin) - &#163;75,000 - &#163;85,000 -  (Fully Remote)
+        NO SPONSORSHIP Backend Engineer for a Fintech and Retail scale-up based in
+        London Salary - &#163;75,000 - &#163;85,000 per annum &#43; benefits Job title:
+        Senior Backend Enginee... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-engineer/44471471"},{"jobId":44441706,"employerId":436122,"employerName":"Salt
+        Search","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Java/Springboot/Golang/Echo","locationName":"London","minimumSalary":400.00,"maximumSalary":700.00,"currency":"EUR","expirationDate":"02/12/2021","date":"21/10/2021","jobDescription":"
+        Backend Software Engineer (Java/Springboot/Golang/Echo) - Telecoms - Portugal
+        Freelance - REMOTE Day rate: €400 - €700 (Outside IR35) Start: ASAP  Description
+        My client is looking for someone to be a part of a young development team
+        accountable for the product delivery and in-life management of their Connect
+        product which includes a mobile connectivity platform targeted at IoT and
+        end user ... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-java-springboot-golang-echo/44441706"},{"jobId":44440230,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"C++
+        Developer Backend Linux - Remote","locationName":"East Croydon","minimumSalary":55000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"18/11/2021","date":"21/10/2021","jobDescription":"C&#43;&#43;
+        Developer / Backend Software Engineer (C&#43;&#43; 17) *Remote / WFH*. Technologist
+        sought by scale-up technology company as they grow their UK presence. This
+        is an opportunity to remain hands-on working on complex systems; taking ownership
+        and making a real  impact.As a C&#43;&#43; Developer / Backend Software Engineer
+        you''ll utilise your breadth of technical knowledge to design, build and extend
+        high quality application... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/c-developer-backend-linux-remote/44440230"},{"jobId":44467767,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Java ForgeRock","locationName":"London","minimumSalary":80000.00,"maximumSalary":95000.00,"currency":"GBP","expirationDate":"22/11/2021","date":"25/10/2021","jobDescription":"Backend
+        Software Engineer / Developer (Java Spring Security SQL API) *Hybrid WFH /
+        Remote*. FinTech solutions provider is seeking Backend Software Engineer with
+        strong Java and ForgeRock experience.As a Backend Software Engineer you''ll
+        join a small team responsible for highly available services that process user
+        authentication and security mechanisms for a wide set of customers and clients
+        on a best-in-class platform that is highly a... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-java-forgerock/44467767"},{"jobId":44439483,"employerId":642293,"employerName":"Crypto
+        . com","employerProfileId":null,"employerProfileName":null,"jobTitle":"Full
+        Stack / Frontend / Backend Developer (New Venture) - Global Fintech Startup","locationName":"London","minimumSalary":null,"maximumSalary":null,"currency":null,"expirationDate":"02/12/2021","date":"21/10/2021","jobDescription":"
+        About Crypto.com Crypto.com was founded in 2016 on a simple belief: it''s
+        a basic human right for everyone to control their money, data and identity.
+        With over 9&#43; million users on its platform today, Crypto.com provides
+        a powerful alternative to traditional financial services,  turning its vision
+        of &quot;cryptocurrency in every wallet&quot; into reality, one customer at
+        a time. Crypto.com is built on a solid found... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/full-stack-frontend-backend-developer-new-venture-global-fintech-startup/44439483"},{"jobId":44439213,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Python Linux SQL Data","locationName":"Camden","minimumSalary":70000.00,"maximumSalary":85000.00,"currency":"GBP","expirationDate":"18/11/2021","date":"21/10/2021","jobDescription":"Backend
+        Software Engineer / Developer (Python Linux SQL Data) *Hybrid WfH / Remote*.
+        Are you a data centric Backend Software Engineer seeking a role where you
+        can learn and develop your skills as part of a supportive Agile team? You
+        could be progressing your career at a one of the world''s most highly regarded
+        law firms.As a Backend Software Engineer you will design and deliver a range
+        of technical software engineering projects,... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-python-linux-sql-data/44439213"},{"jobId":44466932,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"C++
+        Developer Backend - Sports Data TV","locationName":"Southwark","minimumSalary":55000.00,"maximumSalary":60000.00,"currency":"GBP","expirationDate":"22/11/2021","date":"25/10/2021","jobDescription":"C&#43;&#43;
+        Developer / Backend Software Engineer (Computer Science Maths Data C&#43;&#43;)
+        *Hybrid WfH*. Are you a data centric C&#43;&#43; Developer with an interest
+        in F1 Racing? You could be progressing your career at a growing software house,
+        working on a complex data analytics  product used by sports teams across a
+        range of disciplines to deliver live data analysis and predictions, pre-event
+        planning and post event review with a focus on t... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/c-developer-backend-sports-data-tv/44466932"},{"jobId":44466893,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"C#
+        Developer / Backend .Net Core Quant","locationName":"Mayfair","minimumSalary":90000.00,"maximumSalary":140000.00,"currency":"GBP","expirationDate":"22/11/2021","date":"25/10/2021","jobDescription":"C#
+        Developer / Backend Software Engineer (C# .Net Core SQL). Are you a technologist
+        Backend Software Engineer with C# .Net expertise backed by a record of academic
+        achievement? You could be progressing your career working on complex and challenging
+        systems  at a Hedge Fund with over $17 billion under management. As a C# Developer
+        / Backend Software Engineer you''ll collaborate with a team of highly intelligent
+        technologists and financ... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/c-developer-backend-net-core-quant/44466893"},{"jobId":44512766,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Java
+        Developer / Backend Software Engineer","locationName":"London","minimumSalary":65000.00,"maximumSalary":80000.00,"currency":"GBP","expirationDate":"26/11/2021","date":"29/10/2021","jobDescription":"Java
+        Developer / Backend Software Engineer *Hybrid WfH*. Would you like to work
+        on a modern microservices tech stack, continually progressing your career?
+        You could be joining a global commodities trading firm.As a Java Developer
+        / Backend Software Engineer you will design and develop real-time pricing
+        components which drive all trading decisions and are vital to the business.
+        The company prides itself on innovation... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/java-developer-backend-software-engineer/44512766"},{"jobId":44511483,"employerId":612529,"employerName":"Randstad
+        Tech IT","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Developer","locationName":"Reading","minimumSalary":40000.00,"maximumSalary":65000.00,"currency":"GBP","expirationDate":"09/12/2021","date":"28/10/2021","jobDescription":"
+        Node.js | Java | Python | .NET | C# | C&#43;&#43; | Azure | Kubernetes | Docker
+        Senior Backend Developer - up to &#163;65,000 Randstad are exclusively partnered
+        alongside one of the UK''s most interesting brands, who boast a client base
+        that includes some of the most influential sporting teams on earth. They''re
+        going through an exciting IT transformation currently, with alot of investment...
+        ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-developer/44511483"},{"jobId":44436248,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"DevOps
+        / Backend Software Engineer Artifactory API","locationName":"Camden","minimumSalary":110000.00,"maximumSalary":150000.00,"currency":"GBP","expirationDate":"17/11/2021","date":"20/10/2021","jobDescription":"DevOps
+        Engineer / Backend Software Engineer *Hybrid WfH / Remote UK*. Do you have
+        expertise with Artifactory REST APIs and automation? You could be working
+        on complex and interesting systems with cutting edge technology and progressing
+        your career in a  senior role at a global quantitative investment trading
+        firm.As a DevOps Engineer you will focus on creating Artifactory APIs, applying
+        automation, Infrastructure as Code and providin... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/devops-backend-software-engineer-artifactory-api/44436248"},{"jobId":44509761,"employerId":443281,"employerName":"Be-IT
+        Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Web Python Developer - Glasgow Full Remote","locationName":"Central","minimumSalary":0.00,"maximumSalary":0.00,"currency":"GBP","expirationDate":"04/11/2021","date":"28/10/2021","jobDescription":"
+        Afternoon All!Python Developers - This is your moment as I share with you
+        a fully remote position paying up to &#163;55,000 &#43; 10% Bonus!I''m searching
+        for a&nbsp; Backend Web Python Developer to join an iconic recruitment solutions
+        company where you will shape their future and implement your technical vision!You
+        will lead the day-to-day activities of the development team in supporting&nbsp;existing
+        serv... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-web-python-developer-glasgow-full-remote/44509761"},{"jobId":44509742,"employerId":443281,"employerName":"Be-IT
+        Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Lead
+        Backend Web Python Developer - Glasgow Full Remote","locationName":"Central","minimumSalary":0.00,"maximumSalary":0.00,"currency":"GBP","expirationDate":"04/11/2021","date":"28/10/2021","jobDescription":"
+        Python Developers - This is your moment as I share with you a fully remote
+        position paying up to &#163;75,000 &#43; 10% Bonus!I''m searching for a Lead
+        Web Backend Developer to join an iconic recruitment solutions company where
+        you will shape their future and implement your technical vision!You will lead
+        the day-to-day activities of the development team in supporting&nbsp;existing
+        services, providing strong technical g... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/lead-backend-web-python-developer-glasgow-full-remote/44509742"},{"jobId":44508805,"employerId":496791,"employerName":"Colossus
+        Associates","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Web Developer","locationName":"Birmingham","minimumSalary":null,"maximumSalary":null,"currency":null,"expirationDate":"18/11/2021","date":"28/10/2021","jobDescription":"Part
+        RemoteEstablished digital agency specialising in website design are seeking
+        a passionate PHP developer to support in the development of functional and
+        visually pleasing websites for household name clients. They have had great
+        recent success despite the pandemic and  are looking to expand their team.
+        Role and Responsibilities: The ideal candidate will use their skills in back-end
+        web development to create ... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/backend-web-developer/44508805"},{"jobId":44395026,"employerId":149525,"employerName":"Certus
+        Recruitment Group","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Staff Engineer","locationName":"Germany","minimumSalary":null,"maximumSalary":null,"currency":null,"expirationDate":"14/11/2021","date":"16/10/2021","jobDescription":"Backend
+        Staff EngineerGermany - Remote80-100k &#43; Great BenefitsOur information
+        technology and services company designs and delivers intuitive tools to the
+        business community. To build upon their enviable position, they have an immediate
+        opening for a Backend Staff Engineer to be based in Germany.As a Backend Staff
+        Engineer, you will: * Lead backend architecture* Oversee ongoing projects
+        an... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/backend-staff-engineer/44395026"},{"jobId":44429581,"employerId":397873,"employerName":"Forward
+        Role","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Developer","locationName":"Manchester","minimumSalary":null,"maximumSalary":null,"currency":null,"expirationDate":"01/12/2021","date":"20/10/2021","jobDescription":"
+        Senior Backend Developer – Remote – Salary DOE Forward Role have partnered
+        with an award winning UK based digital agency, who are looking for additional
+        senior backend developers to join a growing team, using technologies like
+        NodeJS, TypeScript, NestJS and SQL. This is an exciting time to join them  whilst
+        they are growing! The role: You will be a senior backend developer with experience
+        working with NodeJS. You will br... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-developer/44429581"},{"jobId":44506821,"employerId":451880,"employerName":"Corriculo
+        Ltd","employerProfileId":null,"employerProfileName":null,"jobTitle":"Software
+        Engineer, GO, Java, Vue, JavaScript, AWS","locationName":"Nottingham","minimumSalary":55000.00,"maximumSalary":65000.00,"currency":"GBP","expirationDate":"09/12/2021","date":"28/10/2021","jobDescription":"
+        Software Engineer, GO, Java, Vue, JavaScript, AWS  My Client, an established
+        and growing organisation serving the MedTech sector, is seeking a skilled
+        Software Engineer / Backend Developer to join their team, working with an
+        exciting and modern tech stack. This is an exciting opportunity for an experienced  and
+        skilled Software Engineer / Backend Developer with skills in Java Development
+        ... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/software-engineer-go-java-vue-javascript-aws/44506821"},{"jobId":44427298,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Java Developer - Technologist","locationName":"London","minimumSalary":80000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"17/11/2021","date":"20/10/2021","jobDescription":"Backend
+        Java Developer / Senior Software Engineer *Remote Interview WfH*. Do you have
+        expertise with multi-threaded core Java development? You could be working
+        on complex and interesting real-time, low latency trading systems that provide
+        daily challenges  and collaborating with a friendly and upbeat team a FinTech
+        that has been consistently voted as one of the UKs top employers.As a Backend
+        Java Developer you will design and develop... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-java-developer-technologist/44427298"},{"jobId":44426308,"employerId":479968,"employerName":"Addition
+        Solutions","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        JavaScript Developer","locationName":"Gateshead","minimumSalary":40000.00,"maximumSalary":45000.00,"currency":"GBP","expirationDate":"01/12/2021","date":"20/10/2021","jobDescription":"
+        Backend JavaScript Developer | UK’s Largest Tech Company | Newcastle/Reading
+        | Incredible Employee Benefits  EXCLUSIVE OPPORTUNITY: We are currently recruiting
+        for a recognised Technology Company that are giants within their industry,
+        for the role of Backend JavaScript Developer. It’s an exciting opportunity
+        to work a huge company that have over 6 million customers worldwide with offices
+        around the gl... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-javascript-developer/44426308"},{"jobId":44424949,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Java
+        Developer / Backend Software Engineer - WfH","locationName":"Cambridge","minimumSalary":55000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"17/11/2021","date":"20/10/2021","jobDescription":"Java
+        Developer / Backend Software Engineer (CI/CD Kafka) *Hybrid WfH*. Are you
+        a technologist Java Developer seeking an opportunity to work on complex and
+        challenging systems, continually learning and progressing your career? You
+        could be joining a scale-up FinTech and working on a renewable energy trading
+        / real-time market data platform.As a Java Developer you will design and develop
+        new features and enhancements to the core,... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/java-developer-backend-software-engineer-wfh/44424949"},{"jobId":44424128,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer Java","locationName":"London","minimumSalary":75000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"17/11/2021","date":"20/10/2021","jobDescription":"Backend
+        Developer (Java JVM Kotlin Scala Clojure TDD BDD CI/CD AWS Agile). Opportunity
+        for a talented Backend Developer to join a successful technology consultancy
+        that offers a comprehensive benefits package and perks including flexible
+        working (work  from home), an extensive training and conference budget and
+        25 days holiday. As a Backend Developer you''ll work on a variety of client
+        projects that span from Greenfield work for start... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer-java/44424128"},{"jobId":44424071,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Golang
+        Developer Backend Cloud IoT","locationName":"Canary Wharf","minimumSalary":60000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"17/11/2021","date":"20/10/2021","jobDescription":"Golang
+        Developer / Backend Software Engineer (Golang Cloud IoT) *Hybrid WfH*. Would
+        you like an opportunity to work on a modern tech stack where you''ll be challenged
+        and continually learning, working on complex systems at the cutting edge of
+        IoT technology?You could be progressing your career, as a Golang Developer,
+        at a technology company that prides data centric software that enables the
+        management and control of machines via IoT. ... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/golang-developer-backend-cloud-iot/44424071"},{"jobId":44393036,"employerId":436122,"employerName":"Salt
+        Search","employerProfileId":null,"employerProfileName":null,"jobTitle":"AWS
+        Solution Architect - Germany","locationName":"Germany","minimumSalary":550.00,"maximumSalary":850.00,"currency":"EUR","expirationDate":"26/11/2021","date":"15/10/2021","jobDescription":"
+        AWS Solutions Architect (cloud) - Germany  Freelance/contract Rate: €550 -
+        €850 Duration: 3 - 6 months Start: ASAP  My client is looking for AWS Solution
+        Architect to create and implement AWS native tools due to the fact that these
+        tools and the architecture is currently unknown to the team. Description of
+        services   The contractor is supposed to work in... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/aws-solution-architect-germany/44393036"},{"jobId":44391248,"employerId":645496,"employerName":"Digitek
+        Resourcing Ltd T/A DigiTech Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Scala
+        Developer","locationName":"London","minimumSalary":550.00,"maximumSalary":650.00,"currency":"GBP","expirationDate":"26/11/2021","date":"15/10/2021","jobDescription":"
+        My market leading US based client is seeking for a Senior Software Engineer
+        with a passion for building reliable, scalable, and performant software.  What
+        you''ll do:   Architect, design, and implement backend services including
+        the core API that powers our mobile apps, backend data processing, and trading
+        systems Partner with the product team to come up with new features and products
+        Own the end to end de... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/scala-developer/44391248"},{"jobId":44391113,"employerId":645496,"employerName":"Digitek
+        Resourcing Ltd T/A DigiTech Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Ruby
+        Developer","locationName":"London","minimumSalary":550.00,"maximumSalary":650.00,"currency":"GBP","expirationDate":"26/11/2021","date":"15/10/2021","jobDescription":"
+        My market leading US based client is seeking for a Senior Software Engineer
+        with a passion for building reliable, scalable, and performant software. What
+        you''ll do:   Architect, design, and implement backend services including
+        the core API that powers our mobile apps, backend data processing, and trading
+        systems Partner with the product team to come up with new features and products
+        Own the end to end del... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/ruby-developer/44391113"},{"jobId":44389499,"employerId":17696,"employerName":"Concept
+        Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer","locationName":"York","minimumSalary":45000.00,"maximumSalary":60000.00,"currency":"GBP","expirationDate":"26/11/2021","date":"15/10/2021","jobDescription":"
+        Backend DeveloperYork&#163;45-60k &#43; PackageAn experienced Backend Developer
+        with strong analytical skills is urgently required to join a rapidly expanding
+        team to help manage the exchange of data between systems and end-user applications
+        in a fast paced, ever-changing environment.The successful candidate will focus
+        on the development of server-side cod... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer/44389499"},{"jobId":44416720,"employerId":613607,"employerName":"NDC
+        Tek Recruitment","employerProfileId":null,"employerProfileName":null,"jobTitle":"PHP
+        Developer - 100% Remote - £100k + Bonus + Equity ","locationName":"London","minimumSalary":70000.00,"maximumSalary":100000.00,"currency":"GBP","expirationDate":"30/11/2021","date":"19/10/2021","jobDescription":"PHP
+        Developer / Specialist NDC Tek are looking for a PHP specialist to work on
+        a business critical project for a leading player in the social media industry.
+        This role will be focused on backend coding and database design. Millions
+        of our users will see the results of your work every day, so we pay special
+        attention to the performance and reliability of our system. KEY ACCOUNTABILITIES:  Participate
+        ... ","applications":6,"jobUrl":"https://www.reed.co.uk/jobs/php-developer-100-remote-100k--bonus--equity/44416720"},{"jobId":44493992,"employerId":418190,"employerName":"Murray
+        McIntosh Recruitment Consultancy","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Ruby developer - contract - outside IR35","locationName":"Cambridge","minimumSalary":450.00,"maximumSalary":550.00,"currency":"GBP","expirationDate":"08/12/2021","date":"27/10/2021","jobDescription":"
+        I am currently recruiting for a well-known consumer electronics business in
+        Cambridge who are currently recruiting for a backend Ruby developer to join
+        them on a 6-month contract basis. This role is outside IR35 and will run for
+        an initial 6 months, with a strong chance of extension. The rate for this
+        will be in the region of &#163;450 and &#163;550 per day and will be based
+        onsite in Cambridge, with free onsite car parking. You can i... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/backend-ruby-developer-contract-outside-ir35/44493992"},{"jobId":44415341,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Java Developer API - Banking","locationName":"London","minimumSalary":95000.00,"maximumSalary":120000.00,"currency":"GBP","expirationDate":"16/11/2021","date":"19/10/2021","jobDescription":"Backend
+        Java Developer (Agile CI/CD RESTful API TDD). Would you like to utilise and
+        develop your Java skills within a hugely successful challenger bank that will
+        encourage you to learn new technologies and collaborate with talented developers?
+        As a Backend Java Developer you''ll be working on the core transaction engine;
+        building public, scalable REST APIs and secure, fast integrations. You will
+        be tackling different technical project... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-java-developer-api-banking/44415341"},{"jobId":44493691,"employerId":496791,"employerName":"Colossus
+        Associates","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer","locationName":"Southwark","minimumSalary":null,"maximumSalary":null,"currency":null,"expirationDate":"17/11/2021","date":"27/10/2021","jobDescription":"An
+        exciting opportunity for a passionate backend developer to join the ranks
+        of an established software house in order to facilitate the production of
+        future and existing core products. The ideal candidate will be an experienced
+        software developer with  a real passion for what they do who is able to add
+        value to existing software development teams. Responsibilities: - Working
+        as apart of the agile development team in order to f... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer/44493691"},{"jobId":44386543,"employerId":593269,"employerName":"Brook
+        Street","employerProfileId":null,"employerProfileName":null,"jobTitle":"Java
+        Full Stack Engineer backend","locationName":"Manchester","minimumSalary":35000.00,"maximumSalary":55000.00,"currency":"GBP","expirationDate":"26/11/2021","date":"15/10/2021","jobDescription":"
+        My client is a market leader in digital commerce for travel retailers. Their
+        Platform enables a travel marketplace of over one billion shoppers covering
+        every corner of the globe, driven by some of the world`s most innovative airline
+        retail brands with a  relationship with many successful and well known airlines.
+        This company maintains offices worldwide.This role will be based in Manchester
+        City Centre in very modern open plan of... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/java-full-stack-engineer-backend/44386543"},{"jobId":44386537,"employerId":593269,"employerName":"Brook
+        Street","employerProfileId":null,"employerProfileName":null,"jobTitle":"Java
+        Full Stack Engineer backend","locationName":"Manchester","minimumSalary":35000.00,"maximumSalary":55000.00,"currency":"GBP","expirationDate":"26/11/2021","date":"15/10/2021","jobDescription":"
+        My client is a market leader in digital commerce for travel retailers. Their
+        Platform enables a travel marketplace of over one billion shoppers covering
+        every corner of the globe, driven by some of the world`s most innovative airline
+        retail brands with a  relationship with many successful and well known airlines.
+        This company maintains offices worldwide.This role will be based in Manchester
+        City Centre in very modern open plan of... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/java-full-stack-engineer-backend/44386537"},{"jobId":44385686,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Junior
+        Backend Developer Node.js","locationName":"Cambridge","minimumSalary":35000.00,"maximumSalary":50000.00,"currency":"GBP","expirationDate":"12/11/2021","date":"15/10/2021","jobDescription":"Junior
+        Backend Developer / Software Engineer (Node.js JavaScript) *Remote Interview
+        WFH*. One of the world''s most advanced technology companies is seeking bright,
+        highly motivated Software Developers to join their team in Cambridge.As a
+        Junior Backend Developer you''ll design and develop new components and enhancements
+        for a suite of cutting edge AI driven Cyber Security software products. You''ll
+        join a collaborative Agile team workin... ","applications":7,"jobUrl":"https://www.reed.co.uk/jobs/junior-backend-developer-nodejs/44385686"},{"jobId":44492028,"employerId":485887,"employerName":"FreshtechIT","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer","locationName":"London","minimumSalary":300.00,"maximumSalary":500.00,"currency":"GBP","expirationDate":"08/12/2021","date":"27/10/2021","jobDescription":"
+        Software Engineer ( Backend/- Node) Urgent A fast-growing, leading retail
+        company based in the heart of London is seeking Senior Software Engineers
+        to work on their new e-commerce platform. This is an incredible opportunity
+        to join the team in its early stages and an opportunity for you to significantly  contribute
+        to the project from a technical/ architectural point of view! As the Software
+        Engineer you will be responsible for... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer/44492028"},{"jobId":44491424,"employerId":524744,"employerName":"Hays
+        Specialist Recruitment Limited","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Python Backend Developer","locationName":"Guildford","minimumSalary":300.00,"maximumSalary":425.00,"currency":"GBP","expirationDate":"08/12/2021","date":"27/10/2021","jobDescription":"
+        New contract job for a Senior Backend Developer that specialises in Python
+        3.6&#43; and AWS architecture. Our client is looking for a senior backend
+        developer with Python 3.6&#43; experience and good understanding of AWS architecture.
+        The ideal candidate would be able to work alone as part of a SCRUM team, interpreting
+        technical requirements and implementing them accordingly. Our client have
+        become a leading global pr... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/senior-python-backend-developer/44491424"},{"jobId":44491157,"employerId":306165,"employerName":"Propel
+        London","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Python Django Engineer - Childcare","locationName":"London","minimumSalary":70000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"08/12/2021","date":"27/10/2021","jobDescription":"
+        The Company A heavily backed start-up working to disrupt an under digitized
+        industry whose B2C product has massive plans to scale both nationally and
+        internationally require a senior Python Django Engineer to join their scaling
+        remote engineering team The Role Working closely with the CTO of a newly formed
+        engineering team you will build greenfield features for this early-stage venture
+        taking a key role in shaping the be... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-python-django-engineer-childcare/44491157"},{"jobId":44489617,"employerId":306165,"employerName":"Propel
+        London","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Engineer - Video AI Regtech - £100k","locationName":"London","minimumSalary":70000.00,"maximumSalary":110000.00,"currency":"GBP","expirationDate":"08/12/2021","date":"27/10/2021","jobDescription":"
+        The Company Senior Backend Engineer (Go Golang C&#43;&#43; Java) is required
+        to join an American AI RegTech business scaling into Europe and building out
+        a remote engineering team. Having Received over $15 million in funding to
+        date for its Video Communications cyber security  product this 40 person scale
+        up is now looking to add to its small but impressive engineering team by bringing
+        in a software engineer who wants to work in a fla... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-engineer-video-ai-regtech-100k/44489617"},{"jobId":44382826,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Java
+        Developer / Backend Software Engineer","locationName":"London","minimumSalary":55000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"12/11/2021","date":"15/10/2021","jobDescription":"Java
+        Developer / Backend Software Engineer *Remote Interview Flexible Working*.
+        Would you like to work on complex and interesting systems that provide daily
+        challenges; collaborate with a friendly and upbeat team and improve your skills
+        via continual learning  programmes whilst enjoying a good work / life balance?You
+        could be joining a global FinTech; as part of an Agile development team you
+        will design, develop and maintain highly c... ","applications":6,"jobUrl":"https://www.reed.co.uk/jobs/java-developer-backend-software-engineer/44382826"},{"jobId":44375876,"employerId":415711,"employerName":"Explore
+        Group","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Developer","locationName":"Watford","minimumSalary":70000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"25/11/2021","date":"14/10/2021","jobDescription":"
+        Senior Backend Developer  Are you experienced in back-end development? Do
+        you see yourself categorised as a Senior PHP Developer? If so, this job will
+        be more than perfect for you! I''m working with a rapidly growing company
+        in the gaming community. They have rapidly grown since their  founding, and
+        they offer both marketing / development for their clients and power the marketing
+        / technology for hundreds of sites thro... ","applications":4,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-developer/44375876"},{"jobId":44368278,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Python
+        Developer Real-time Data SQL","locationName":"London","minimumSalary":75000.00,"maximumSalary":100000.00,"currency":"GBP","expirationDate":"11/11/2021","date":"14/10/2021","jobDescription":"Python
+        Developer / Backend Software Engineer *Remote / WFH*. Do you have expertise
+        with Python and a data centric mindset?You could be joining a FinTech solutions
+        provider as they expand their UK presence. As a senior Python Developer you
+        will prototype and develop new features, analytics and enhancements to the
+        core trading platform with a focus on improving backend infrastructures, optimising
+        platform performance and en... ","applications":6,"jobUrl":"https://www.reed.co.uk/jobs/python-developer-real-time-data-sql/44368278"},{"jobId":44367683,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer Java - FinTech","locationName":"London","minimumSalary":100000.00,"maximumSalary":115000.00,"currency":"GBP","expirationDate":"11/11/2021","date":"14/10/2021","jobDescription":"Backend
+        Developer (Java Distributed Systems Kafka Kubernetes AWS SpringBoot). Would
+        you like to utilise your Backend Developer skills within a growing FinTech
+        that works with a number of well-known global companies? As a Backend Developer
+        you''ll be joining a brand new team who are responsible for managing, designing
+        and developing the core components that underpin the company''s core banking
+        platform. You''ll be looking at the existing... ","applications":4,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer-java-fintech/44367683"},{"jobId":44364256,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"C#
+        Developer / Backend .Net 5.0 Quant","locationName":"Mayfair","minimumSalary":90000.00,"maximumSalary":140000.00,"currency":"GBP","expirationDate":"10/11/2021","date":"13/10/2021","jobDescription":"C#
+        Developer / Backend Software Engineer (C# .Net Core SQL). Are you a technologist
+        C# Developer with a range of experience backed by a record of academic achievement?
+        You could be progressing your career working on complex and challenging systems
+        at a  Hedge Fund with over $17 billion under management. As a C# Developer
+        / Backend Software Engineer you''ll collaborate with a team of highly intelligent
+        technologists and finance profess... ","applications":4,"jobUrl":"https://www.reed.co.uk/jobs/c-developer-backend-net-50-quant/44364256"},{"jobId":44362908,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Python
+        Developer - Tech for Good","locationName":"London","minimumSalary":65000.00,"maximumSalary":80000.00,"currency":"GBP","expirationDate":"10/11/2021","date":"13/10/2021","jobDescription":"Python
+        Developer / Backend Software Engineer *Hybrid WfH*. Would you like to progress
+        your career at a fast growing &quot;Tech for Good&quot; start-up? You could
+        be working on a product that is set to disrupt the Life Assurance space via
+        its advanced AI data platform,  rewarding customers for a healthy lifestyle.
+        As the Python Developer you design and develop for the core platform; the
+        service consists of a cloud based API that is be... ","applications":5,"jobUrl":"https://www.reed.co.uk/jobs/python-developer-tech-for-good/44362908"},{"jobId":44357965,"employerId":626368,"employerName":"Amber
+        Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend PHP Developer","locationName":"London","minimumSalary":55000.00,"maximumSalary":75000.00,"currency":"GBP","expirationDate":"24/11/2021","date":"13/10/2021","jobDescription":"
+        Senior Backend PHP Developer | Fully Remote | up to &#163;75,000  PHP Engineer|
+        PHP Developer | PHP | Laravel | WordPress | MySQL | AWS | Docker | Bitbucket
+        The Company: A well established and growing company in the iGaming industry
+        are embarking on a new side project and are building up a talented team of
+        multidisciplinary developers who are passionate about what they d... ","applications":8,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-php-developer/44357965"},{"jobId":44355905,"employerId":126720,"employerName":"
+        Talent Point Ltd","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Backend Engineer at a series C tech scale-up","locationName":"London","minimumSalary":75000.00,"maximumSalary":95000.00,"currency":"GBP","expirationDate":"24/11/2021","date":"13/10/2021","jobDescription":"
+        Senior Software Engineer (Back-End) Location: Southampton / London / remote
+        We’re looking for a Senior Software Engineer to join our growing engineering
+        team and help us build out scalable, reliable, performant solutions in our
+        SaaS platform. Who are we? Ometria is a customer data and marketing platform
+        that helps retailers increase customer loyalty and CRM revenue by se... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/senior-backend-engineer-at-a-series-c-tech-scale-up/44355905"},{"jobId":44354745,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Lead
+        Backend Software Engineer Python - Remote","locationName":"London","minimumSalary":90000.00,"maximumSalary":100000.00,"currency":"GBP","expirationDate":"10/11/2021","date":"13/10/2021","jobDescription":"Lead
+        Backend Software Engineer / Developer (Python) *Remote UK*. Would you like
+        to progress your career in a senior hands-on role at a growing FinTech? As
+        a Lead Backend Software Engineer you will take a lead role in a small engineering
+        team to build out the core platform, an award winning data analytics platform
+        sold into major financial institutions across the globe. You''ll get involved
+        with projects across  the platform collaborat... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/lead-backend-software-engineer-python-remote/44354745"},{"jobId":44354404,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Java Spring AWS - Remote","locationName":"London","minimumSalary":75000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"10/11/2021","date":"13/10/2021","jobDescription":"Backend
+        Software Engineer / Java Developer (Spring AWS microservices API SQL) *Remote
+        UK*. Would you like to progress your career working on a modern tech stack
+        where you''ll be continually learning? You could be joining a growing FinTech
+        organisation.As a Backend Software Engineer you will design and develop new
+        features and enhancements to the core, data centric product that enables clients
+        to better understand their data to drive a... ","applications":5,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-java-spring-aws-remote/44354404"},{"jobId":44354401,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer C# .Net Core","locationName":"Camden","minimumSalary":65000.00,"maximumSalary":75000.00,"currency":"GBP","expirationDate":"10/11/2021","date":"13/10/2021","jobDescription":"Backend
+        Software Engineer / Developer (C# .Net Core AWS Microservices) *Hybrid WfH*.
+        Are you a technologist seeking a role where you can work a modern tech stack,
+        continually learning and progressing your career? You could be joining a growing
+        start-up that is viewed as a leading FinTech disruptor.As a Backend Software
+        Engineer you''ll design and develop performant and highly scalable solutions
+        utilising technologies inclu... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-c-net-core/44354401"},{"jobId":44347273,"employerId":432282,"employerName":"Oscar
+        Technology","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer - Leeds/Remote - Up to £45k","locationName":"Leeds","minimumSalary":35000.00,"maximumSalary":45000.00,"currency":"GBP","expirationDate":"09/11/2021","date":"12/10/2021","jobDescription":"
+        Backend Developer - (PHP, Laravel, MySQL, Vue.Js, AWS) - Leeds/Remote Up to
+        &#163;45k plus benefits (remote work, flexible hours, team holidays, company
+        bonus scheme) The Company The past 18 months has shown us how important company
+        culture, ethos and support are in achieving a happy working environment. This
+        company pride themselves on their values, both internally in t... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer-leeds-remote-up-to-45k/44347273"},{"jobId":44317076,"employerId":543266,"employerName":"Post
+        My Job Ltd","employerProfileId":null,"employerProfileName":null,"jobTitle":"Junior/Grad
+        Backend .Net Core Developer","locationName":"Blisworth","minimumSalary":25000.00,"maximumSalary":30000.00,"currency":"GBP","expirationDate":"19/11/2021","date":"08/10/2021","jobDescription":"
+        Dragon2000 is an award-winning provider of business management software, websites
+        and mobile apps to the Automotive industry and due to continued expansion
+        we are looking for Junior or Graduate Backend Developers to join our ranks
+        to help shape exciting  new products and features from concept to roll out.
+        About You This role requires some understanding of .Net Core and C# but training
+        is available to bring you ... ","applications":10,"jobUrl":"https://www.reed.co.uk/jobs/junior-grad-backend-net-core-developer/44317076"},{"jobId":44317019,"employerId":543266,"employerName":"Post
+        My Job Ltd","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        .Net Core Developer","locationName":"Blisworth","minimumSalary":30000.00,"maximumSalary":40000.00,"currency":"GBP","expirationDate":"19/11/2021","date":"08/10/2021","jobDescription":"
+        Dragon2000 is an award-winning provider of business management software, websites
+        and mobile apps to the Automotive industry and due to continued expansion
+        we are looking for Backend Developers to join our ranks to help shape exciting
+        new products and features  from concept to roll out. About You This role requires
+        an understanding of .Net Core and C# but further training is available to
+        bring you up to speed i... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-net-core-developer/44317019"},{"jobId":44341570,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Java Golang AWS","locationName":"London","minimumSalary":85000.00,"maximumSalary":100000.00,"currency":"GBP","expirationDate":"09/11/2021","date":"12/10/2021","jobDescription":"Backend
+        Software Engineer / Principle Developer (Java Golang AWS) *Hybrid WfH*. Would
+        you like to take a lead role, working for a technology driven start-up that
+        is enabling life changing education to be accessed by students around the
+        world?As a Backend Software Engineer you will take a lead role in the architecture,
+        design and development of the backend infrastructure as part of a Greenfield
+        project to re-engineer the main platform... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-java-golang-aws/44341570"},{"jobId":44336605,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer C++ Real-time","locationName":"London","minimumSalary":75000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"09/11/2021","date":"12/10/2021","jobDescription":"Backend
+        Software Engineer / Developer (C&#43;&#43; Windows Algorithm Data) * Hybrid
+        WfH*. Are you a skilled C&#43;&#43; Software Engineer looking to work on complex
+        and challenging systems where you can make a real impact and progress your
+        career? You could be joining a FinTech that has been consistently voted as
+        one of the UKs top employers. As a Backend Software Engineer you will design
+        and develop C&#43;&#43; multi-thr... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-c-real-time/44336605"},{"jobId":44336404,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer - Python Linux Low Latency","locationName":"London","minimumSalary":120000.00,"maximumSalary":250000.00,"currency":"GBP","expirationDate":"09/11/2021","date":"12/10/2021","jobDescription":"Backend
+        Developer / Software Engineer (Python Linux HFT). Do you have expertise with
+        backend software development? You could be working on complex and interesting
+        High Frequency Trading systems whilst continually learning and improving your
+        skills at a  technology driven e-trading firm as a key member of a small team,
+        discussing ideas and collaborating to solve problems and optimise ultra-low
+        latency e-trading systems performance. As... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer-python-linux-low-latency/44336404"},{"jobId":44335927,"employerId":436122,"employerName":"Salt
+        Search","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
+        Node Backend Developer","locationName":"London","minimumSalary":80000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"23/11/2021","date":"12/10/2021","jobDescription":"
+        Senior Backend Node Developer London &#163;80000.00 - &#163;90000.00 per annum
+        This is a great opportunity to join one of the European market leaders in
+        the E-Commerce industry, working on bespoke products. If you are looking to
+        join a team of experienced and enthusiastic engineers where people are empowered
+        to have an impact and quality  is valued this will be the perfect role for
+        you. They are looking for self-starters... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/senior-node-backend-developer/44335927"},{"jobId":44333308,"employerId":593269,"employerName":"Brook
+        Street","employerProfileId":null,"employerProfileName":null,"jobTitle":"Javascript
+        Developer/Nodejs - backend- Remote working","locationName":"Manchester","minimumSalary":40000.00,"maximumSalary":42000.00,"currency":"GBP","expirationDate":"22/11/2021","date":"11/10/2021","jobDescription":"
+        Our client is an innovative tech consultancy that helps its customers automate
+        their day-to-day operations so that they can focus on innovating and providing
+        the best possible service rather than handling large volumes of repetitive
+        tasks. Working with a key Partner in designing innovative real-time communications
+        solutions using their SMS, Voice and Whatsapp communication channels (and
+        many more).We work incredibly closely with... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/javascript-developer-nodejs-backend-remote-working/44333308"},{"jobId":44333196,"employerId":593269,"employerName":"Brook
+        Street","employerProfileId":null,"employerProfileName":null,"jobTitle":"Javascript/Nodejs
+        Backend Developer - Remote working","locationName":"Birmingham","minimumSalary":38000.00,"maximumSalary":40000.00,"currency":"GBP","expirationDate":"22/11/2021","date":"11/10/2021","jobDescription":"
+        Our client is an innovative tech consultancy that helps its customers automate
+        their day-to-day operations so that they can focus on innovating and providing
+        the best possible service rather than handling large volumes of repetitive
+        tasks. Working with a key Partner in designing innovative real-time communications
+        solutions using their SMS, Voice and Whatsapp communication channels (and
+        many more).We work incredibly closely with... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/javascript-nodejs-backend-developer-remote-working/44333196"},{"jobId":44332933,"employerId":593269,"employerName":"Brook
+        Street","employerProfileId":null,"employerProfileName":null,"jobTitle":"Javascript/Nodejs
+        Backend Developer - Remote working","locationName":"London","minimumSalary":38000.00,"maximumSalary":40000.00,"currency":"GBP","expirationDate":"22/11/2021","date":"11/10/2021","jobDescription":"
+        Our client is an innovative tech consultancy that helps its customers automate
+        their day-to-day operations so that they can focus on innovating and providing
+        the best possible service rather than handling large volumes of repetitive
+        tasks. Working with a key Partner in designing innovative real-time communications
+        solutions using their SMS, Voice and Whatsapp communication channels (and
+        many more).We work incredibly closely with... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/javascript-nodejs-backend-developer-remote-working/44332933"},{"jobId":44327796,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Python
+        Developer Backend Linux - Remote","locationName":"London","minimumSalary":75000.00,"maximumSalary":85000.00,"currency":"GBP","expirationDate":"08/11/2021","date":"11/10/2021","jobDescription":"Python
+        Developer / Backend Software Engineer (API AWS Linux SQL) *Remote / WfH*.
+        Would you like to work on complex and challenging systems in a senior, hands-on
+        role where you can take ownership and work closely with the business? You
+        could be joining  a tech company that specialise in solutions for the maritime
+        / shipping industry using complex data to derive insights across regulatory
+        conformance, sanctions screening, trade compliance, trackin... ","applications":4,"jobUrl":"https://www.reed.co.uk/jobs/python-developer-backend-linux-remote/44327796"},{"jobId":44326567,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer C++ CUDA Boost","locationName":"London","minimumSalary":85000.00,"maximumSalary":100000.00,"currency":"GBP","expirationDate":"08/11/2021","date":"11/10/2021","jobDescription":"Backend
+        Software Engineer / Developer (C&#43;&#43; CUDA Boost) *Hybrid WfH*. Do you
+        have expertise with C&#43;&#43;? You could be progressing your career in a
+        senior, hands-on role at a scale-up technology company that produce complex
+        software for CNC manufacturing /  programmable sheet metal patterns for use
+        in things like the aircraft and automotive industry.As a Backend Software
+        Engineer you will design and develop the core techno... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-c-cuda-boost/44326567"},{"jobId":44325689,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Java SpringBoot","locationName":"London","minimumSalary":85000.00,"maximumSalary":100000.00,"currency":"GBP","expirationDate":"08/11/2021","date":"11/10/2021","jobDescription":"Backend
+        Software Engineer / Java Developer (SpringBoot microservices) *Remote Interview
+        WfH*. Fast growing FinTech that''s SaaS solutions are helping High Street
+        banks to compete with the challenge from their online tech driven rivals,
+        is seeking a skilled  Backend Software Engineer to work on challenging systems.As
+        a Backend Software Engineer you will design and develop customer focused on-boarding
+        and client reporting systems. You''l... ","applications":7,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-java-springboot/44325689"},{"jobId":44316958,"employerId":637421,"employerName":"Zealous
+        Agency","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer","locationName":"Leeds","minimumSalary":32000.00,"maximumSalary":40000.00,"currency":"GBP","expirationDate":"19/11/2021","date":"08/10/2021","jobDescription":"
+        Awesome digital agency, seeks an experienced and talented Backend Developer
+        to join their growing team. We are looking for a Backend Developer who loves
+        to work with PHP and JavaScript as their core languages, supported by fantastic
+        modern frameworks. Someone who likes to collaborate with like-minded innovative
+        Developers and Designers across a wide range  of projects using all the latest
+        technologies. With no two projects the ... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer/44316958"},{"jobId":44315452,"employerId":17696,"employerName":"Concept
+        Resourcing","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Developer/ Ruby/ CMS /Javascript / Contract / £550pd","locationName":"London","minimumSalary":500.00,"maximumSalary":550.00,"currency":"GBP","expirationDate":"19/11/2021","date":"08/10/2021","jobDescription":"
+        Backend Developer / Ruby / CMS / Javascript / Contract / &#163;550pd  Backend
+        Developer / Ruby / CMS / Javascript / Contract / &#163;550pd  My client, a
+        large central government department are looking to recruit based on the onset
+        of alage project of work. On this ocassion my client require 3 Backend developers
+        on initial 6 month contrats  The backend developers will have skills in the
+        following :  have exper... ","applications":0,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer-ruby-cms-javascript-contract-550pd/44315452"},{"jobId":44312481,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Go
+        Developer Golang Backend Cloud","locationName":"Canary Wharf","minimumSalary":60000.00,"maximumSalary":70000.00,"currency":"GBP","expirationDate":"05/11/2021","date":"08/10/2021","jobDescription":"Go
+        Developer / Backend Software Engineer (Golang Cloud) *Hybrid WfH*. Would you
+        like an opportunity to work on a modern tech stack where you''ll be challenged
+        and continually learning, working on complex systems at the cutting edge of
+        IoT technology?You could be progressing your career, as a Go Developer, at
+        a technology company that prides data centric software that enables the management
+        and control of machines via IoT. ... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/go-developer-golang-backend-cloud/44312481"},{"jobId":44311988,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Software Engineer Golang Cloud","locationName":"Canary Wharf","minimumSalary":80000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"05/11/2021","date":"08/10/2021","jobDescription":"Backend
+        Software Engineer / Developer (Golang Cloud) *Hybrid WfH*. Are you a skilled
+        backend technologist seeking a role where you''ll be challenged and continually
+        learning, working on complex systems at the cutting edge of IoT technology?You
+        could be progressing your career in a senior role at a technology company
+        that prides data centric software that enables the management and control
+        of machines via IoT. As a Backend ... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-golang-cloud/44311988"},{"jobId":44309586,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"C#
+        Developer .Net Core Cloud - FinTech","locationName":"Reigate","minimumSalary":80000.00,"maximumSalary":95000.00,"currency":"GBP","expirationDate":"05/11/2021","date":"08/10/2021","jobDescription":"C#
+        Developer / Backend Software Engineer (C# .Net Core Azure AWS Kubernetes)
+        *Hybrid WfH*. Are you a skilled Backend Software Engineer with strong Cloud
+        and microservices experience? You could be progressing your career in a senior
+        hands-on role.As a C# Developer you will provide subject matter expertise,
+        collaborating with the lead architect to guide best practice for SaaS cloud
+        based microservices backend systems and CI/CD pipeline... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/c-developer-net-core-cloud-fintech/44309586"},{"jobId":44309567,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Java
+        Developer / Backend Software Engineer","locationName":"London","minimumSalary":80000.00,"maximumSalary":90000.00,"currency":"GBP","expirationDate":"05/11/2021","date":"08/10/2021","jobDescription":"Java
+        Developer / Backend Software Engineer *Remote Interview WfH*. Do you have
+        expertise with multi-threaded core Java development? You could be working
+        on complex and interesting real-time, low latency trading systems that provide
+        daily challenges and  collaborating with a friendly and upbeat team a FinTech
+        that has been consistently voted as one of the UKs top employers.As a Java
+        Developer / Backend Software Engineer you will desig... ","applications":9,"jobUrl":"https://www.reed.co.uk/jobs/java-developer-backend-software-engineer/44309567"},{"jobId":44305150,"employerId":535504,"employerName":"TEC
+        PARTNERS LIMITED","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Engineer","locationName":"Bromley","minimumSalary":40000.00,"maximumSalary":65000.00,"currency":"GBP","expirationDate":"18/11/2021","date":"07/10/2021","jobDescription":"BACKEND
+        ENGINEERBROMLEY, KENT or FULLY REMOTEUP TO &#163;65,000 Tec Partners are working
+        with one of the most recognised games studios in the UK who specialise in
+        multiplayer first-person shooter video games. They are looking for a Backend
+        Engineer to work with Golang on a new unannounced title. You will focus on
+        scalability and performance and implement key tasks and features on their...
+        ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-engineer/44305150"}],"ambiguousLocations":[],"totalResults":833}'
+  recorded_at: Sun, 31 Oct 2021 08:34:17 GMT
+- request:
+    method: get
+    uri: https://www.reed.co.uk/api/1.0/jobs/44489464
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Basic NDhhNjBmYmYtNTQ0Zi00ZWIzLWEyY2QtODNmZGJkNGE3MmFiOg==
+      Connection:
+      - close
+      Host:
+      - www.reed.co.uk
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 31 Oct 2021 08:34:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2568'
+      Connection:
+      - close
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      Set-Cookie:
+      - ".ASPXANONYMOUS=52oA5rA3q5RRFLo7WCCRktJFRNnPTdYp6fstXZKwyy9LtkpfbXrjKApIjmxeJKO5qfsUswn2bDAUCIF7OVNx-hAOT5oItEf8mmZuuvTWMOXJ_6h-WPOR-_Mo_C2ROYtWPVDHsQ2;
+        expires=Sun, 31-Oct-2021 10:04:18 GMT; path=/; HttpOnly"
+      - __cf_bm=n9k.mS23nN5oeyrFaw60G4IUqIJQCSzfUHJM1hlkar8-1635669258-0-Aej/1RK3+71kDZRskHRIo2dzqvfNfxFJG3QEZs+UvRJy0JEwBd/Da95hbwJszMcUlecOEVVYun1yhmyIEZVtBBM=;
+        path=/; expires=Sun, 31-Oct-21 09:04:18 GMT; domain=.reed.co.uk; HttpOnly;
+        Secure; SameSite=None
+      - __cfruid=1af1cdba1eb5eb05816ff60da9ec09612f7914f4-1635669258; path=/; domain=.reed.co.uk;
+        HttpOnly; Secure; SameSite=None
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - frame-src 'self' 'unsafe-eval' 'unsafe-inline' player.vimeo.com *.vimeo.com
+        googletagmanager.com *.googletagmanager.com youtube.com *.youtube.com facebook.com
+        *.facebook.com google.com *.google.com *.googlesyndication.com ff.doubleclick.net
+        *.doubleclick.net *.criteo.com *.hotjar.com;
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6a6b8b191e2c6a8c-TPE
+    body:
+      encoding: UTF-8
+      string: '{"employerId":300264,"employerName":"Client Server Ltd.","jobId":44489464,"jobTitle":"Java
+        Developer Backend Technologist","locationName":"London","minimumSalary":75000.0000,"maximumSalary":90000.0000,"yearlyMinimumSalary":75000.0000,"yearlyMaximumSalary":90000.0000,"currency":"GBP","salaryType":"per
+        annum","salary":"£75,000 - £90,000 per annum","datePosted":"27/10/2021","expirationDate":"24/11/2021","externalUrl":null,"jobUrl":"https://www.reed.co.uk/jobs/java-developer-backend-technologist/44489464","partTime":false,"fullTime":true,"contractType":"Permanent","jobDescription":"Java
+        Developer / Backend Software Engineer *Remote UK / Work from Home*. Would
+        you like to progress your career working on a modern tech stack where you''ll
+        be continually learning? You could be progressing your career at a market
+        leading SaaS software  house that specialise in communications recording and
+        management for regulated environments such as trade floors.<br /><br />As
+        a Java Developer you will design and develop new features and enhancements
+        to the core, data centric product that enables clients to better understand
+        their data to drive a range of business benefits. You''ll be an instrumental
+        part of a collaborative Agile  development team working across the full development
+        lifecycle from liaising with the Product Owner to refine requirements through
+        development stages and delivery. You''ll be working with clean coding practices,
+        code reviews and will ensure that code is well  tested collaborating with
+        QA Engineers.<br /><br />There''s a remote interview and onboarding process
+        as well as the ability to work from home fulltime within the UK (or you can
+        have a hybrid model working from the London office).<br /><br />Requirements:<br
+        />*You have strong Java software development experience across the full lifecycle
+        <br />*You have experience of designing and building high performance, secure
+        and scalable enterprise applications<br />*You have a good working knowledge
+        of AWS, Spring / SpringBoot, REST APIs, SQL, Docker / Kubernetes, ElasticSearch,
+        microservices architectures<br />*You have a thorough understanding of Computer
+        Science fundamentals such as OOP, Design Patterns, Data Structures, SOLID
+        principles<br />*You''re collaborative and pragmatic, used to working in Agile
+        teams remotely <br /><br />As a Java Developer / Backend Software Engineer
+        you will earn a competitive salary (to &#163;90k) plus benefits.<br /><br
+        />Apply now or call to find out more about this Java Developer / Backend Software
+        Engineer opportunity.","applicationCount":4}'
+  recorded_at: Sun, 31 Oct 2021 08:34:18 GMT
+- request:
+    method: get
+    uri: https://www.reed.co.uk/api/1.0/jobs/INVALID%20JOB_ID
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Basic NDhhNjBmYmYtNTQ0Zi00ZWIzLWEyY2QtODNmZGJkNGE3MmFiOg==
+      Connection:
+      - close
+      Host:
+      - www.reed.co.uk
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sun, 31 Oct 2021 08:34:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '37'
+      Connection:
+      - close
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      Set-Cookie:
+      - ".ASPXANONYMOUS=azFMNewJq5-uQYwxOmJwR_G_STnIVAVj1zJkUk8-KwQWSXfRJgTbQcxP96gbrcJM4kXkM-2z_gofYoIMAVFHguaMtYewbwJj1isY0NysCc5Ez-qmwI_5uexUJuThMhD3vvtw1Q2;
+        expires=Sun, 31-Oct-2021 10:04:19 GMT; path=/; HttpOnly"
+      - __cf_bm=.CZ8J9xwJAj62kVkQTdUUIJszuFPOhKZdoBXhxWIG5Y-1635669259-0-AcW/HhZxW2z6EPNeyOGlOMF7U1Lf5pIXMpKTgwbkBpwzaOmBT5sPuTM2PM8grru/2EkZshyJJbS8a+QW3f0iRtk=;
+        path=/; expires=Sun, 31-Oct-21 09:04:19 GMT; domain=.reed.co.uk; HttpOnly;
+        Secure; SameSite=None
+      - __cfruid=558eb1b2a7840119ee8ee0810215a2a884be9313-1635669259; path=/; domain=.reed.co.uk;
+        HttpOnly; Secure; SameSite=None
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - frame-src 'self' 'unsafe-eval' 'unsafe-inline' player.vimeo.com *.vimeo.com
+        googletagmanager.com *.googletagmanager.com youtube.com *.youtube.com facebook.com
+        *.facebook.com google.com *.google.com *.googlesyndication.com ff.doubleclick.net
+        *.doubleclick.net *.criteo.com *.hotjar.com;
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6a6b8b20e8c156e8-TPE
+    body:
+      encoding: UTF-8
+      string: '{"message":"The request is invalid."}'
+  recorded_at: Sun, 31 Oct 2021 08:34:19 GMT
+- request:
+    method: get
+    uri: https://www.reed.co.uk/api/1.0/search?keywords=backend
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Basic SU5WQUxJRCBUT0tFTjo=
+      Connection:
+      - close
+      Host:
+      - www.reed.co.uk
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Sun, 31 Oct 2021 08:34:20 GMT
+      Content-Length:
+      - '0'
+      Connection:
+      - close
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      Set-Cookie:
+      - ".ASPXANONYMOUS=fU9XDd1g2wBpDoFfT7KBRwOEoUjLVYOWZIEBOimyOEATxCm2JvKPmA_ba-iLWtdXnyV2tHXu_HuQ1V1NfJlWtKo_116aIllp4V3CO1t96jcCHhtuQ4FDx2UejGwjif4qCP1_-A2;
+        expires=Sun, 31-Oct-2021 10:04:20 GMT; path=/; HttpOnly"
+      - __cf_bm=3Ie7L4la6rqgwVHeZ8zrLx1oWW9wJGv9BpoOtxT6i3U-1635669260-0-AWdj3McTxs3CyohNIp+ZR2w75VkOtxNkxyRQ+Dbt3KMdiMl0azx0r3lZhmWw2vAjtuaTooT7BFsxkd1p7+j2F8M=;
+        path=/; expires=Sun, 31-Oct-21 09:04:20 GMT; domain=.reed.co.uk; HttpOnly;
+        Secure; SameSite=None
+      - __cfruid=22145940c567284bf1f4ebd25df5c5be302ddd06-1635669260; path=/; domain=.reed.co.uk;
+        HttpOnly; Secure; SameSite=None
+      Www-Authenticate:
+      - Basic
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - frame-src 'self' 'unsafe-eval' 'unsafe-inline' player.vimeo.com *.vimeo.com
+        googletagmanager.com *.googletagmanager.com youtube.com *.youtube.com facebook.com
+        *.facebook.com google.com *.google.com *.googlesyndication.com ff.doubleclick.net
+        *.doubleclick.net *.criteo.com *.hotjar.com;
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6a6b8b28a9446a87-TPE
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+  recorded_at: Sun, 31 Oct 2021 08:34:20 GMT
+recorded_with: VCR 6.0.0
