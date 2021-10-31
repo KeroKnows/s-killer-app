@@ -1,7 +1,6 @@
 Gemfile.lock
 
 config/secrets.yml
-spec/fixtures/
 coverage/
 !coverage/.resultset.json
 
