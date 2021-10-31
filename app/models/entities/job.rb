@@ -13,7 +13,7 @@ module Skiller
       attribute :location, Types::Strict::String
     end
 
-    # Job information of jobs from Reed API
+    # Job information from Reed Details API
     class Job < PartialJob
       attribute :min_year_salary, Types::Optional::Float
       attribute :max_year_salary, Types::Optional::Float
