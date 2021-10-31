@@ -11,6 +11,7 @@ module Skiller
         @gateway = gateway_class.new(@config['REED_TOKEN'])
       end
 
+      # Get job_list from Reed::API and make each job a DataMapper class
       def job_list(keyword)
         data = @gateway.search(keyword)['results']
         data.map { |job_data| DataMapper.new(job_data).build_entity }
