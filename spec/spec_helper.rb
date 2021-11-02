@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+# Specify we are in test environment as the first thing in our spec setup
+ENV['RACK_ENV'] = 'test'
+
 require 'simplecov'
 SimpleCov.start
 
