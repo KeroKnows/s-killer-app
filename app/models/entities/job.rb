@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'dry-struct'
+require_relative 'partial_job'
 
 module Skiller
   module Entity
