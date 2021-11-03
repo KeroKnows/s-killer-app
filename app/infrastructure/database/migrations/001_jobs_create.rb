@@ -15,10 +15,11 @@ Sequel.migration do
       Float       :yearly_minimum_salary
       Float       :yearly_maximum_salary
       String      :currency
-      String      :job_url
+      String      :job_url, null: true
 
       DateTime    :created_at
       DateTime    :updated_at
+      String      :updated_by
     end
   end
 end
