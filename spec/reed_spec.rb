@@ -7,8 +7,8 @@ describe 'Test Reed library' do
     c.cassette_library_dir = CASSETTES_FOLDER
     c.hook_into :webmock
 
-    c.filter_sensitive_data('<REED_TOKEN>') { REED_TOKEN }
-    c.filter_sensitive_data('<REED_TOKEN_ESC>') { CGI.escape(REED_TOKEN) }
+    c.filter_sensitive_data('<REED_TOKEN>') { CREDENTIALS }
+    c.filter_sensitive_data('<REED_TOKEN_ESC>') { CGI.escape(CREDENTIALS) }
   end
 
   before do
