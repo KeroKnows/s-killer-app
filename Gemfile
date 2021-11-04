@@ -2,6 +2,9 @@
 
 source 'https://rubygems.org'
 
+# Developing tools
+gem 'pry', '~> 0.13.1'
+
 # Web App
 gem 'figaro'
 gem 'puma', '~> 5.5'

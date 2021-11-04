@@ -5,6 +5,7 @@
 require 'roda'
 require 'yaml'
 require 'figaro'
+require 'sequel'
 
 module Skiller
   # Configuration for the App

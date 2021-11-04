@@ -21,6 +21,11 @@ end
 desc 'run all quality checks'
 task quality: 'quality:all'
 
+desc 'Run application console (irb)'
+task :console do
+  sh 'pry -r ./init.rb'
+end
+
 namespace :db do
   task :config do
     require 'sequel'
