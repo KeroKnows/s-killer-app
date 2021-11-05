@@ -10,12 +10,12 @@ Sequel.migration do
 
       Integer     :job_id, unique: true
       String      :job_title
-      String      :partial_description
+      String      :description
       String      :location
-      Float       :yearly_minimum_salary
-      Float       :yearly_maximum_salary
+      Float       :min_year_salary
+      Float       :max_year_salary
       String      :currency
-      String      :job_url, null: true
+      String      :url, null: true
 
       DateTime    :created_at
       DateTime    :updated_at
