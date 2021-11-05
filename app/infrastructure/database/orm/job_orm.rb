@@ -1,5 +1,7 @@
 # http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/Timestamps.html
 
+require 'sequel'
+
 module Skiller
   module Database
     # Object Relational Mapper for Job and PartialJob Entities
