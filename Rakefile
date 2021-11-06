@@ -26,26 +26,26 @@ task :console do
   sh 'pry -r ./init.rb'
 end
 
-namespace :db do
+namespace :db do # rubocop:disable Metrics/BlockLength
   task :config do
     require 'sequel'
     require_relative 'config/environment' # load config info
     require_relative 'spec/helpers/database_helper'
 
-    def app()
+    def app
       Skiller::App
     end
   end
 
   desc 'Run migrations'
-  task :migrate => :config do
+  task migrate: :config do
     Sequel.extension :migration
     puts "Migrating #{app.environment} database to latest"
     Sequel::Migrator.run(app.DB, 'app/infrastructure/database/migrations')
   end
 
   desc 'Wipe records from all tables'
-  task :wipe => :config do
+  task wipe: :config do
     if app.environment == :production
       puts 'Do not damage production database!'
       return
@@ -55,7 +55,7 @@ namespace :db do
   end
 
   desc 'Delete dev or test database file (set correct RACK_ENV)'
-  task :drop => :config do
+  task drop: :config do
     if app.environment == :production
       puts 'Do not damage production database!'
       return

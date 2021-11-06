@@ -19,9 +19,9 @@ module Skiller
         path: File.expand_path('config/secrets.yml')
       )
       Figaro.load
-  
+
       # Make the environment variables accessible
-      def self.config()
+      def self.config
         Figaro.env
       end
 
@@ -30,8 +30,8 @@ module Skiller
       end
 
       # Database Setup
-      DB = Sequel.connect(ENV['DATABASE_URL'])
-      def self.DB()
+      DB = Sequel.connect(ENV['DATABASE_URL']) # rubocop:disable Lint/ConstantDefinitionInBlock
+      def self.DB # rubocop:disable Naming/MethodName
         DB
       end
     end
