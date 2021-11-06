@@ -6,7 +6,7 @@ describe 'Test Reed library' do
   Skiller::VcrHelper.setup_vcr
 
   before do
-    Skiller::VcrHelper.configure_vcr_for_reed
+    Skiller::VcrHelper.configure_vcr_for_reed(REED_CASSETTE_FILE)
   end
 
   after do

@@ -14,8 +14,8 @@ module Skiller
       end
     end
 
-    def self.configure_vcr_for_reed
-      VCR.insert_cassette CASSETTE_FILE,
+    def self.configure_vcr_for_reed(cassette_file)
+      VCR.insert_cassette cassette_file,
                           record: :new_episodes,
                           match_requests_on: %i[method uri headers]
     end

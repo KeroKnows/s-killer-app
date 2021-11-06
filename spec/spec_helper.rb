@@ -23,4 +23,5 @@ REED_TOKEN = CONFIG['REED_TOKEN']
 CREDENTIALS = Base64.strict_encode64("#{REED_TOKEN}:")
 
 CASSETTES_FOLDER = 'spec/fixtures/cassettes'
-CASSETTE_FILE = 'reed_api'
+REED_CASSETTE_FILE = 'reed_api'
+GATEWAY_DATABASE_CASSETTE_FILE = 'gateway_database'

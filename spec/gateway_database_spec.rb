@@ -6,7 +6,7 @@ describe 'Integration Tests of Reed API and Database' do
   Skiller::VcrHelper.setup_vcr
 
   before do
-    Skiller::VcrHelper.configure_vcr_for_reed
+    Skiller::VcrHelper.configure_vcr_for_reed(GATEWAY_DATABASE_CASSETTE_FILE)
   end
 
   after do
