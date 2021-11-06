@@ -1,24 +1,16 @@
 # frozen_string_literal: true
 
-require_relative 'spec_helper'
+require_relative 'helpers/vcr_helper'
 
 describe 'Test Reed library' do
-  VCR.configure do |c|
-    c.cassette_library_dir = CASSETTES_FOLDER
-    c.hook_into :webmock
-
-    c.filter_sensitive_data('<REED_TOKEN>') { CREDENTIALS }
-    c.filter_sensitive_data('<REED_TOKEN_ESC>') { CGI.escape(CREDENTIALS) }
-  end
+  Skiller::VcrHelper.setup_vcr
 
   before do
-    VCR.insert_cassette CASSETTE_FILE,
-                        record: :new_episodes,
-                        match_requests_on: %i[method uri headers]
+    Skiller::VcrHelper.configure_vcr_for_reed
   end
 
   after do
-    VCR.eject_cassette
+    Skiller::VcrHelper.eject_vcr
   end
 
   describe 'HTTP communication of Reed Search API' do
