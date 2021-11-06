@@ -42,7 +42,7 @@ describe 'Test Reed library' do
   describe 'HTTP communication of Reed Details API' do
     it 'HAPPY: should fetch details with correct job id' do
       jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
-      details = Skiller::Reed::Api.new(REED_TOKEN).details(jobs.first.id)
+      details = Skiller::Reed::Api.new(REED_TOKEN).details(jobs.first.job_id)
       _(details).wont_be_empty
     end
 
@@ -57,11 +57,11 @@ describe 'Test Reed library' do
     before do
       partial_jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
       @partial_job = partial_jobs.first
-      @job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@partial_job.id)
+      @job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@partial_job.job_id)
     end
 
     it 'HAPPY: should have job ID' do
-      _(@job).must_respond_to :id
+      _(@job).must_respond_to :job_id
     end
 
     it 'HAPPY: should have location' do

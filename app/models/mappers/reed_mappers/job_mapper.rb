@@ -25,7 +25,8 @@ module Skiller
 
         def build_entity
           Entity::Job.new(
-            id: @data['jobId'].to_s,
+            id: nil,
+            job_id: @data['jobId'].to_s,
             title: @data['jobTitle'],
             description: @data['jobDescription'],
             location: @data['locationName'],
