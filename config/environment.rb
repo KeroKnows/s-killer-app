@@ -31,6 +31,7 @@ module Skiller
 
       # Database Setup
       DB = Sequel.connect(ENV['DATABASE_URL']) # rubocop:disable Lint/ConstantDefinitionInBlock
+      # :reek:UncommunicativeMethodName
       def self.DB # rubocop:disable Naming/MethodName
         DB
       end
