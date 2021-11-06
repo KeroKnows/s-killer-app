@@ -23,7 +23,7 @@ module Skiller
           @data = data
         end
 
-        def build_entity
+        def build_entity # rubocop:disable Metrics/MethodLength
           Entity::Job.new(
             id: nil,
             job_id: @data['jobId'].to_s,

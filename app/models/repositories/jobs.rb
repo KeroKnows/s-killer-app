@@ -2,6 +2,7 @@
 
 module Skiller
   module Repository
+    # Provide the access to jobs table via `JobOrm`
     class Jobs
       def self.all
         Database::JobOrm.all.map { |db_job| rebuild_entity(db_job) }
@@ -20,7 +21,7 @@ module Skiller
         rebuild_entity(db_job)
       end
 
-      def self.create(entity)
+      def self.create(entity) # rubocop:disable Metrics/MethodLength
         raise 'Job already exists' if find(entity)
 
         db_job = Database::JobOrm.create(
@@ -37,7 +38,7 @@ module Skiller
         rebuild_entity(db_job)
       end
 
-      def self.rebuild_entity(db_job)
+      def self.rebuild_entity(db_job) # rubocop:disable Metrics/MethodLength
         return nil unless db_job
 
         Entity::Job.new(

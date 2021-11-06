@@ -4,6 +4,7 @@ require_relative 'jobs'
 
 module Skiller
   module Repository
+    # lookup class to find the right repository for a given entity
     class For
       ENTITY_REPOSITORY = {
         Entity::Job => Repository::Jobs

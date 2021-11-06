@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../config/init.rb'
+require_relative '../../config/init'
 
 module Skiller
   module DatabaseHelper
