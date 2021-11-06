@@ -3,6 +3,7 @@
 require_relative '../../config/init'
 
 module Skiller
+  # provide spec utility functions of database
   module DatabaseHelper
     def self.wipe_database
       db = Skiller::App.DB

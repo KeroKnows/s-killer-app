@@ -3,14 +3,16 @@
 require_relative '../spec_helper'
 
 module Skiller
+  # provide spec utility functions of VCR
   module VcrHelper
+    # :reek:TooManyStatements
     def self.setup_vcr
-      VCR.configure do |c|
-        c.cassette_library_dir = CASSETTES_FOLDER
-        c.hook_into :webmock
+      VCR.configure do |config|
+        config.cassette_library_dir = CASSETTES_FOLDER
+        config.hook_into :webmock
 
-        c.filter_sensitive_data('<REED_TOKEN>') { CREDENTIALS }
-        c.filter_sensitive_data('<REED_TOKEN_ESC>') { CGI.escape(CREDENTIALS) }
+        config.filter_sensitive_data('<REED_TOKEN>') { CREDENTIALS }
+        config.filter_sensitive_data('<REED_TOKEN_ESC>') { CGI.escape(CREDENTIALS) }
       end
     end
 
