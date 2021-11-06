@@ -38,5 +38,7 @@ module Skiller
         end
       end
     end
+
+    # puts config.DB_FILENAME
   end
 end
