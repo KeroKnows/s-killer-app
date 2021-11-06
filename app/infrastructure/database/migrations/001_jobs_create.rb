@@ -8,7 +8,7 @@ Sequel.migration do
       # Method name # Column
       primary_key :id
 
-      String     :job_id, unique: true
+      String      :job_id, unique: true
       String      :job_title
       String      :description
       String      :location
