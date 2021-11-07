@@ -2,6 +2,7 @@
 
 require_relative 'helpers/vcr_helper'
 require_relative 'helpers/database_helper'
+require_relative 'spec_helper'
 
 describe 'Integration Tests of Reed API and Database' do
   Skiller::VcrHelper.setup_vcr
@@ -20,11 +21,10 @@ describe 'Integration Tests of Reed API and Database' do
     end
 
     it 'HAPPY: should be able to save reed jobs data to database' do
-      config = { 'REED_TOKEN' => REED_TOKEN }
       partial_jobs = Skiller::Reed::PartialJobMapper
-                     .new(config)
+                     .new(CONFIG)
                      .job_list(TEST_KEYWORD)
-      job_mapper = Skiller::Reed::JobMapper.new(config)
+      job_mapper = Skiller::Reed::JobMapper.new(CONFIG)
       first_10_jobs = partial_jobs[0...10].map { |pg| job_mapper.job(pg.job_id) }
       rebuilt_jobs = first_10_jobs.map do |job|
         Skiller::Repository::For.entity(job).create(job)

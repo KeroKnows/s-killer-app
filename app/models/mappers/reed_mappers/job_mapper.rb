@@ -8,7 +8,7 @@ module Skiller
     class JobMapper
       def initialize(config, gateway_class = Reed::Api)
         @config = config
-        @gateway = gateway_class.new(@config['REED_TOKEN'])
+        @gateway = gateway_class.new(@config.REED_TOKEN)
       end
 
       # Get job from Reed::API and make the job a DataMapper class

@@ -18,8 +18,14 @@ require_relative '../init'
 
 TEST_KEYWORD = 'backend'
 
-CONFIG = YAML.safe_load(File.read('config/secrets.yml'))
-REED_TOKEN = CONFIG['REED_TOKEN']
+Figaro.application = Figaro::Application.new(
+  environment: ENV,
+  path: File.expand_path('config/secrets.yml')
+)
+Figaro.load
+# CONFIG = YAML.safe_load(File.read('config/secrets.yml'))
+CONFIG = Figaro.env
+REED_TOKEN = CONFIG.REED_TOKEN
 CREDENTIALS = Base64.strict_encode64("#{REED_TOKEN}:")
 
 CASSETTES_FOLDER = 'spec/fixtures/cassettes'
