@@ -9,13 +9,11 @@ task :default do
 end
 
 desc 'run spec checks'
-task :spec do
-  sh 'ruby spec/reed_spec.rb'
-end
+task spec: 'spec:all'
 
 desc 'start the app with file chages watched'
 task :dev do
-  sh "rerun -c 'rackup -p 4001' --ignore 'coverage/*' --ignore 'spec/*' --ignore '*.slim'"
+  sh "rerun -c 'bundle exec rackup -p 4001' --ignore 'coverage/*' --ignore 'spec/*' --ignore '*.slim'"
 end
 
 desc 'run all quality checks'
@@ -24,6 +22,20 @@ task quality: 'quality:all'
 desc 'Run application console (irb)'
 task :console do
   sh 'pry -r ./init.rb'
+end
+
+namespace :spec do
+  task all: %i[reed_api gateway_database]
+
+  desc 'spec checks of Reed API'
+  task :reed_api do
+    sh 'RACK_ENV=test bundle exec ruby spec/reed_spec.rb'
+  end
+
+  desc 'spec checks of the integration of gateway and database'
+  task :gateway_database do
+    sh 'RACK_ENV=test bundle exec ruby spec/gateway_database_spec.rb'
+  end
 end
 
 namespace :db do # rubocop:disable Metrics/BlockLength

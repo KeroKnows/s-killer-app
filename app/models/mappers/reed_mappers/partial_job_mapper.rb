@@ -8,7 +8,7 @@ module Skiller
     class PartialJobMapper
       def initialize(config, gateway_class = Reed::Api)
         @config = config
-        @gateway = gateway_class.new(@config['REED_TOKEN'])
+        @gateway = gateway_class.new(@config.REED_TOKEN)
       end
 
       # Get job_list from Reed::API and make each job a DataMapper class
@@ -25,7 +25,7 @@ module Skiller
 
         def build_entity
           Entity::PartialJob.new(
-            id: @data['jobId'].to_s,
+            job_id: @data['jobId'].to_s,
             title: @data['jobTitle'],
             description: @data['jobDescription'],
             location: @data['locationName']
