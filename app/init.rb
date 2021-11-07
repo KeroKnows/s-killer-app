@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
-%w[models controllers].each do |folder|
+folders = %w[models controllers infrastructure]
+folders.each do |folder|
   require_relative "#{folder}/init"
 end

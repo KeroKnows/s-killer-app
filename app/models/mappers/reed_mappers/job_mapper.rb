@@ -8,7 +8,7 @@ module Skiller
     class JobMapper
       def initialize(config, gateway_class = Reed::Api)
         @config = config
-        @gateway = gateway_class.new(@config['REED_TOKEN'])
+        @gateway = gateway_class.new(@config.REED_TOKEN)
       end
 
       # Get job from Reed::API and make the job a DataMapper class
@@ -23,9 +23,10 @@ module Skiller
           @data = data
         end
 
-        def build_entity
+        def build_entity # rubocop:disable Metrics/MethodLength
           Entity::Job.new(
-            id: @data['jobId'].to_s,
+            id: nil,
+            job_id: @data['jobId'].to_s,
             title: @data['jobTitle'],
             description: @data['jobDescription'],
             location: @data['locationName'],

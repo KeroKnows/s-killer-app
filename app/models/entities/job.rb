@@ -7,6 +7,7 @@ module Skiller
   module Entity
     # Job information from Reed Details API
     class Job < PartialJob
+      attribute :id, Types::Optional::Integer
       attribute :min_year_salary, Types::Optional::Float
       attribute :max_year_salary, Types::Optional::Float
       attribute :currency, Types::Optional::String

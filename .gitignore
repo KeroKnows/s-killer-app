@@ -1,5 +1,7 @@
 Gemfile.lock
 
+*.db
+
 config/secrets.yml
 coverage/
 !coverage/.resultset.json

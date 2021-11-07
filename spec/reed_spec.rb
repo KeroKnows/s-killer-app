@@ -1,24 +1,16 @@
 # frozen_string_literal: true
 
-require_relative 'spec_helper'
+require_relative 'helpers/vcr_helper'
 
 describe 'Test Reed library' do
-  VCR.configure do |c|
-    c.cassette_library_dir = CASSETTES_FOLDER
-    c.hook_into :webmock
-
-    c.filter_sensitive_data('<REED_TOKEN>') { CREDENTIALS }
-    c.filter_sensitive_data('<REED_TOKEN_ESC>') { CGI.escape(CREDENTIALS) }
-  end
+  Skiller::VcrHelper.setup_vcr
 
   before do
-    VCR.insert_cassette CASSETTE_FILE,
-                        record: :new_episodes,
-                        match_requests_on: %i[method uri headers]
+    Skiller::VcrHelper.configure_vcr_for_reed(REED_CASSETTE_FILE)
   end
 
   after do
-    VCR.eject_cassette
+    Skiller::VcrHelper.eject_vcr
   end
 
   describe 'HTTP communication of Reed Search API' do
@@ -42,7 +34,7 @@ describe 'Test Reed library' do
   describe 'HTTP communication of Reed Details API' do
     it 'HAPPY: should fetch details with correct job id' do
       jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
-      details = Skiller::Reed::Api.new(REED_TOKEN).details(jobs.first.id)
+      details = Skiller::Reed::Api.new(REED_TOKEN).details(jobs.first.job_id)
       _(details).wont_be_empty
     end
 
@@ -57,11 +49,11 @@ describe 'Test Reed library' do
     before do
       partial_jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
       @partial_job = partial_jobs.first
-      @job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@partial_job.id)
+      @job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@partial_job.job_id)
     end
 
     it 'HAPPY: should have job ID' do
-      _(@job).must_respond_to :id
+      _(@job).must_respond_to :job_id
     end
 
     it 'HAPPY: should have location' do
