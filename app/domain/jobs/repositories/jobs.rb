@@ -29,9 +29,9 @@ module Skiller
           job_title: entity.title,
           description: entity.description,
           location: entity.location,
-          min_year_salary: entity.min_year_salary,
-          max_year_salary: entity.max_year_salary,
-          currency: entity.currency,
+          min_year_salary: entity.salary.year_min,
+          max_year_salary: entity.salary.year_max,
+          currency: entity.salary.currency,
           url: entity.url
         )
 
@@ -47,9 +47,11 @@ module Skiller
           title: db_job.job_title,
           description: db_job.description,
           location: db_job.location,
-          min_year_salary: db_job.min_year_salary,
-          max_year_salary: db_job.max_year_salary,
-          currency: db_job.currency,
+          salary: {
+            year_min: db_job.min_year_salary,
+            year_max: db_job.max_year_salary,
+            currency: db_job.currency,
+          },
           url: db_job.url
         )
       end

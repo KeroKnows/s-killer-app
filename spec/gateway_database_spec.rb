@@ -35,9 +35,9 @@ describe 'Integration Tests of Reed API and Database' do
         _(orig.description).must_equal(rebuilt.description)
         _(orig.title).must_equal(rebuilt.title)
         _(orig.location).must_equal(rebuilt.location)
-        _(orig.min_year_salary).must_equal(rebuilt.min_year_salary)
-        _(orig.max_year_salary).must_equal(rebuilt.max_year_salary)
-        _(orig.currency).must_equal(rebuilt.currency)
+        _(orig.salary.year_min).must_equal(rebuilt.salary.year_min)
+        _(orig.salary.year_max).must_equal(rebuilt.salary.year_max)
+        _(orig.salary.currency).must_equal(rebuilt.salary.currency)
         _(orig.url).must_equal(rebuilt.url)
       end
     end
