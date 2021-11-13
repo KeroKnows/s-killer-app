@@ -25,7 +25,7 @@ module Skiller
 
         def build_entity # rubocop:disable Metrics/MethodLength
           Entity::Job.new(
-            id: nil,
+            db_id: nil,
             job_id: @data['jobId'].to_s,
             title: @data['jobTitle'],
             description: @data['jobDescription'],

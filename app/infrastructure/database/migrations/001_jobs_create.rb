@@ -6,7 +6,7 @@ Sequel.migration do
   change do
     create_table(:jobs) do
       # Method name # Column
-      primary_key :id
+      primary_key :db_id
 
       String      :job_id, unique: true
       String      :job_title

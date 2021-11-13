@@ -9,11 +9,11 @@ module Skiller
       end
 
       def self.find(entity)
-        find_job_id(entity.id)
+        find_db_id(entity.db_id)
       end
 
-      def self.find_id(id)
-        rebuild_entity Database::JobOrm.first(id: id)
+      def self.find_db_id(db_id)
+        rebuild_entity Database::JobOrm.first(db_id: db_id)
       end
 
       def self.find_job_id(job_id)
@@ -42,7 +42,7 @@ module Skiller
         return nil unless db_job
 
         Entity::Job.new(
-          id: db_job.id,
+          db_id: db_job.db_id,
           job_id: db_job.job_id,
           title: db_job.job_title,
           description: db_job.description,
