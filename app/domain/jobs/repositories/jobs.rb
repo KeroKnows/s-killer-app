@@ -25,14 +25,15 @@ module Skiller
         db_entity = find(entity)
         return db_entity if db_entity
 
+        salary = entity.salary
         db_job = Database::JobOrm.create(
           job_id: entity.job_id,
           job_title: entity.title,
           description: entity.description,
           location: entity.location,
-          min_year_salary: entity.salary.year_min,
-          max_year_salary: entity.salary.year_max,
-          currency: entity.salary.currency,
+          min_year_salary: salary.year_min,
+          max_year_salary: salary.year_max,
+          currency: salary.currency,
           url: entity.url
         )
 
