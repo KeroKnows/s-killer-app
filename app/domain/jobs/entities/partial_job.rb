@@ -6,10 +6,11 @@ module Skiller
   module Entity
     # Library for job information
     class PartialJob < Dry::Struct
-      attribute :job_id, Types::Strict::String
-      attribute :title, Types::Strict::String
-      attribute :description, Types::Strict::String
-      attribute :location, Types::Strict::String
+      include Dry.Types
+      attribute :job_id, Strict::String
+      attribute :title, Strict::String
+      attribute :description, Strict::String
+      attribute :location, Strict::String
     end
   end
 end

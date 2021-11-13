@@ -8,9 +8,10 @@ module Skiller
   module Entity
     # Job information from Reed Details API
     class Job < PartialJob
-      attribute :id, Types::Optional::Integer
+      include Dry.Types
+      attribute :id, Integer.optional
       attribute :salary, Skiller::Value::Salary
-      attribute :url, Types::Optional::String
+      attribute :url, String.optional
     end
   end
 end
