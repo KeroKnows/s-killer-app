@@ -22,7 +22,8 @@ module Skiller
       end
 
       def self.create(entity) # rubocop:disable Metrics/MethodLength
-        raise 'Job already exists' if find(entity)
+        db_entity = find(entity)
+        return db_entity if db_entity
 
         db_job = Database::JobOrm.create(
           job_id: entity.job_id,
