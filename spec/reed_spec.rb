@@ -72,17 +72,17 @@ describe 'Test Reed library' do
       it 'HAPPY: should have yearly minimum salary' do
         _(@salary).must_respond_to :year_min
       end
-  
+
       it 'HAPPY: should have yearly maximum salary' do
         _(@salary).must_respond_to :year_max
       end
-  
+
       it 'HAPPY: should have currency' do
         _(@salary).must_respond_to :currency
       end
 
       it 'HAPPY: should be able to compute yearly average salary' do
-        if @salary.year_min == nil && @salary.year_max == nil
+        if @salary.year_min.nil? && @salary.year_max.nil?
           assert_operator @salary.year_avg, :==, nil
         else
           assert_operator @salary.year_avg, :==, (@salary.year_min + @salary.year_max) / 2

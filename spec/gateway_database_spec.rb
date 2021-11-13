@@ -26,7 +26,6 @@ describe 'Integration Tests of Reed API and Database' do
     end
 
     it 'HAPPY: should be able to save reed jobs data to database' do
-      
       rebuilt_jobs = @first_10_jobs.map do |job|
         Skiller::Repository::For.entity(job).create(job)
       end
@@ -44,12 +43,11 @@ describe 'Integration Tests of Reed API and Database' do
     end
 
     it 'HAPPY: should be able to save query and jobs data to database' do
-      
       rebuilt_jobs = @first_10_jobs.map do |job|
         Skiller::Repository::For.entity(job).create(job)
       end
 
-      job_db_ids = rebuilt_jobs.map { |job| job.db_id }
+      job_db_ids = rebuilt_jobs.map(&:db_id)
       Skiller::Repository::QueriesJobs.create(TEST_KEYWORD, job_db_ids)
       query_jobs = Skiller::Repository::QueriesJobs.find_jobs_by_query(TEST_KEYWORD)
 
@@ -64,6 +62,5 @@ describe 'Integration Tests of Reed API and Database' do
         _(orig.url).must_equal(rebuilt.url)
       end
     end
-
   end
 end

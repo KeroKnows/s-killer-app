@@ -51,7 +51,7 @@ module Skiller
           salary: {
             year_min: db_job.min_year_salary,
             year_max: db_job.max_year_salary,
-            currency: db_job.currency,
+            currency: db_job.currency
           },
           url: db_job.url
         )
