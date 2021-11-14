@@ -12,17 +12,24 @@ module Skiller
 
       def initialize(job)
         @job = job
-        @description = html_to_text
+        @description = gen_description
+        @result = nil
       end
 
-      def html_to_text
+      def gen_description
         node = Nokogiri::HTML(@job.description)
         node.xpath('//text()').to_a.join(' ')
       end
 
       def extract
-        result = `#{PYTHON} #{SCRIPT} "#{@description}"`
-        YAML.safe_load result
+        @result = `#{PYTHON} #{SCRIPT} "#{@description}"`
+        self
+      end
+
+      def parse
+        raise 'Please extract skillset first' unless @result
+
+        YAML.safe_load @result
       end
     end
   end
