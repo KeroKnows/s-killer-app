@@ -34,7 +34,8 @@ module Skiller
           min_year_salary: salary.year_min,
           max_year_salary: salary.year_max,
           currency: salary.currency,
-          url: entity.url
+          url: entity.url,
+          isfull: entity.isfull
         )
 
         rebuild_entity(db_job)
@@ -54,7 +55,8 @@ module Skiller
             year_max: db_job.max_year_salary,
             currency: db_job.currency
           },
-          url: db_job.url
+          url: db_job.url,
+          isfull: db_job.isfull
         )
       end
     end

@@ -27,13 +27,13 @@ describe 'Test Reed library' do
   end
 
   it 'HAPPY: job list should be PartialJob' do
-    jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
-    jobs.each { |job| _(job).must_be_instance_of Skiller::Entity::PartialJob }
+    jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+    jobs.each { |job| _(job.isfull).must_be_same_as false }
   end
 
   describe 'HTTP communication of Reed Details API' do
     it 'HAPPY: should fetch details with correct job id' do
-      jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+      jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
       details = Skiller::Reed::Api.new(REED_TOKEN).details(jobs.first.job_id)
       _(details).wont_be_empty
     end
@@ -47,9 +47,10 @@ describe 'Test Reed library' do
 
   describe 'JobInfo' do
     before do
-      partial_jobs = Skiller::Reed::PartialJobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
+      job_mapper = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api)
+      partial_jobs = job_mapper.job_list(TEST_KEYWORD)
       @partial_job = partial_jobs.first
-      @job = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job(@partial_job.job_id)
+      @job = job_mapper.job(@partial_job.job_id)
     end
 
     it 'HAPPY: should have job ID' do
@@ -97,6 +98,14 @@ describe 'Test Reed library' do
 
     it 'HAPPY: should have url to the job application' do
       _(@job).must_respond_to :url
+    end
+
+    it 'HAPPY: should `isfull`' do
+      _(@job).must_respond_to :isfull
+    end
+
+    it 'HAPPY: `isfull` have true' do
+      _(@job.isfull).must_be_same_as true
     end
 
     it 'HAPPY: JobMapper should generate Job' do
