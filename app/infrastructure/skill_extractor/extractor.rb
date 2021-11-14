@@ -4,7 +4,7 @@ require 'yaml'
 require 'nokogiri'
 
 module Skiller
-  module SkillAnalyzer
+  module Skill
     # Extract the skillset from Skiller::Entity::Job
     class Extractor
       PYTHON = 'python3' # may need to change this to `python`, depending on your system
