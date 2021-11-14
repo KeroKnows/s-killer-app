@@ -16,6 +16,15 @@ module Skiller
 
         (year_min + year_max) / 2
       end
+
+      def exchange_currency(new_currency)
+        exchange_rate = Skiller::FreeCurrency::ExchangeRateMapper.new(Skiller::App.config).exchange_rate(currency, new_currency)
+        Salary.new(
+          year_min: year_min * exchange_rate,
+          year_max: year_max * exchange_rate,
+          currency: new_currency
+        )
+      end
     end
   end
 end
