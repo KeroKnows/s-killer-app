@@ -17,13 +17,10 @@ def extract_skillset(description):
     return list(set(skills))
 
 if __name__ == '__main__':
-    import yaml
-    with open('spec/fixtures/fulljob.yaml', 'r') as f:
-        data = f.read()
-    data = yaml.safe_load(data)
-    skills = map(lambda d: extract_skillset(d['description']), data)
-    for idx, skill in enumerate(skills):
-        if len(skill) == 0:
-            print(data[idx]['description'])
-        else: 
-            print(skill)
+    import sys
+    if len(sys.argv) != 2:
+        print(f'[ ERROR ] please specify the job description in command line')
+        exit(1)
+    
+    skillset = extract_skillset(sys.argv[1])
+    print(skillset)
