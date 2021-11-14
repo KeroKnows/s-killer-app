@@ -34,6 +34,10 @@ module Skiller
 
             jobs = JobCollector.new(App.config).jobs(query)
 
+            # TODO: extract `Skill` from jobs if the query has not been searched
+            # TODO: then use `Repository::JobsSkills.create()` to put them into database
+            # TODO: use `Repository::QueriesJobs.find_skills_by_query()` if the query has been searched
+
             view 'details', locals: { query: query, jobs: jobs }
           end
         end
