@@ -6,7 +6,7 @@ require 'sequel'
 
 module Skiller
   module Database
-    # Object Relational Mapper for Job and PartialJob Entities
+    # Object Relational Mapper for Job and Entities
     class JobOrm < Sequel::Model(:jobs)
       one_to_many :skills,
                   class: :'Skiller::Database::JobSkillOrm',

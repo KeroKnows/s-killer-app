@@ -100,11 +100,11 @@ describe 'Test Reed library' do
       _(@job).must_respond_to :url
     end
 
-    it 'HAPPY: should `isfull`' do
+    it 'HAPPY: should have `isfull`' do
       _(@job).must_respond_to :isfull
     end
 
-    it 'HAPPY: `isfull` have true' do
+    it 'HAPPY: `isfull` should be true' do
       _(@job.isfull).must_be_same_as true
     end
 
