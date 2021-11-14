@@ -2,7 +2,7 @@
 
 require 'http'
 require 'forwardable'
-require_relative 'http_response'
+require_relative '../http_response'
 
 module Skiller
   # Library for Reed API Handling
