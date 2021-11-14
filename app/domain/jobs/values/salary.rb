@@ -11,6 +11,7 @@ module Skiller
       attribute :year_max, Float.optional
       attribute :currency, String.optional
 
+      # :reek:NilCheck
       def year_avg
         return nil unless !year_min.nil? && !year_max.nil?
 

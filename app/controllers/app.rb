@@ -60,11 +60,14 @@ module Skiller
       end
 
       def request_jobs_and_update_database(query)
-        partial_jobs = @partial_job_mapper.job_list(query)
-        jobs = partial_jobs[0...10].map { |pj| Repository::Jobs.create(@job_mapper.job(pj.job_id)) }
-        jobs = jobs.map { |job| Repository::Jobs.create(job) }
+        jobs = request_first_10_full_jobs(query).map { |job| Repository::Jobs.create(job) }
         Repository::QueriesJobs.create(query, jobs.map(&:db_id))
         jobs
+      end
+
+      def request_first_10_full_jobs(query)
+        partial_jobs = @partial_job_mapper.job_list(query)
+        partial_jobs[0...10].map { |pj| @job_mapper.job(pj.job_id) }
       end
     end
     # puts config.DB_FILENAME
