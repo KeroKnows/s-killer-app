@@ -47,10 +47,6 @@ describe 'Test Skill Analyzer library' do
       end).must_raise RuntimeError
     end
 
-    it 'HAPPY: should be generated from a full job' do
-      _(Skiller::Skill::SkillMapper.new(@job))
-    end
-
     it 'HAPPY: should be able to extract skill' do
       skill_mapper = Skiller::Skill::SkillMapper.new(@job)
       _(skill_mapper.skills).wont_be_empty
