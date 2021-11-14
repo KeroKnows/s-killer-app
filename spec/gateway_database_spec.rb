@@ -18,10 +18,8 @@ describe 'Integration Tests of Reed API and Database' do
   describe 'Retrieve and store jobs' do
     before do
       Skiller::DatabaseHelper.wipe_database
-      partial_jobs = Skiller::Reed::PartialJobMapper
-                     .new(CONFIG)
-                     .job_list(TEST_KEYWORD)
       job_mapper = Skiller::Reed::JobMapper.new(CONFIG)
+      partial_jobs = job_mapper.job_list(TEST_KEYWORD)
       @first_10_jobs = partial_jobs[0...10].map { |pg| job_mapper.job(pg.job_id) }
     end
 
@@ -60,6 +58,7 @@ describe 'Integration Tests of Reed API and Database' do
         _(orig.salary.year_max).must_equal(rebuilt.salary.year_max)
         _(orig.salary.currency).must_equal(rebuilt.salary.currency)
         _(orig.url).must_equal(rebuilt.url)
+        _(orig.isfull).must_equal(rebuilt.isfull)
       end
     end
   end

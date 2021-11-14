@@ -47,7 +47,6 @@ module Skiller
     # request jobs using API if the query has not saved to database
     class JobCollector
       def initialize(config)
-        @partial_job_mapper = Skiller::Reed::PartialJobMapper.new(config)
         @job_mapper = Skiller::Reed::JobMapper.new(config)
       end
 
@@ -66,7 +65,7 @@ module Skiller
       end
 
       def request_first_10_full_jobs(query)
-        partial_jobs = @partial_job_mapper.job_list(query)
+        partial_jobs = @job_mapper.job_list(query)
         partial_jobs[0...10].map { |pj| @job_mapper.job(pj.job_id) }
       end
     end

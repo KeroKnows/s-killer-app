@@ -8,7 +8,7 @@ Sequel.migration do
       # Method name # Column
       primary_key :db_id
 
-      String      :job_id, unique: true
+      Integer     :job_id, unique: true
       String      :job_title
       String      :description
       String      :location
@@ -16,6 +16,7 @@ Sequel.migration do
       Float       :max_year_salary
       String      :currency
       String      :url, null: true
+      Bool        :isfull
 
       DateTime    :created_at
       DateTime    :updated_at
