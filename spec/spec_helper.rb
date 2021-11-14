@@ -17,7 +17,8 @@ require 'http'
 require_relative '../init'
 
 TEST_KEYWORD = 'backend'
-TEST_CURRENCY = 'TWD'
+TEST_SRC_CURRENCY = 'TWD'
+TEST_TGT_CURRENCY = 'USD'
 
 Figaro.application = Figaro::Application.new(
   environment: ENV,
