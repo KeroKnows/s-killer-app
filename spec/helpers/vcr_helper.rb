@@ -13,6 +13,9 @@ module Skiller
 
         config.filter_sensitive_data('<REED_TOKEN>') { CREDENTIALS }
         config.filter_sensitive_data('<REED_TOKEN_ESC>') { CGI.escape(CREDENTIALS) }
+
+        config.filter_sensitive_data('<FREECURRENCY_API_KEY>') { FREECURRENCY_API_KEY }
+        config.filter_sensitive_data('<FREECURRENCY_API_KEY_ESC>') { CGI.escape(FREECURRENCY_API_KEY) }
       end
     end
 

@@ -25,14 +25,16 @@ module Skiller
 
         def build_entity # rubocop:disable Metrics/MethodLength
           Entity::Job.new(
-            id: nil,
+            db_id: nil,
             job_id: @data['jobId'].to_s,
             title: @data['jobTitle'],
             description: @data['jobDescription'],
             location: @data['locationName'],
-            min_year_salary: @data['yearlyMinimumSalary'],
-            max_year_salary: @data['yearlyMaximumSalary'],
-            currency: @data['currency'],
+            salary: {
+              year_min: @data['yearlyMinimumSalary'],
+              year_max: @data['yearlyMaximumSalary'],
+              currency: @data['currency']
+            },
             url: @data['jobUrl']
           )
         end

@@ -31,7 +31,12 @@ module Skiller
             router.halt 400 unless router.params.include? 'query'
 
             query = router.params['query']
-            jobs = Reed::PartialJobMapper.new(App.config).job_list(query)
+
+            jobs = JobCollector.new(App.config).jobs(query)
+
+            # TODO: extract `Skill` from jobs if the query has not been searched
+            # TODO: then use `Repository::JobsSkills.create()` to put them into database
+            # TODO: use `Repository::QueriesJobs.find_skills_by_query()` if the query has been searched
 
             view 'details', locals: { query: query, jobs: jobs }
           end
@@ -39,6 +44,32 @@ module Skiller
       end
     end
 
+    # request jobs using API if the query has not saved to database
+    class JobCollector
+      def initialize(config)
+        @partial_job_mapper = Skiller::Reed::PartialJobMapper.new(config)
+        @job_mapper = Skiller::Reed::JobMapper.new(config)
+      end
+
+      def jobs(query)
+        if Repository::QueriesJobs.query_exist?(query)
+          Repository::QueriesJobs.find_jobs_by_query(query)
+        else
+          request_jobs_and_update_database(query)
+        end
+      end
+
+      def request_jobs_and_update_database(query)
+        jobs = request_first_10_full_jobs(query).map { |job| Repository::Jobs.create(job) }
+        Repository::QueriesJobs.create(query, jobs.map(&:db_id))
+        jobs
+      end
+
+      def request_first_10_full_jobs(query)
+        partial_jobs = @partial_job_mapper.job_list(query)
+        partial_jobs[0...10].map { |pj| @job_mapper.job(pj.job_id) }
+      end
+    end
     # puts config.DB_FILENAME
   end
 end

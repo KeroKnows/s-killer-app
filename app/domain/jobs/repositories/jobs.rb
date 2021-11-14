@@ -9,11 +9,11 @@ module Skiller
       end
 
       def self.find(entity)
-        find_job_id(entity.id)
+        find_db_id(entity.db_id)
       end
 
-      def self.find_id(id)
-        rebuild_entity Database::JobOrm.first(id: id)
+      def self.find_db_id(db_id)
+        rebuild_entity Database::JobOrm.first(db_id: db_id)
       end
 
       def self.find_job_id(job_id)
@@ -22,16 +22,18 @@ module Skiller
       end
 
       def self.create(entity) # rubocop:disable Metrics/MethodLength
-        raise 'Job already exists' if find(entity)
+        db_entity = find(entity)
+        return db_entity if db_entity
 
+        salary = entity.salary
         db_job = Database::JobOrm.create(
           job_id: entity.job_id,
           job_title: entity.title,
           description: entity.description,
           location: entity.location,
-          min_year_salary: entity.min_year_salary,
-          max_year_salary: entity.max_year_salary,
-          currency: entity.currency,
+          min_year_salary: salary.year_min,
+          max_year_salary: salary.year_max,
+          currency: salary.currency,
           url: entity.url
         )
 
@@ -42,14 +44,16 @@ module Skiller
         return nil unless db_job
 
         Entity::Job.new(
-          id: db_job.id,
+          db_id: db_job.db_id,
           job_id: db_job.job_id,
           title: db_job.job_title,
           description: db_job.description,
           location: db_job.location,
-          min_year_salary: db_job.min_year_salary,
-          max_year_salary: db_job.max_year_salary,
-          currency: db_job.currency,
+          salary: {
+            year_min: db_job.min_year_salary,
+            year_max: db_job.max_year_salary,
+            currency: db_job.currency
+          },
           url: db_job.url
         )
       end
