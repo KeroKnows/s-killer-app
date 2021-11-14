@@ -10,6 +10,14 @@ module Skiller
         end
       end
 
+      def self.find_skills_by_query(query)
+        skills = []
+        Database::QueryJobOrm.where(query: query).all.each do |query_job|
+          JobsSkills.find_skills_by_job(query_job.job_db_id).each { |skill| skills.append(skill) }
+        end
+        skills
+      end
+
       def self.query_exist?(query)
         if Database::QueryJobOrm.first(query: query)
           true
