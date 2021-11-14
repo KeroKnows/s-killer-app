@@ -11,6 +11,7 @@ module Skiller
       end
 
       def exchange_rate(src_currency, tgt_currency)
+        return 1.0 if src_currency == tgt_currency
         exchange_rates = @gateway.exchange_rates(src_currency)['data']
         rate = exchange_rates[tgt_currency]
         raise 'Invalid target currency' if rate.nil?

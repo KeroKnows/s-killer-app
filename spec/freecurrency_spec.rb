@@ -38,6 +38,11 @@ describe 'Test FreeCurrency library' do
       _(result).must_be_instance_of Float
     end
 
+    it 'HAPPY: should be able to take care of the special case that source == target' do
+      result = Skiller::FreeCurrency::ExchangeRateMapper.new(CONFIG).exchange_rate(TEST_SRC_CURRENCY, TEST_SRC_CURRENCY)
+      _(result).must_be_instance_of Float
+    end
+
     it 'SAD: should raise exception on invalid target currency' do
       _(proc do
         Skiller::FreeCurrency::ExchangeRateMapper.new(CONFIG).exchange_rate(TEST_SRC_CURRENCY, 'INVALID TGT CURRENCY')
