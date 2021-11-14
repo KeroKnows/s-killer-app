@@ -1,5 +1,4 @@
 import re
-from bs4 import BeautifulSoup
 
 KEYWORD = ['Python', 'C', 'C\+\+', 'C#', '.Net', 'Go', 'PHP', 'HTML', 'CSS', 'Java', 'Scala', 'Ruby', 
            'JavaScript', 'JS', 'TypeScript', 'TS', 'Node.js', 'NodeJs', 'Vue', 'React', 
@@ -11,9 +10,7 @@ KEYWORD = ['Python', 'C', 'C\+\+', 'C#', '.Net', 'Go', 'PHP', 'HTML', 'CSS', 'Ja
 REGEX = re.compile(rf'(?:[\s,.!?:;])({"|".join(KEYWORD)})(?:[\s,.!?:;])', flags=re.I)
 
 def extract_skillset(description):
-    soup = BeautifulSoup(description, features='html.parser')
-    text = soup.get_text(separator=' ')
-    skills = re.findall(REGEX, text)
+    skills = re.findall(REGEX, description)
     return list(set(skills))
 
 if __name__ == '__main__':
