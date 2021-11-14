@@ -93,7 +93,6 @@ describe 'Test Reed library' do
         new_salary = @salary.exchange_currency(TEST_TGT_CURRENCY)
         _(new_salary).must_be_instance_of Skiller::Value::Salary
       end
-
     end
 
     it 'HAPPY: should have url to the job application' do
