@@ -5,6 +5,7 @@ require_relative '../../jobs/values/salary'
 
 module Skiller
   module Entity
+    # Skill information
     class Skill < Dry::Struct
       include Dry.Types
       attribute :id, Integer.optional

@@ -13,7 +13,7 @@ module Skiller
       def self.find_skills_by_query(query)
         skills = []
         Database::QueryJobOrm.where(query: query).all.each do |query_job|
-          JobsSkills.find_skills_by_job(query_job.job_db_id).each { |skill| skills.append(skill) }
+          skills += JobsSkills.find_skills_by_job(query_job.job_db_id)
         end
         skills
       end
