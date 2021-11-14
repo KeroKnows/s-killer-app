@@ -68,7 +68,8 @@ namespace :db do # rubocop:disable Metrics/BlockLength
       return
     end
 
-    DatabaseHelper.wipe_database
+    require_relative 'spec/helpers/database_helper'
+    Skiller::DatabaseHelper.wipe_database
   end
 
   desc 'Delete dev or test database file (set correct RACK_ENV)'
