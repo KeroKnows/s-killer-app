@@ -44,7 +44,7 @@ module Skiller
             # skill = Skiller::SkillAnalyzer::Extractor.new(job)
             #  skill.extract
             #  skills.append(skill)
-            #end
+            # end
 
             ## TODO: extract `Skill` from jobs if the query has not been searched
             # skills = []
@@ -52,7 +52,7 @@ module Skiller
             #   skill = Skiller::SkillAnalyzer::Extractor.new(jobs[0])
             #   skill.extract
             #   puts skill.result
-  
+
             #   id = 1
             #   name = 'aaa'
             #   job_db_id = job.job_id
@@ -64,9 +64,9 @@ module Skiller
             # Repository::JobsSkills.create(skills)
 
             ## TODO: use `Repository::QueriesJobs.find_skills_by_query()` if the query has been searched
-            for skill in skills
-              puts skill.name
-            end
+            # skills.each do |skill|
+            #  puts skill.name
+            # end
             view 'details', locals: { query: query, jobs: jobs, skills: skills }
           end
         end
