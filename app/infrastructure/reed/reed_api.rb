@@ -2,7 +2,7 @@
 
 require 'http'
 require 'forwardable'
-require_relative 'http_response'
+require_relative '../http_response'
 
 module Skiller
   # Library for Reed API Handling
@@ -45,7 +45,7 @@ module Skiller
       # Send request to Reed Details API
       def details(job_id)
         response = HTTP.basic_auth(user: @reed_token, pass: '')
-                       .get(File.join(DETAILS_API_PATH, job_id))
+                       .get(File.join(DETAILS_API_PATH, job_id.to_s))
         HttpResponse.new(response, HTTP_ERROR).parse
       end
     end

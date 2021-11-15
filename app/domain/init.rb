@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-folders = %w[domain controllers infrastructure]
+folders = %w[jobs skills]
 folders.each do |folder|
   require_relative "#{folder}/init"
 end

@@ -47,6 +47,7 @@ group :development do
   gem 'rb-kqueue', platforms: :ruby, install_if: os_is(/linux/)
   gem 'rerun'
 end
+gem 'nokogiri', '~> 1.12'
 
 # Code Quality
 gem 'flog'

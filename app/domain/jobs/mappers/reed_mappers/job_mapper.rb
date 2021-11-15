@@ -11,29 +11,39 @@ module Skiller
         @gateway = gateway_class.new(@config.REED_TOKEN)
       end
 
+      # Get job_list from Reed::API and make each job a DataMapper class
+      def job_list(keyword)
+        data = @gateway.search(keyword)['results']
+        data.map { |job_data| DataMapper.new(job_data, false).build_entity }
+      end
+
       # Get job from Reed::API and make the job a DataMapper class
       def job(job_id)
         data = @gateway.details(job_id)
-        DataMapper.new(data).build_entity
+        DataMapper.new(data, true).build_entity
       end
 
       # Extracts entity specific elements from data structure
       class DataMapper
-        def initialize(data)
+        def initialize(data, isfull)
           @data = data
+          @isfull = isfull
         end
 
         def build_entity # rubocop:disable Metrics/MethodLength
           Entity::Job.new(
-            id: nil,
-            job_id: @data['jobId'].to_s,
+            db_id: nil,
+            job_id: @data['jobId'],
             title: @data['jobTitle'],
             description: @data['jobDescription'],
             location: @data['locationName'],
-            min_year_salary: @data['yearlyMinimumSalary'],
-            max_year_salary: @data['yearlyMaximumSalary'],
-            currency: @data['currency'],
-            url: @data['jobUrl']
+            salary: {
+              year_min: @data['yearlyMinimumSalary'],
+              year_max: @data['yearlyMaximumSalary'],
+              currency: @data['currency']
+            },
+            url: @data['jobUrl'],
+            isfull: @isfull
           )
         end
       end

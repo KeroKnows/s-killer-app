@@ -6,8 +6,11 @@ require 'sequel'
 
 module Skiller
   module Database
-    # Object Relational Mapper for Job and PartialJob Entities
+    # Object Relational Mapper for Job and Entities
     class JobOrm < Sequel::Model(:jobs)
+      one_to_many :skills,
+                  class: :'Skiller::Database::JobSkillOrm',
+                  key: :job_db_id
       # setting the update timestamp when creating
       plugin :timestamps, update_on_create: true
     end
