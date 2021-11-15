@@ -35,11 +35,16 @@ module Skiller
             jobs = JobCollector.new(App.config).jobs(query)
 
             skills = []
-            for job in jobs
-              skill = Skiller::SkillAnalyzer::Extractor.new(job)
-              skill.extract
-              skills.append(skill)
+
+            jobs.each do |job|
+              skills += Skiller::Skill::SkillMapper.new(job).skills
             end
+
+            # for job in jobs
+            # skill = Skiller::SkillAnalyzer::Extractor.new(job)
+            #  skill.extract
+            #  skills.append(skill)
+            #end
 
             ## TODO: extract `Skill` from jobs if the query has not been searched
             # skills = []
@@ -60,7 +65,7 @@ module Skiller
 
             ## TODO: use `Repository::QueriesJobs.find_skills_by_query()` if the query has been searched
             for skill in skills
-              puts skill.result
+              puts skill.name
             end
             view 'details', locals: { query: query, jobs: jobs, skills: skills }
           end
