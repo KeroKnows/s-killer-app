@@ -1,13 +1,15 @@
-div 
-  h1 Welcome to S-killer!
-  p Wanna search for a job? Type it down here! 
+div.row 
+  .row.text-center
+    h1.display-1 S-killer
+    p Know your job. Know your skills.
 
-  form action='/details'
-    .card.p-3.border-none.bg-light
-      label.form-label.card-title.fs-5 for='query' 
-        | Which job do you want to learn?
-      .input-group.mb-3
-        input.form-control type='text' name='query' placeholder='data scientist' value="#{query}"
-        button.btn.btn-primary type='submit'
-          | submit
+  .row
+    form action='/details'
+      .card.p-3.border-none.bg-light
+        label.form-label.card-title.fs-5 for='query' 
+          | Enter job title or skills to analyze:
+        .input-group.mb-3
+          input.form-control type='text' name='query' placeholder='data scientist' value="#{query}"
+          button.btn.btn-primary type='submit'
+            | submit
 

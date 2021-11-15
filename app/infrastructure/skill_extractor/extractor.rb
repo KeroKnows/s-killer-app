@@ -10,6 +10,8 @@ module Skiller
       PYTHON = 'python3' # may need to change this to `python`, depending on your system
       SCRIPT = 'app/infrastructure/skill_extractor/extract.py'
 
+      attr_reader :result
+
       def initialize(job)
         @job = job
         @description = gen_description
