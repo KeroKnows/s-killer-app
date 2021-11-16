@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
+ruby File.read('.ruby-version').strip
+
+# Production
+group :production do
+  gem 'pg'
+end
 
 # Developing tools
 gem 'pry', '~> 0.13.1'
