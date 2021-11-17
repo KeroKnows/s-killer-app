@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# require_relative '../../../infrastructure/skill_extractor/init'
-
 module Skiller
   module Skill
     # Get an array of `Skill` from an array of Entity::Job, using Skill::Extractor
