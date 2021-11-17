@@ -25,9 +25,9 @@ module Skiller
 
       # Extracts entity specific elements from data structure
       class DataMapper
-        def initialize(data, isfull)
+        def initialize(data, is_full)
           @data = data
-          @isfull = isfull
+          @is_full = is_full
         end
 
         def build_entity # rubocop:disable Metrics/MethodLength
@@ -43,7 +43,7 @@ module Skiller
               currency: @data['currency']
             },
             url: @data['jobUrl'],
-            isfull: @isfull
+            is_full: @is_full
           )
         end
       end

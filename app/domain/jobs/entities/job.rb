@@ -15,7 +15,7 @@ module Skiller
       attribute :location, Strict::String
       attribute :salary, Skiller::Value::Salary
       attribute :url, String.optional
-      attribute :isfull, Strict::Bool
+      attribute :is_full, Strict::Bool
     end
   end
 end

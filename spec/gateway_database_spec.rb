@@ -58,7 +58,7 @@ describe 'Integration Tests of Reed API and Database' do
         _(orig.salary.year_max).must_equal(rebuilt.salary.year_max)
         _(orig.salary.currency).must_equal(rebuilt.salary.currency)
         _(orig.url).must_equal(rebuilt.url)
-        _(orig.isfull).must_equal(rebuilt.isfull)
+        _(orig.is_full).must_equal(rebuilt.is_full)
       end
     end
   end

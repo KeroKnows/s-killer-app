@@ -28,7 +28,7 @@ describe 'Test Reed library' do
 
   it 'HAPPY: job list should be PartialJob' do
     jobs = Skiller::Reed::JobMapper.new(CONFIG, Skiller::Reed::Api).job_list(TEST_KEYWORD)
-    jobs.each { |job| _(job.isfull).must_be_same_as false }
+    jobs.each { |job| _(job.is_full).must_be_same_as false }
   end
 
   describe 'HTTP communication of Reed Details API' do
@@ -100,12 +100,12 @@ describe 'Test Reed library' do
       _(@job).must_respond_to :url
     end
 
-    it 'HAPPY: should have `isfull`' do
-      _(@job).must_respond_to :isfull
+    it 'HAPPY: should have `is_full`' do
+      _(@job).must_respond_to :is_full
     end
 
-    it 'HAPPY: `isfull` should be true' do
-      _(@job.isfull).must_be_same_as true
+    it 'HAPPY: `is_full` should be true' do
+      _(@job.is_full).must_be_same_as true
     end
 
     it 'HAPPY: JobMapper should generate Job' do

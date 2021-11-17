@@ -16,7 +16,7 @@ Sequel.migration do
       Float       :max_year_salary
       String      :currency
       String      :url, null: true
-      Bool        :isfull
+      Bool        :is_full
 
       DateTime    :created_at
       DateTime    :updated_at

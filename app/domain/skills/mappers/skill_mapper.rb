@@ -5,7 +5,7 @@ module Skiller
     # Get an array of `Skill` from an array of Entity::Job, using Skill::Extractor
     class SkillMapper
       def initialize(job)
-        raise 'should be a full job' unless job.isfull
+        raise 'should be a full job' unless job.is_full
 
         @job = job
         @extractor = Skiller::Skill::Extractor.new(job)
