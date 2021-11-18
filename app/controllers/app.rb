@@ -34,18 +34,19 @@ module Skiller
 
             jobs = JobCollector.new(App.config).jobs(query)
 
-            skills = []
-
-            jobs.each do |job|
-              skills += Skiller::Skill::SkillMapper.new(job).skills
-            end
+            skills = jobs.map { |job| Skiller::Skill::SkillMapper.new(job).skills }
+                         .reduce(:+)
+            skill_count = skills.group_by(&:name)
+                                .transform_values(&:length)
+            skill_sort = skill_count.sort_by { |_, count| count }
+                                    .reverse!
 
             ## TODO: extract `Skill` from jobs if the query has not been searched
 
             ## TODO: then use `Repository::JobsSkills.create()` to put them into database
 
             ## TODO: use `Repository::QueriesJobs.find_skills_by_query()` if the query has been searched
-            view 'details', locals: { query: query, jobs: jobs, skills: skills }
+            view 'details', locals: { query: query, jobs: jobs, skills: skill_sort }
           end
         end
       end

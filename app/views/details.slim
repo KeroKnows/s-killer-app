@@ -15,8 +15,11 @@
         .card-header Skills Required
         .card-body
           ul.list-group.list-group-flush
-            - skills.each do |skill|
-              li.list-group-item = skill.name
+            - skills.each do |skill, count|
+              li.list-group-item
+                span = skill
+                span.badge.mx-2.bg-light.rounded.text-black.float-end
+                  = count
     .col-8
       / Salary card
       .card
