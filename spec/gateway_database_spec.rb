@@ -56,7 +56,7 @@ describe 'Integration Tests of Reed API and Database' do
       end
 
       @skills.zip(rebuilt_skills).map do |orig, rebuilt|
-        _(orig.name) == (rebuilt.name)
+        _(orig.name).must_equal(rebuilt.name)
       end
     end
   end
@@ -76,15 +76,15 @@ describe 'Integration Tests of Reed API and Database' do
     it 'HAPPY: should be able to save the mapping between jobs and skills' do
       rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@skills)
       @skills.zip(rebuilt_skills).map do |orig, rebuilt|
-        _(orig.name) == (rebuilt.name)
-        _(orig.job_db_id) == (rebuilt.job_db_id)
-        _(orig.salary) == (rebuilt.salary)
+        _(orig.name).must_equal(rebuilt.name)
+        _(orig.job_db_id).must_equal(rebuilt.job_db_id)
+        _(orig.salary).must_equal(rebuilt.salary)
       end
     end
   end
 
   describe 'Retrive and store the mapping between queries and jobs' do
-     before do
+    before do
       @rebuilt_jobs = @first_10_jobs.map do |job|
         Skiller::Repository::For.entity(job).create(job)
       end
@@ -118,11 +118,10 @@ describe 'Integration Tests of Reed API and Database' do
       Skiller::Repository::QueriesJobs.create(TEST_KEYWORD, [@job.db_id])
       rebuilt_skills = Skiller::Repository::QueriesJobs.find_skills_by_query(TEST_KEYWORD)
       @rebuilt_skills.zip(rebuilt_skills).map do |orig, rebuilt|
-        _(orig.name) == (rebuilt.name)
-        _(orig.job_db_id) == (rebuilt.job_db_id)
-        _(orig.salary) == (rebuilt.salary)
+        _(orig.name).must_equal(rebuilt.name)
+        _(orig.job_db_id).must_equal(rebuilt.job_db_id)
+        _(orig.salary).must_equal(rebuilt.salary)
       end
     end
-
   end
 end
