@@ -95,7 +95,7 @@ describe 'Integration Tests of Reed API and Database' do
       ]
       @rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@skills)
       job_db_ids = @rebuilt_jobs.map(&:db_id)
-      Skiller::Repository::QueriesJobs.create(TEST_KEYWORD, job_db_ids)
+      Skiller::Repository::QueriesJobs.find_or_create(TEST_KEYWORD, job_db_ids)
     end
 
     it 'HAPPY: should be able to save query and jobs data to database' do
@@ -116,6 +116,7 @@ describe 'Integration Tests of Reed API and Database' do
 
     it 'HAPPY: sould be able to find skills by a given query' do
       rebuilt_skills = Skiller::Repository::QueriesJobs.find_skills_by_query(TEST_KEYWORD)
+
       @rebuilt_skills.zip(rebuilt_skills).map do |orig, rebuilt|
         _(orig.name).must_equal(rebuilt.name)
         _(orig.job_db_id).must_equal(rebuilt.job_db_id)

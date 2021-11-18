@@ -67,7 +67,7 @@ module Skiller
 
       def request_jobs_and_update_database(query)
         jobs = request_first_10_full_jobs(query).map { |job| Repository::Jobs.create(job) }
-        Repository::QueriesJobs.create(query, jobs.map(&:db_id))
+        Repository::QueriesJobs.find_or_create(query, jobs.map(&:db_id))
         jobs
       end
 

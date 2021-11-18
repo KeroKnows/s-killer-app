@@ -26,11 +26,9 @@ module Skiller
         end
       end
 
-      def self.create(query, job_db_ids)
-        raise 'Query already exists' if query_exist?(query)
-
+      def self.find_or_create(query, job_db_ids)
         job_db_ids.map do |job_db_id|
-          Database::QueryJobOrm.create(query: query, job_db_id: job_db_id)
+          Database::QueryJobOrm.find_or_create(query, job_db_id)
         end
       end
     end
