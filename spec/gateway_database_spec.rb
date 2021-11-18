@@ -22,7 +22,7 @@ describe 'Integration Tests of Reed API and Database' do
   describe 'Retrieve and store jobs' do
     it 'HAPPY: should be able to save reed jobs data to database' do
       rebuilt_jobs = @first_10_jobs.map do |job|
-        Skiller::Repository::For.entity(job).create(job)
+        Skiller::Repository::For.entity(job).find_or_create(job)
       end
 
       @first_10_jobs.zip(rebuilt_jobs).map do |orig, rebuilt|
@@ -41,7 +41,7 @@ describe 'Integration Tests of Reed API and Database' do
   describe 'Retrieve and store skills' do
     before do
       rebuilt_jobs = @first_10_jobs.map do |job|
-        Skiller::Repository::For.entity(job).create(job)
+        Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = rebuilt_jobs.first
       @skills = [
@@ -64,7 +64,7 @@ describe 'Integration Tests of Reed API and Database' do
   describe 'Retrive and store the mapping between jobs and skills' do
     before do
       rebuilt_jobs = @first_10_jobs.map do |job|
-        Skiller::Repository::For.entity(job).create(job)
+        Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = rebuilt_jobs.first
       @skills = [
@@ -86,7 +86,7 @@ describe 'Integration Tests of Reed API and Database' do
   describe 'Retrive and store the mapping between queries and jobs' do
     before do
       @rebuilt_jobs = @first_10_jobs.map do |job|
-        Skiller::Repository::For.entity(job).create(job)
+        Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = @rebuilt_jobs.first
       @skills = [

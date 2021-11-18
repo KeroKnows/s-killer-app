@@ -21,24 +21,8 @@ module Skiller
         rebuild_entity(db_job)
       end
 
-      def self.create(entity) # rubocop:disable Metrics/MethodLength
-        db_entity = find(entity)
-        return db_entity if db_entity
-
-        salary = entity.salary
-        db_job = Database::JobOrm.create(
-          job_id: entity.job_id,
-          job_title: entity.title,
-          description: entity.description,
-          location: entity.location,
-          min_year_salary: salary.year_min,
-          max_year_salary: salary.year_max,
-          currency: salary.currency,
-          url: entity.url,
-          is_full: entity.is_full
-        )
-
-        rebuild_entity(db_job)
+      def self.find_or_create(entity)
+        rebuild_entity(Database::JobOrm.find_or_create(entity))
       end
 
       def self.rebuild_entity(db_job) # rubocop:disable Metrics/MethodLength
