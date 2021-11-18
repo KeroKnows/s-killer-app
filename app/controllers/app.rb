@@ -6,7 +6,7 @@ require 'slim'
 module Skiller
   # Web Application for S-killer
   class App < Roda
-    plugin :render, engine: 'slim', views: 'app/views'
+    plugin :render, engine: 'slim', views: 'app/presentation/views_html'
     plugin :halt
 
     route do |router|
