@@ -9,6 +9,10 @@ describe 'Integration Tests of Reed API and Database' do
 
   before do
     Skiller::VcrHelper.configure_vcr_for_reed(GATEWAY_DATABASE_CASSETTE_FILE)
+    Skiller::DatabaseHelper.wipe_database
+    job_mapper = Skiller::Reed::JobMapper.new(CONFIG)
+    partial_jobs = job_mapper.job_list(TEST_KEYWORD)
+    @first_10_jobs = partial_jobs[0...10].map { |pg| job_mapper.job(pg.job_id) }
   end
 
   after do
@@ -16,13 +20,6 @@ describe 'Integration Tests of Reed API and Database' do
   end
 
   describe 'Retrieve and store jobs' do
-    before do
-      Skiller::DatabaseHelper.wipe_database
-      job_mapper = Skiller::Reed::JobMapper.new(CONFIG)
-      partial_jobs = job_mapper.job_list(TEST_KEYWORD)
-      @first_10_jobs = partial_jobs[0...10].map { |pg| job_mapper.job(pg.job_id) }
-    end
-
     it 'HAPPY: should be able to save reed jobs data to database' do
       rebuilt_jobs = @first_10_jobs.map do |job|
         Skiller::Repository::For.entity(job).create(job)
@@ -39,7 +36,9 @@ describe 'Integration Tests of Reed API and Database' do
         _(orig.url).must_equal(rebuilt.url)
       end
     end
+  end
 
+  describe 'Retrive and store the mapping between queries and jobs' do
     it 'HAPPY: should be able to save query and jobs data to database' do
       rebuilt_jobs = @first_10_jobs.map do |job|
         Skiller::Repository::For.entity(job).create(job)
