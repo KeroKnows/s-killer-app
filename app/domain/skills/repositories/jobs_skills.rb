@@ -21,10 +21,14 @@ module Skiller
         )
       end
 
-      def self.find_or_create(skills)
+      def self.job_exist?(job)
+        Database::JobSkillOrm.first(job_db_id: job.db_id) ? true : false
+      end
+
+      def self.find_or_create(job, skills)
         skills.map do |skill|
-          db_skill = Database::SkillOrm.find_or_create(skill.name)
-          job_skill = Database::JobSkillOrm.find_or_create(skill.job_db_id, db_skill.id)
+          db_skill = Database::SkillOrm.find_or_create(skill)
+          job_skill = Database::JobSkillOrm.find_or_create(job.db_id, db_skill.id)
           rebuild_skill_entity(job_skill)
         end
       end

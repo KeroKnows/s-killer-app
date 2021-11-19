@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/simon/s-killer/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/init.rb": {
         "lines": [
           null,
           null,
@@ -10,14 +10,14 @@
           null
         ]
       },
-      "/Users/simon/s-killer/config/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/config/init.rb": {
         "lines": [
           null,
           null,
           1
         ]
       },
-      "/Users/simon/s-killer/config/environment.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/config/environment.rb": {
         "lines": [
           null,
           null,
@@ -54,14 +54,14 @@
           1,
           null,
           1,
-          5,
+          8,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/simon/s-killer/app/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/init.rb": {
         "lines": [
           null,
           null,
@@ -71,7 +71,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/init.rb": {
         "lines": [
           null,
           null,
@@ -81,7 +81,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/init.rb": {
         "lines": [
           null,
           null,
@@ -93,7 +93,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/entities/job.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/entities/job.rb": {
         "lines": [
           null,
           null,
@@ -118,7 +118,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/values/salary.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/values/salary.rb": {
         "lines": [
           null,
           null,
@@ -154,7 +154,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/repositories/for.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/repositories/for.rb": {
         "lines": [
           null,
           null,
@@ -173,14 +173,14 @@
           null,
           null,
           1,
-          50,
+          80,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/repositories/jobs.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/repositories/jobs.rb": {
         "lines": [
           null,
           null,
@@ -206,13 +206,13 @@
           null,
           null,
           1,
-          50,
+          80,
           null,
           null,
           1,
-          68,
+          104,
           null,
-          68,
+          104,
           null,
           null,
           null,
@@ -232,7 +232,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/repositories/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/repositories/init.rb": {
         "lines": [
           null,
           null,
@@ -240,7 +240,7 @@
           1
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/repositories/queries_jobs.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/repositories/queries_jobs.rb": {
         "lines": [
           null,
           null,
@@ -280,7 +280,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/mappers/freecurrency_mappers/exchange_rate_mapper.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/mappers/freecurrency_mappers/exchange_rate_mapper.rb": {
         "lines": [
           null,
           null,
@@ -308,7 +308,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/jobs/mappers/reed_mappers/job_mapper.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/jobs/mappers/reed_mappers/job_mapper.rb": {
         "lines": [
           null,
           null,
@@ -319,31 +319,31 @@
           null,
           1,
           1,
-          5,
-          5,
+          8,
+          8,
           null,
           null,
           null,
           1,
-          5,
-          515,
+          8,
+          824,
           null,
           null,
           null,
           1,
-          50,
-          50,
+          80,
+          80,
           null,
           null,
           null,
           1,
           1,
-          560,
-          560,
+          896,
+          896,
           null,
           null,
           1,
-          560,
+          896,
           null,
           null,
           null,
@@ -364,7 +364,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/skills/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/skills/init.rb": {
         "lines": [
           null,
           null,
@@ -376,7 +376,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/skills/entities/skill.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/skills/entities/skill.rb": {
         "lines": [
           null,
           null,
@@ -397,7 +397,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/skills/repositories/jobs_skills.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/skills/repositories/jobs_skills.rb": {
         "lines": [
           null,
           null,
@@ -406,55 +406,60 @@
           null,
           1,
           1,
+          11,
+          4,
+          null,
+          null,
+          null,
+          1,
+          14,
+          null,
+          14,
+          14,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          5,
           10,
-          2,
-          null,
-          null,
-          null,
-          1,
-          8,
-          null,
-          8,
-          8,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          3,
-          6,
-          6,
-          6,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/simon/s-killer/app/domain/skills/repositories/skills.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          2,
-          2,
-          null,
-          null,
-          1,
           10,
-          null,
           10,
           null,
           null,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/skills/repositories/skills.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null,
+          1,
+          16,
+          null,
+          16,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -462,7 +467,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/domain/skills/mappers/skill_mapper.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/domain/skills/mappers/skill_mapper.rb": {
         "lines": [
           null,
           null,
@@ -505,7 +510,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/controllers/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/controllers/init.rb": {
         "lines": [
           null,
           null,
@@ -514,7 +519,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/controllers/app.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/controllers/app.rb": {
         "lines": [
           null,
           null,
@@ -555,6 +560,7 @@
           0,
           null,
           0,
+          null,
           0,
           null,
           null,
@@ -598,7 +604,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/init.rb": {
         "lines": [
           null,
           null,
@@ -608,7 +614,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/database/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/database/init.rb": {
         "lines": [
           null,
           null,
@@ -618,7 +624,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/database/orm/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/database/orm/init.rb": {
         "lines": [
           null,
           null,
@@ -627,7 +633,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/database/orm/job_orm.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/database/orm/job_orm.rb": {
         "lines": [
           null,
           null,
@@ -646,9 +652,9 @@
           1,
           null,
           1,
-          50,
-          50,
-          50,
+          80,
+          80,
+          80,
           null,
           null,
           null,
@@ -665,7 +671,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/database/orm/job_skill_orm.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/database/orm/job_skill_orm.rb": {
         "lines": [
           null,
           null,
@@ -684,14 +690,14 @@
           null,
           null,
           1,
-          6,
+          10,
           null,
           null,
           null,
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/database/orm/query_job_orm.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/database/orm/query_job_orm.rb": {
         "lines": [
           null,
           null,
@@ -713,7 +719,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/database/orm/skill_orm.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/database/orm/skill_orm.rb": {
         "lines": [
           null,
           null,
@@ -724,6 +730,109 @@
           null,
           1,
           1,
+          null,
+          null,
+          null,
+          1,
+          12,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/skill_extractor/init.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/skill_extractor/extractor.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/reed/init.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          2,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/reed/reed_api.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
           null,
           null,
           null,
@@ -732,10 +841,47 @@
           null,
           null,
           null,
+          1,
+          8,
+          null,
+          8,
+          null,
+          null,
+          null,
+          1,
+          80,
+          null,
+          80,
+          null,
+          null,
+          null,
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/skill_extractor/init.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/http_response.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          88,
+          88,
+          null,
+          null,
+          1,
+          88,
+          null,
+          88,
+          null,
+          null,
+          1,
+          88,
+          null,
+          null
+        ]
+      },
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/freecurrency/init.rb": {
         "lines": [
           null,
           null,
@@ -744,147 +890,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/app/infrastructure/skill_extractor/extractor.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          0,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          null,
-          1,
-          0,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/simon/s-killer/app/infrastructure/reed/init.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          2,
-          null
-        ]
-      },
-      "/Users/simon/s-killer/app/infrastructure/reed/reed_api.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          5,
-          null,
-          null,
-          null,
-          1,
-          5,
-          null,
-          5,
-          null,
-          null,
-          null,
-          1,
-          50,
-          null,
-          50,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/simon/s-killer/app/infrastructure/http_response.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          1,
-          1,
-          55,
-          55,
-          null,
-          null,
-          1,
-          55,
-          null,
-          55,
-          null,
-          null,
-          1,
-          55,
-          null,
-          null
-        ]
-      },
-      "/Users/simon/s-killer/app/infrastructure/freecurrency/init.rb": {
-        "lines": [
-          null,
-          null,
-          1,
-          2,
-          null
-        ]
-      },
-      "/Users/simon/s-killer/app/infrastructure/freecurrency/freecurrency_api.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/app/infrastructure/freecurrency/freecurrency_api.rb": {
         "lines": [
           null,
           null,
@@ -932,7 +938,7 @@
           null
         ]
       },
-      "/Users/simon/s-killer/spec/helpers/database_helper.rb": {
+      "/Users/joaw/workspace/SOA2021/s-killer/spec/helpers/database_helper.rb": {
         "lines": [
           null,
           null,
@@ -942,15 +948,15 @@
           null,
           1,
           1,
-          5,
-          5,
-          30,
+          8,
+          8,
+          48,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1637236151
+    "timestamp": 1637328631
   }
 }

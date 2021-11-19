@@ -67,21 +67,55 @@ describe 'Integration Tests of Reed API and Database' do
         Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = rebuilt_jobs.first
-      @skills = [
-        Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: 'python', salary: @job.salary),
-        Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: 'java', salary: @job.salary)
-      ]
+      @skills = ['Python', 'Java']
+      @skill_entities = @skills.map do |skill| 
+        Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: skill, salary: @job.salary) 
+      end
     end
 
     it 'HAPPY: should be able to save the mapping between jobs and skills' do
-      rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@skills)
-      @skills.zip(rebuilt_skills).map do |orig, rebuilt|
+      rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
+      @skill_entities.zip(rebuilt_skills).map do |orig, rebuilt|
         _(orig.name).must_equal(rebuilt.name)
         _(orig.job_db_id).must_equal(rebuilt.job_db_id)
         _(orig.salary).must_equal(rebuilt.salary)
       end
     end
+
+    it 'HAPPY: should be able to search skills from existing job' do
+      # ensure data exists in database
+      Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
+
+      rebuilt_skills = Skiller::Repository::JobsSkills.find_skills_by_job(@job.db_id)
+      @skill_entities.zip(rebuilt_skills).map do |orig, rebuilt|
+        _(orig.name).must_equal(rebuilt.name)
+        _(orig.job_db_id).must_equal(rebuilt.job_db_id)
+        _(orig.salary).must_equal(rebuilt.salary)
+      end
+    end
+
+    it 'HAPPY: should be able to check if job-skill rows already exist' do
+      # ensure data exists in database
+      Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
+      _(Skiller::Repository::JobsSkills.job_exist?(@job)).must_equal true
+    end
+
+    it 'SAD: should not say true to non-existing data' do
+      INVALID_ID = -1
+      @invalid_job = Skiller::Entity::Job.new(db_id: INVALID_ID, 
+                                              job_id: INVALID_ID, 
+                                              title: 'TEST JOB',
+                                              description: 'TEST DESCRIPTION',
+                                              location: 'TEST LOCATION',
+                                              salary: Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil),
+                                              url: 'EMPTY URL',
+                                              is_full: false
+                                             ) 
+      _(Skiller::Repository::JobsSkills.job_exist?(@invalid_job)).must_equal false
+    end
   end
+
+  ## ----
 
   describe 'Retrive and store the mapping between queries and jobs' do
     before do
@@ -89,11 +123,8 @@ describe 'Integration Tests of Reed API and Database' do
         Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = @rebuilt_jobs.first
-      @skills = [
-        Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: 'python', salary: @job.salary),
-        Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: 'java', salary: @job.salary)
-      ]
-      @rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@skills)
+      @skills = ['Python', 'Java']
+      @rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
       job_db_ids = @rebuilt_jobs.map(&:db_id)
       Skiller::Repository::QueriesJobs.find_or_create(TEST_KEYWORD, job_db_ids)
     end
