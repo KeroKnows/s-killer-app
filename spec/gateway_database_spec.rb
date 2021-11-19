@@ -67,9 +67,9 @@ describe 'Integration Tests of Reed API and Database' do
         Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = rebuilt_jobs.first
-      @skills = ['Python', 'Java']
-      @skill_entities = @skills.map do |skill| 
-        Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: skill, salary: @job.salary) 
+      @skills = %w[Python Java]
+      @skill_entities = @skills.map do |skill|
+        Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: skill, salary: @job.salary)
       end
     end
 
@@ -101,17 +101,17 @@ describe 'Integration Tests of Reed API and Database' do
     end
 
     it 'SAD: should not say true to non-existing data' do
-      INVALID_ID = -1
-      @invalid_job = Skiller::Entity::Job.new(db_id: INVALID_ID, 
-                                              job_id: INVALID_ID, 
-                                              title: 'TEST JOB',
-                                              description: 'TEST DESCRIPTION',
-                                              location: 'TEST LOCATION',
-                                              salary: Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil),
-                                              url: 'EMPTY URL',
-                                              is_full: false
-                                             ) 
-      _(Skiller::Repository::JobsSkills.job_exist?(@invalid_job)).must_equal false
+      invalid_id = -1
+      new_salary = Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil)
+      invalid_job = Skiller::Entity::Job.new(db_id: invalid_id,
+                                             job_id: invalid_id,
+                                             title: 'TEST JOB',
+                                             description: 'TEST DESCRIPTION',
+                                             location: 'TEST LOCATION',
+                                             salary: new_salary,
+                                             url: 'EMPTY URL',
+                                             is_full: false)
+      _(Skiller::Repository::JobsSkills.job_exist?(invalid_job)).must_equal false
     end
   end
 
@@ -123,7 +123,7 @@ describe 'Integration Tests of Reed API and Database' do
         Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = @rebuilt_jobs.first
-      @skills = ['Python', 'Java']
+      @skills = %w[Python Java]
       @rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
       job_db_ids = @rebuilt_jobs.map(&:db_id)
       Skiller::Repository::QueriesJobs.find_or_create(TEST_KEYWORD, job_db_ids)
