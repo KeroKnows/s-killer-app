@@ -34,13 +34,8 @@ module Skiller
 
             collector = DataCollector.new(App.config)
             jobs = collector.jobs(query)
-            skills = collector.extract_skillset(jobs)
+            skills = collector.skillset(query, jobs)
 
-            ## TODO: extract `Skill` from jobs if the query has not been searched
-
-            ## TODO: then use `Repository::JobsSkills.create()` to put them into database
-
-            ## TODO: use `Repository::QueriesJobs.find_skills_by_query()` if the query has been searched
             view 'details', locals: { query: query, jobs: jobs, skills: skills }
           end
         end
@@ -61,9 +56,15 @@ module Skiller
         end
       end
 
-      def extract_skillset(jobs)
-        skill_list = jobs[..10].map { |job| extract_skills_and_update_database(job) }
-                               .reduce(:+)
+      def skillset(query, jobs)
+        if Repository::QueriesJobs.query_exist?(query)
+          skill_list = Repository::QueriesJobs.find_skills_by_query(query)
+        else
+          # [ TODO ] analyze skillset from more data
+          skill_list = jobs[..10].map { |job| extract_skills_and_update_database(job) }
+                                 .reduce(:+)
+          Repository::QueriesJobs.find_or_create(query, jobs.map(&:db_id))
+        end
         skill_count = skill_list.group_by(&:name)
                                 .transform_values!(&:length)
         skill_count.sort_by { |_, count| count }.reverse!
