@@ -14,7 +14,7 @@ module Skiller
         skill_list = Database::QueryJobOrm.where(query: query).all.map do |query_job|
           JobsSkills.find_skills_by_job_id(query_job.job_db_id)
         end
-        skill_list.reduce(&:+)
+        skill_list.reduce(:+)
       end
 
       def self.query_exist?(query)
