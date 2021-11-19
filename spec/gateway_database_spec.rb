@@ -11,8 +11,8 @@ describe 'Integration Tests of Reed API and Database' do
     Skiller::VcrHelper.configure_vcr_for_reed(GATEWAY_DATABASE_CASSETTE_FILE)
     Skiller::DatabaseHelper.wipe_database
     job_mapper = Skiller::Reed::JobMapper.new(CONFIG)
-    partial_jobs = job_mapper.job_list(TEST_KEYWORD)
-    @first_10_jobs = partial_jobs[0...10].map { |pg| job_mapper.job(pg.job_id) }
+    @partial_jobs = job_mapper.job_list(TEST_KEYWORD)
+    @first_10_jobs = @partial_jobs[0...10].map { |pg| job_mapper.job(pg.job_id) }
   end
 
   after do
@@ -35,6 +35,17 @@ describe 'Integration Tests of Reed API and Database' do
         _(orig.salary.currency).must_equal(rebuilt.salary.currency)
         _(orig.url).must_equal(rebuilt.url)
       end
+    end
+
+    it 'HAPPY: should be able to update job records' do
+      partial_job = Skiller::Repository::Jobs.find_or_create(@partial_jobs.first)
+      updated_job = partial_job.new(description: @first_10_jobs.first.description,
+                                    is_full: true)
+      Skiller::Repository::Jobs.update(updated_job)
+      rebuilt = Skiller::Repository::Jobs.find(updated_job)
+
+      _(updated_job.description).must_equal(rebuilt.description)
+      _(updated_job.is_full).must_equal(rebuilt.is_full)
     end
   end
 
@@ -114,8 +125,6 @@ describe 'Integration Tests of Reed API and Database' do
       _(Skiller::Repository::JobsSkills.job_exist?(invalid_job)).must_equal false
     end
   end
-
-  ## ----
 
   describe 'Retrive and store the mapping between queries and jobs' do
     before do

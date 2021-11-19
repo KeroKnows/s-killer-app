@@ -25,6 +25,23 @@ module Skiller
         rebuild_entity(Database::JobOrm.find_or_create(entity))
       end
 
+      def self.update(entity) # rubocop:disable Metrics/MethodLength
+        db_id = entity.db_id
+        salary = entity.salary
+        Database::JobOrm.where(db_id: db_id).update(
+          db_id: db_id,
+          job_id: entity.job_id,
+          job_title: entity.title,
+          description: entity.description,
+          location: entity.location,
+          min_year_salary: salary.year_min,
+          max_year_salary: salary.year_max,
+          currency: salary.currency,
+          url: entity.url,
+          is_full: entity.is_full
+        )
+      end
+
       def self.rebuild_entity(db_job) # rubocop:disable Metrics/MethodLength
         return nil unless db_job
 
