@@ -4,7 +4,7 @@ module Skiller
   module Repository
     # Provide the access to jobs_skills table via `JobSkillOrm`
     class JobsSkills
-      def self.find_skills_by_job(job_db_id)
+      def self.find_skills_by_job_id(job_db_id)
         Database::JobSkillOrm.where(job_db_id: job_db_id).all.map do |job_skill|
           rebuild_skill_entity(job_skill)
         end

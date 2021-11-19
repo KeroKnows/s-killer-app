@@ -86,7 +86,7 @@ describe 'Integration Tests of Reed API and Database' do
       # ensure data exists in database
       Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
 
-      rebuilt_skills = Skiller::Repository::JobsSkills.find_skills_by_job(@job.db_id)
+      rebuilt_skills = Skiller::Repository::JobsSkills.find_skills_by_job_id(@job.db_id)
       @skill_entities.zip(rebuilt_skills).map do |orig, rebuilt|
         _(orig.name).must_equal(rebuilt.name)
         _(orig.job_db_id).must_equal(rebuilt.job_db_id)
