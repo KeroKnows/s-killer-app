@@ -32,28 +32,23 @@ module Skiller
 
             query = router.params['query']
 
-            jobs = JobCollector.new(App.config).jobs(query)
-
-            skills = jobs.map { |job| Skiller::Skill::SkillMapper.new(job).skills }
-                         .reduce(:+)
-            skill_count = skills.group_by(&:name)
-                                .transform_values(&:length)
-            skill_sort = skill_count.sort_by { |_, count| count }
-                                    .reverse!
+            collector = DataCollector.new(App.config)
+            jobs = collector.jobs(query)
+            skills = collector.extract_skillset(jobs)
 
             ## TODO: extract `Skill` from jobs if the query has not been searched
 
             ## TODO: then use `Repository::JobsSkills.create()` to put them into database
 
             ## TODO: use `Repository::QueriesJobs.find_skills_by_query()` if the query has been searched
-            view 'details', locals: { query: query, jobs: jobs, skills: skill_sort }
+            view 'details', locals: { query: query, jobs: jobs, skills: skills }
           end
         end
       end
     end
 
     # request jobs using API if the query has not saved to database
-    class JobCollector
+    class DataCollector
       def initialize(config)
         @job_mapper = Skiller::Reed::JobMapper.new(config)
       end
@@ -66,15 +61,38 @@ module Skiller
         end
       end
 
-      def request_jobs_and_update_database(query)
-        jobs = request_first_10_full_jobs(query).map { |job| Repository::Jobs.find_or_create(job) }
-        Repository::QueriesJobs.find_or_create(query, jobs.map(&:db_id))
-        jobs
+      def extract_skillset(jobs)
+        skill_list = jobs[..10].map { |job| extract_skills_and_update_database(job) }
+                               .reduce(:+)
+        skill_count = skill_list.group_by(&:name)
+                                .transform_values!(&:length)
+        skill_count.sort_by { |_, count| count }.reverse!
       end
 
-      def request_first_10_full_jobs(query)
-        partial_jobs = @job_mapper.job_list(query)
-        partial_jobs[0...10].map { |pj| @job_mapper.job(pj.job_id) }
+      def extract_skills_and_update_database(job)
+        if Repository::JobsSkills.job_exist?(job)
+          Repository::JobsSkills.find_skills_by_job_id(job.db_id)
+        else
+          job = request_full_job_and_update_database(job) unless job.is_full
+          skills = Skiller::Skill::SkillMapper.new(job).skills
+          Repository::JobsSkills.find_or_create(skills)
+        end
+      end
+
+      def request_jobs_and_update_database(query)
+        job_list = @job_mapper.job_list(query)
+        job_list.map do |job|
+          Repository::Jobs.find_or_create(job)
+        end
+      end
+
+      def request_full_job_and_update_database(job)
+        job = Repository::Jobs.find(job)
+        return job if job.is_full
+
+        full_job = @job_mapper.job(job.job_id, job)
+        Repository::Jobs.update(full_job)
+        Repository::Jobs.find(full_job)
       end
     end
   end
