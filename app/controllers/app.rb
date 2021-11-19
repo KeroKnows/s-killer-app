@@ -32,9 +32,9 @@ module Skiller
 
             query = router.params['query']
 
-            collector = DataCollector.new(App.config)
-            jobs = collector.jobs(query)
-            skills = collector.skillset(query, jobs)
+            collector = DataCollector.new(App.config, query)
+            jobs = collector.jobs
+            skills = collector.skillset
 
             view 'details', locals: { query: query, jobs: jobs, skills: skills }
           end
@@ -44,39 +44,54 @@ module Skiller
 
     # request jobs using API if the query has not saved to database
     class DataCollector
-      def initialize(config)
+      def initialize(config, query)
         @job_mapper = Skiller::Reed::JobMapper.new(config)
+        @query = query
+        @jobs = nil
+        @skillset = nil
       end
 
-      def jobs(query)
-        if Repository::QueriesJobs.query_exist?(query)
-          Repository::QueriesJobs.find_jobs_by_query(query)
+      def jobs
+        if Repository::QueriesJobs.query_exist?(@query)
+          Repository::QueriesJobs.find_jobs_by_query(@query)
         else
-          request_jobs_and_update_database(query)
+          @jobs = request_jobs_and_update_database(@query)
+          @jobs
         end
       end
 
-      def skillset(query, jobs)
-        if Repository::QueriesJobs.query_exist?(query)
-          skill_list = Repository::QueriesJobs.find_skills_by_query(query)
-        else
-          # [ TODO ] analyze skillset from more data
-          skill_list = jobs[..10].map { |job| extract_skills_and_update_database(job) }
-                                 .reduce(:+)
-          Repository::QueriesJobs.find_or_create(query, jobs.map(&:db_id))
-        end
-        skill_count = skill_list.group_by(&:name)
-                                .transform_values!(&:length)
+      def skillset
+        @skills = if Repository::QueriesJobs.query_exist?(@query)
+                    Repository::QueriesJobs.find_skills_by_query(@query)
+                  else
+                    extract_skillset
+                  end
+        @skillset = merge_skillset
+        @skillset
+      end
+
+      def extract_skillset
+        skill_list = extract_skills_and_update_database.reduce(:+)
+        Repository::QueriesJobs.find_or_create(@query, @jobs.map(&:db_id))
+        skill_list
+      end
+
+      def merge_skillset
+        skill_count = @skills.group_by(&:name)
+                             .transform_values!(&:length)
         skill_count.sort_by { |_, count| count }.reverse!
       end
 
-      def extract_skills_and_update_database(job)
-        if Repository::JobsSkills.job_exist?(job)
-          Repository::JobsSkills.find_skills_by_job_id(job.db_id)
-        else
-          job = request_full_job_and_update_database(job) unless job.is_full
-          skills = Skiller::Skill::SkillMapper.new(job).skills
-          Repository::JobsSkills.find_or_create(skills)
+      def extract_skills_and_update_database
+        # [ TODO ] analyze skillset from more data
+        @jobs[..10].map do |job|
+          if Repository::JobsSkills.job_exist?(job)
+            Repository::JobsSkills.find_skills_by_job_id(job.db_id)
+          else
+            job = request_full_job_and_update_database(job)
+            skills = Skiller::Skill::SkillMapper.new(job).skills
+            Repository::JobsSkills.find_or_create(skills)
+          end
         end
       end
 
@@ -88,10 +103,8 @@ module Skiller
       end
 
       def request_full_job_and_update_database(job)
-        job = Repository::Jobs.find(job)
-        return job if job.is_full
-
-        full_job = @job_mapper.job(job.job_id, job)
+        db_job = Repository::Jobs.find(job)
+        full_job = @job_mapper.job(db_job.job_id, db_job)
         Repository::Jobs.update(full_job)
         Repository::Jobs.find(full_job)
       end
