@@ -78,15 +78,15 @@ describe 'Integration Tests of Reed API and Database' do
         Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = rebuilt_jobs.first
-      @skills = %w[Python Java]
-      @skill_entities = @skills.map do |skill|
+      skill_names = %w[Python Java]
+      @skills = skill_names.map do |skill|
         Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: skill, salary: @job.salary)
       end
     end
 
     it 'HAPPY: should be able to save the mapping between jobs and skills' do
-      rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
-      @skill_entities.zip(rebuilt_skills).map do |orig, rebuilt|
+      rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@skills)
+      @skills.zip(rebuilt_skills).map do |orig, rebuilt|
         _(orig.name).must_equal(rebuilt.name)
         _(orig.job_db_id).must_equal(rebuilt.job_db_id)
         _(orig.salary).must_equal(rebuilt.salary)
@@ -95,10 +95,10 @@ describe 'Integration Tests of Reed API and Database' do
 
     it 'HAPPY: should be able to search skills from existing job' do
       # ensure data exists in database
-      Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
+      Skiller::Repository::JobsSkills.find_or_create(@skills)
 
       rebuilt_skills = Skiller::Repository::JobsSkills.find_skills_by_job_id(@job.db_id)
-      @skill_entities.zip(rebuilt_skills).map do |orig, rebuilt|
+      @skills.zip(rebuilt_skills).map do |orig, rebuilt|
         _(orig.name).must_equal(rebuilt.name)
         _(orig.job_db_id).must_equal(rebuilt.job_db_id)
         _(orig.salary).must_equal(rebuilt.salary)
@@ -107,7 +107,7 @@ describe 'Integration Tests of Reed API and Database' do
 
     it 'HAPPY: should be able to check if job-skill rows already exist' do
       # ensure data exists in database
-      Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
+      Skiller::Repository::JobsSkills.find_or_create(@skills)
       _(Skiller::Repository::JobsSkills.job_exist?(@job)).must_equal true
     end
 
@@ -132,8 +132,11 @@ describe 'Integration Tests of Reed API and Database' do
         Skiller::Repository::For.entity(job).find_or_create(job)
       end
       @job = @rebuilt_jobs.first
-      @skills = %w[Python Java]
-      @rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@job, @skills)
+      skill_names = %w[Python Java]
+      @skills = skill_names.map do |skill|
+        Skiller::Entity::Skill.new(id: nil, job_db_id: @job.db_id, name: skill, salary: @job.salary)
+      end
+      @rebuilt_skills = Skiller::Repository::JobsSkills.find_or_create(@skills)
       job_db_ids = @rebuilt_jobs.map(&:db_id)
       Skiller::Repository::QueriesJobs.find_or_create(TEST_KEYWORD, job_db_ids)
     end
