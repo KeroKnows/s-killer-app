@@ -34,32 +34,35 @@ describe 'Test Skill Analyzer library' do
   end
 
   describe 'Test SkillMapper' do
-    before do
+    it 'SAD: should request for full job description' do
       salary = Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil)
-      @job = Skiller::Entity::Job.new(db_id: nil,
-                                      job_id: 0,
-                                      title: 'JOB TITLE',
-                                      description: '<h1>JOB TITLE</h1><p>description with Python SQL</p>',
-                                      location: 'LOCATION',
-                                      salary: salary,
-                                      url: 'URL',
-                                      is_full: true)
+      job = Skiller::Entity::Job.new(db_id: nil,
+                                     job_id: 0,
+                                     title: 'JOB TITLE',
+                                     description: '<h1>JOB TITLE</h1><p>description with Python SQL</p>',
+                                     location: 'LOCATION',
+                                     salary: salary,
+                                     url: 'URL',
+                                     is_full: false)
+      _(proc do
+        Skiller::Skill::SkillMapper.new(job)
+      end).must_raise ArgumentError
     end
 
-    it 'SAD: should check for full job description' do
-      # _(proc do
-      #   Skiller::Skill::SkillMapper.new(@job_list.first)
-      # end).must_raise RuntimeError
-    end
-
-    it 'HAPPY: should be able to extract skill' do
-      # skill_mapper = Skiller::Skill::SkillMapper.new(@job)
-      # _(skill_mapper.skills).wont_be_empty
-    end
-
-    it 'HAPPY: skills should have their names' do
-      # skills = Skiller::Skill::SkillMapper.new(@job).skills
-      # skills.each { |skill| _(skill).must_respond_to :name }
+    it 'HAPPY: should return Skill entities' do
+      salary = Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil)
+      job = Skiller::Entity::Job.new(db_id: nil,
+                                     job_id: 0,
+                                     title: 'JOB TITLE',
+                                     description: '<h1>JOB TITLE</h1><p>description with Python SQL</p>',
+                                     location: 'LOCATION',
+                                     salary: salary,
+                                     url: 'URL',
+                                     is_full: true)
+      skill_mapper = Skiller::Skill::SkillMapper.new(job)
+      skill_mapper.skills.map do |skill|
+        _(skill).must_be_instance_of Skiller::Entity::Skill
+      end
     end
   end
 end
