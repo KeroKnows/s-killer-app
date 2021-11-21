@@ -1,11 +1,16 @@
+# cache
+**/__pycached__/
+.DS_Store
+
+# development
+*.code-workspace
 .bundle/
-
-
-*.db
-
-config/secrets.yml
 coverage/
 !coverage/.resultset.json
 
-# environment dump
-.DS_Store
+# secrets
+config/secrets.yml
+
+# big data
+*.db
+
