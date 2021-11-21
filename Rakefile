@@ -8,18 +8,6 @@ task :default do
   puts `rake -T`
 end
 
-desc 'run unit/integration tests'
-task spec: 'spec:all'
-
-
-# desc 'run acceptance tests with watir'
-# task :spec_acceptance do
-#   puts 'NOTE: run app in test environment in another process'
-#   sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
-# end
-
-
-
 desc 'start the app with file chages watched'
 task :dev do
   sh "rerun -c 'bundle exec rackup -p 4001' --ignore 'coverage/*' --ignore 'spec/*' --ignore '*.slim'"
@@ -33,13 +21,15 @@ task :console do
   sh 'pry -r ./init.rb'
 end
 
-namespace :spec do
-  # task acceptance: %i[acceptance]
-  task all: %i[reed_api freecurrency_api skill_analyzer gateway_database view_objects]
-  
+desc 'Run all tests at once'
+Rake::TestTask.new(:spec) do |t|
+  t.pattern = 'spec/tests/{integration,unit}/**/*_spec.rb'
+  t.warning = false
+end
 
-  integration_test_path = 'spec/tests/integration'
+namespace :spec do
   unit_test_path = 'spec/tests/unit'
+  integration_test_path = 'spec/tests/integration'
 
   desc 'spec checks of Reed API'
   task :reed_api do

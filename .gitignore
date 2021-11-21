@@ -1,6 +1,7 @@
 # cache
 **/__pycached__/
 .DS_Store
+**/*.tmp
 
 # development
 *.code-workspace
