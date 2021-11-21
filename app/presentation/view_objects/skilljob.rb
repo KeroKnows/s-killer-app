@@ -17,11 +17,6 @@ module  Views
       @skillset
     end
 
-    def skills
-      analyze_skillset
-      @skillset.map { |skill, _| skill }
-    end
-
     def jobs
       @jobs.map { |job| Views::Job.new(job) }
     end
