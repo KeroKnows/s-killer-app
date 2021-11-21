@@ -8,30 +8,37 @@ module Skiller
     # Extract the skillset from Skiller::Entity::Job
     class Extractor
       PYTHON = 'python3' # may need to change this to `python`, depending on your system
-      SCRIPT = 'app/infrastructure/skill_extractor/extract.py'
-
-      attr_reader :result
+      SCRIPT = File.join(File.dirname(__FILE__), 'extract.py')
 
       def initialize(job)
-        @job = job
-        @description = gen_description
-        @result = nil
+        @raw_description = job.description
+        @random_seed = rand(10_000)
+        @description = nil
+        @script_result = nil
       end
 
-      def gen_description
-        node = Nokogiri::HTML(@job.description)
-        node.xpath('//text()').to_a.join(' ')
+      def skills
+        analyze_skills
+        YAML.safe_load(@script_result)
       end
 
-      def extract
-        @result = `#{PYTHON} #{SCRIPT} "#{@description}"`
-        self
+      def description
+        return @description if @description
+
+        @description = parse_description
+        @description
       end
 
-      def parse
-        raise 'Please extract skillset first' unless @result
+      def analyze_skills
+        tmp_file = ".extractor.#{@random_seed}.tmp"
+        File.write(tmp_file, description, mode: 'w')
+        @script_result = `#{PYTHON} #{SCRIPT} "#{tmp_file}"`
+        File.delete(tmp_file)
+      end
 
-        YAML.safe_load @result
+      def parse_description
+        doc = Nokogiri::HTML(@raw_description)
+        doc.xpath('//text()').to_a.join(' ')
       end
     end
   end
