@@ -38,14 +38,25 @@ module  Views
     def analyze_skillset
       return if @skillset
 
-      skill_count = @skills.group_by(&:name)
-                           .transform_values!(&:length)
       sorted_skill = skill_count.sort_by { |_, count| count }
                                 .reverse!
-      @skillset = sorted_skill.map do |name, count|
-        first_skill = @skills.find { |skill| skill.name == name }
+      @skillset = transform_to_entity(sorted_skill)
+    end
+
+    def skill_count
+      skill_group = @skills.group_by(&:name)
+      skill_group.transform_values(&:length)
+    end
+
+    def transform_to_entity(sorted_skill)
+      sorted_skill.map do |name, count|
+        first_skill = find_first(name)
         Views::Skill.new(first_skill, count)
       end
+    end
+
+    def find_first(name)
+      @skills.find { |skill| skill.name == name }
     end
   end
 end
