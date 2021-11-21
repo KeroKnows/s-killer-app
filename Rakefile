@@ -25,7 +25,7 @@ task :console do
 end
 
 namespace :spec do
-  task all: %i[reed_api freecurrency_api skill_analyzer gateway_database]
+  task all: %i[reed_api freecurrency_api skill_analyzer gateway_database view_objects]
 
   desc 'spec checks of Reed API'
   task :reed_api do
@@ -45,6 +45,11 @@ namespace :spec do
   desc 'spec checks of the integration of gateway and database'
   task :gateway_database do
     sh 'RACK_ENV=test bundle exec ruby spec/gateway_database_spec.rb'
+  end
+
+  desc 'spec checks of View Objects'
+  task :view_objects do
+    sh 'RACK_ENV=test bundle exec ruby spec/view_objects_spec.rb'
   end
 end
 
