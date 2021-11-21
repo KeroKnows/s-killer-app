@@ -24,13 +24,13 @@ module  Views
     def max_salary
       analyze_skillset
       @skillset.max_by { |skill| skill.max_salary }
-               .max_salary
+               .max_salary_str
     end
 
     def min_salary
       analyze_skillset
       @skillset.min_by { |skill| skill.min_salary }
-               .min_salary
+               .min_salary_str
     end
 
     # UTILITIES

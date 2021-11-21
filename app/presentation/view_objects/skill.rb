@@ -11,12 +11,24 @@ module Views
       @skill.name
     end
 
+    def max_salary_str
+      return "None" if max_salary.infinite?
+      "#{currency}$ #{max_salary}"
+    end
+
+    def min_salary_str
+      return "None" if min_salary.infinite?
+      "#{currency}$ #{min_salary}"
+    end
+
     def max_salary
-      @skill.salary.year_max || -Float::INFINITY
+      salary = @skill.salary.year_max
+      salary ? salary.to_i : -Float::INFINITY
     end
 
     def min_salary
-      @skill.salary.year_min || Float::INFINITY
+      salary = @skill.salary.year_min
+      salary ? salary.to_i : Float::INFINITY
     end
 
     def currency
