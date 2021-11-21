@@ -1,8 +1,9 @@
-#frozen_string_literial: true
+# frozen_string_literal: true
 
 require 'nokogiri'
 
 module Views
+  # A view object that holds all data about job
   class Job
     def initialize(job)
       @job = job
@@ -18,7 +19,7 @@ module Views
     end
 
     def brief
-      "#{description[0,300]}..."
+      "#{description[0, 300]}..."
     end
 
     def description

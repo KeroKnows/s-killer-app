@@ -1,10 +1,10 @@
-#frozen_string_literal: true
+# frozen_string_literal: true
 
 require_relative 'skill'
 require_relative 'job'
 
 module  Views
-  # View object for Skillset
+  # A view object that holds all data about Skillset
   class SkillJob
     def initialize(jobs, skills)
       @jobs = jobs
@@ -23,13 +23,13 @@ module  Views
 
     def max_salary
       analyze_skillset
-      @skillset.max_by { |skill| skill.max_salary }
+      @skillset.max_by(&:max_salary)
                .max_salary_str
     end
 
     def min_salary
       analyze_skillset
-      @skillset.min_by { |skill| skill.min_salary }
+      @skillset.min_by(&:min_salary)
                .min_salary_str
     end
 
@@ -42,9 +42,9 @@ module  Views
                            .transform_values!(&:length)
       sorted_skill = skill_count.sort_by { |_, count| count }
                                 .reverse!
-      @skillset = sorted_skill.map do |name, count| 
-        skill = @skills.find { |skill| skill.name == name }
-        Views::Skill.new(skill, count)
+      @skillset = sorted_skill.map do |name, count|
+        first_skill = @skills.find { |skill| skill.name == name }
+        Views::Skill.new(first_skill, count)
       end
     end
   end

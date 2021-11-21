@@ -78,12 +78,6 @@ module Skiller
         skill_list
       end
 
-      def merge_skillset
-        skill_count = @skills.group_by(&:name)
-                             .transform_values!(&:length)
-        skill_count.sort_by { |_, count| count }.reverse!
-      end
-
       def extract_skills_and_update_database
         # [ TODO ] analyze skillset from more data
         @jobs[..10].map do |job|

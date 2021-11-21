@@ -33,9 +33,9 @@ describe 'Test View Objects' do
 
   describe 'Test Skill Object' do
     it 'HAPPY: should extract properties properly' do
-      skill = Skiller::Entity::Skill.new(id: nil, 
-                                         job_db_id: nil, 
-                                         name: 'Python', 
+      skill = Skiller::Entity::Skill.new(id: nil,
+                                         job_db_id: nil,
+                                         name: 'Python',
                                          salary: nil)
       count = 10
       skill_object = Views::Skill.new(skill, count)
@@ -45,9 +45,9 @@ describe 'Test View Objects' do
 
     it 'HAPPY: should not return nil with salary' do
       salary = Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil)
-      skill = Skiller::Entity::Skill.new(id: nil, 
-                                         job_db_id: nil, 
-                                         name: 'Python', 
+      skill = Skiller::Entity::Skill.new(id: nil,
+                                         job_db_id: nil,
+                                         name: 'Python',
                                          salary: salary)
       skill_object = Views::Skill.new(skill, 0)
       _(skill_object.min_salary).wont_be_nil
@@ -57,13 +57,13 @@ describe 'Test View Objects' do
     it 'HAPPY: should transform salary to string' do
       currency = 'USD'
       min_salary = 10.0
-      max_salary = 10000.0
-      salary = Skiller::Value::Salary.new(year_min: min_salary, 
-                                          year_max: max_salary, 
+      max_salary = 10_000.0
+      salary = Skiller::Value::Salary.new(year_min: min_salary,
+                                          year_max: max_salary,
                                           currency: currency)
-      skill = Skiller::Entity::Skill.new(id: nil, 
-                                         job_db_id: nil, 
-                                         name: 'Python', 
+      skill = Skiller::Entity::Skill.new(id: nil,
+                                         job_db_id: nil,
+                                         name: 'Python',
                                          salary: salary)
       skill_object = Views::Skill.new(skill, 0)
       _(skill_object.min_salary_str).must_equal "#{currency}$ #{min_salary.to_i}"
@@ -75,8 +75,8 @@ describe 'Test View Objects' do
                                              name: 'Python',
                                              salary: nil_salary)
       nil_skill_object = Views::Skill.new(nil_skill, 0)
-      _(nil_skill_object.min_salary_str).must_equal "None"
-      _(nil_skill_object.max_salary_str).must_equal "None"
+      _(nil_skill_object.min_salary_str).must_equal 'None'
+      _(nil_skill_object.max_salary_str).must_equal 'None'
     end
 
     it 'HAPPY: should return the relating jobs' do
@@ -91,7 +91,7 @@ describe 'Test View Objects' do
         Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'AWS', salary: salary),
         Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'Python', salary: salary)
       ]
-      skilljob = Views::SkillJob.new(nil,  skills)
+      skilljob = Views::SkillJob.new(nil, skills)
       skilljob.skillset.each do |skill|
         _(skill).must_be_instance_of Views::Skill
       end
@@ -109,8 +109,8 @@ describe 'Test View Objects' do
         Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'JavaScript', salary: salary),
         Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'JavaScript', salary: salary)
       ]
-      skilljob = Views::SkillJob.new(nil,  skills)
-      count = skilljob.skillset.map { |skill| skill.count }
+      skilljob = Views::SkillJob.new(nil, skills)
+      count = skilljob.skillset.map(&:count)
       _(count).must_equal count.sort.reverse!
     end
 
@@ -150,7 +150,7 @@ describe 'Test View Objects' do
       ]
       max_salary_skill = Views::Skill.new(skills[0], 0)
       min_salary_skill = Views::Skill.new(skills[1], 0)
-      skilljob = Views::SkillJob.new(nil,  skills)
+      skilljob = Views::SkillJob.new(nil, skills)
       _(skilljob.max_salary).must_equal max_salary_skill.max_salary_str
       _(skilljob.min_salary).must_equal min_salary_skill.min_salary_str
     end

@@ -1,7 +1,10 @@
-#frozen_string_literal: true
+# frozen_string_literal: true
 
 module Views
+  # A view object that holds all data about skill
   class Skill
+    attr_reader :count
+
     def initialize(skill, count)
       @skill = skill
       @count = count
@@ -12,12 +15,14 @@ module Views
     end
 
     def max_salary_str
-      return "None" if max_salary.infinite?
+      return 'None' if max_salary.infinite?
+
       "#{currency}$ #{max_salary}"
     end
 
     def min_salary_str
-      return "None" if min_salary.infinite?
+      return 'None' if min_salary.infinite?
+
       "#{currency}$ #{min_salary}"
     end
 
@@ -33,10 +38,6 @@ module Views
 
     def currency
       @skill.salary.currency
-    end
-
-    def count
-      @count
     end
 
     def jobs
