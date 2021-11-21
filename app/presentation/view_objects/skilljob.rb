@@ -23,7 +23,7 @@ module  Views
     end
 
     def jobs
-      @jobs.map { |job| Views::Jobs.new(job) }
+      @jobs.map { |job| Views::Job.new(job) }
     end
 
     def max_salary

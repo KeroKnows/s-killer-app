@@ -3,7 +3,7 @@
 require 'nokogiri'
 
 module Views
-  class Jobs
+  class Job
     def initialize(job)
       @job = job
       @description = nil
