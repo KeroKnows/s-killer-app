@@ -5,7 +5,7 @@ module Skiller
     # Get an array of `Skill` from an array of Entity::Job, using Skill::Extractor
     class SkillMapper
       def initialize(job)
-        raise 'should be a full job' unless job.is_full
+        raise ArgumentError, 'Expected a job with full description' unless job.is_full
 
         @job = job
         @extractor = Skiller::Skill::Extractor.new(job)
@@ -13,7 +13,7 @@ module Skiller
 
       # Get job_list from Reed::API and make each job a DataMapper class
       def skills
-        skills = @extractor.extract.parse
+        skills = @extractor.skills
         skills.map { |skill| DataMapper.new(@job, skill).build_entity }
       end
 
