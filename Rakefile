@@ -8,8 +8,17 @@ task :default do
   puts `rake -T`
 end
 
-desc 'run spec checks'
+desc 'run unit/integration tests'
 task spec: 'spec:all'
+
+
+# desc 'run acceptance tests with watir'
+# task :spec_acceptance do
+#   puts 'NOTE: run app in test environment in another process'
+#   sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
+# end
+
+
 
 desc 'start the app with file chages watched'
 task :dev do
@@ -25,7 +34,10 @@ task :console do
 end
 
 namespace :spec do
+  # task acceptance: %i[acceptance]
   task all: %i[reed_api freecurrency_api skill_analyzer gateway_database view_objects]
+  
+
   integration_test_path = 'spec/tests/integration'
   unit_test_path = 'spec/tests/unit'
 
@@ -52,6 +64,12 @@ namespace :spec do
   desc 'spec checks of View Objects'
   task :view_objects do
     sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/view_objects_spec.rb"
+  end
+
+  desc 'run acceptance tests with watir'
+  task :spec_acceptance do
+    puts 'NOTE: run app in test environment in another process'
+    sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
   end
 end
 
