@@ -8,9 +8,6 @@ task :default do
   puts `rake -T`
 end
 
-desc 'run spec checks'
-task spec: 'spec:all'
-
 desc 'start the app with file chages watched'
 task :dev do
   sh "rerun -c 'bundle exec rackup -p 4001' --ignore 'coverage/*' --ignore 'spec/*' --ignore '*.slim'"
@@ -24,9 +21,13 @@ task :console do
   sh 'pry -r ./init.rb'
 end
 
-namespace :spec do
-  task all: %i[reed_api freecurrency_api skill_analyzer gateway_database view_objects]
+desc 'Run all tests at once'
+Rake::TestTask.new(:spec) do |t|
+  t.pattern = 'spec/*_spec.rb'
+  t.warning = false
+end
 
+namespace :spec do
   desc 'spec checks of Reed API'
   task :reed_api do
     sh 'RACK_ENV=test bundle exec ruby spec/reed_spec.rb'
