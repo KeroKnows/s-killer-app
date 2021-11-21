@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'helpers/vcr_helper'
+require_relative '../../helpers/vcr_helper'
 
 describe 'Test View Objects' do
   describe 'Test Job Object' do

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative 'helpers/vcr_helper'
+require_relative '../../helpers/vcr_helper'
 
 describe 'Test Skill Analyzer library' do
   Skiller::VcrHelper.setup_vcr
