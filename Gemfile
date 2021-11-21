@@ -40,6 +40,8 @@ group :test do
   gem 'simplecov', '~> 0'
   gem 'vcr', '~> 6.0'
   gem 'webmock', '~> 3.0'
+  gem 'watir'
+  gem 'webdrivers'
 end
 
 # Utilities
