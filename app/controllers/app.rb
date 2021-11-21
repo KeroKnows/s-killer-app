@@ -3,6 +3,8 @@
 require 'roda'
 require 'slim'
 
+require_relative '../presentation/view_objects/skilljob'
+
 module Skiller
   # Web Application for S-killer
   class App < Roda
@@ -34,9 +36,11 @@ module Skiller
 
             collector = DataCollector.new(App.config, query)
             jobs = collector.jobs
-            skills = collector.skillset
+            skills = collector.skills
 
-            view 'details', locals: { query: query, jobs: jobs, skills: skills }
+            skillset = Views::SkillJob.new(jobs, skills)
+
+            view 'details', locals: { query: query, skilljob: skillset }
           end
         end
       end
@@ -60,14 +64,12 @@ module Skiller
         end
       end
 
-      def skillset
-        @skills = if Repository::QueriesJobs.query_exist?(@query)
-                    Repository::QueriesJobs.find_skills_by_query(@query)
-                  else
-                    extract_skillset
-                  end
-        @skillset = merge_skillset
-        @skillset
+      def skills
+        if Repository::QueriesJobs.query_exist?(@query)
+          Repository::QueriesJobs.find_skills_by_query(@query)
+        else
+          extract_skillset
+        end
       end
 
       def extract_skillset

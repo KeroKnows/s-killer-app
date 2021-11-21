@@ -15,31 +15,35 @@
         .card-header Skills Required
         .card-body
           ul.list-group.list-group-flush
-            - skills.each do |skill, count|
+            - skilljob.skillset.each do |skill|
               li.list-group-item
-                span = skill
+                span = skill.name
                 span.badge.mx-2.bg-light.rounded.text-black.float-end
-                  = count
+                  = skill.count
     .col-8
       / Salary card
       .card
         .card-header Salary
         .card-body
           ul.list-group.list-group-flush
-            li.list-group-item Maximum Year Salary:
-            li.list-group-item Minimum Year Salary:
+            li.list-group-item
+              | Maximum Year Salary:
+              span< = skilljob.max_salary
+            li.list-group-item
+              | Minimum Year Salary:
+              span< = skilljob.min_salary
   
   .row
     / Job Vacancy cards
     div
-      - jobs.each do |job|
+      - skilljob.jobs.each do |job|
         .card.my-5.p-3
           p.card-subtitle.text-muted
             i.fas.fa-map-marker-alt.mx-1
             span = job.location
           h4.px-2.card-title = job.title
           hr.my-2
-          p.p-3.px-4.card-text = job.description
+          p.p-3.px-4.card-text = job.brief
         
 
   / Navigator
