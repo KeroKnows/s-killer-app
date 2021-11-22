@@ -2,6 +2,7 @@
 
 require 'roda'
 require 'slim'
+require 'slim/include'
 
 require_relative '../presentation/view_objects/skilljob'
 
@@ -10,6 +11,7 @@ module Skiller
   class App < Roda
     plugin :render, engine: 'slim', views: 'app/presentation/views_html'
     plugin :halt
+    plugin :flash
 
     route do |router|
       # GET /
@@ -30,17 +32,32 @@ module Skiller
         router.is do
           # GET /details?query=[query]
           router.get do
-            router.halt 400 unless router.params.include? 'query'
 
-            query = router.params['query']
+            # Examine the query
+            begin
+              query = router.params['query']
+              if query.empty?  # TODO: Use regex to avoid "   " inputs
+                flash[:error] = "This query is empty"
+                router.redirect('/')
+              end
+            rescue exception  # router.params.exclude 'query', not sure what the error type is
+              flash[:error] = "Query is not detected"
+              router.redirect('/')
+            end
 
+            # Extract information and map to view object
             collector = DataCollector.new(App.config, query)
             jobs = collector.jobs
             skills = collector.skills
-
             skillset = Views::SkillJob.new(jobs, skills)
 
-            view 'details', locals: { query: query, skilljob: skillset }
+            begin
+              flash[:notice] = "Your last query is '#{query}'"
+              view 'details', locals: { query: query, skilljob: skillset }
+            rescue NoMethodError => error
+              flash[:error] = "No skills extracted from '#{query}'"
+              router.redirect('/')
+            end
           end
         end
       end

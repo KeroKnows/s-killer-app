@@ -23,34 +23,45 @@ end
 
 desc 'Run all tests at once'
 Rake::TestTask.new(:spec) do |t|
-  t.pattern = 'spec/*_spec.rb'
+  t.pattern = 'spec/tests/{integration,unit}/**/*_spec.rb'
   t.warning = false
+end
+
+namespace :spec do
+  unit_test_path = 'spec/tests/unit'
+  integration_test_path = 'spec/tests/integration'
 end
 
 namespace :spec do
   desc 'spec checks of Reed API'
   task :reed_api do
-    sh 'RACK_ENV=test bundle exec ruby spec/reed_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{unit_test_path}/reed_spec.rb"
   end
 
   desc 'spec checks of FreeCurrency API'
   task :freecurrency_api do
-    sh 'RACK_ENV=test bundle exec ruby spec/freecurrency_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{unit_test_path}/freecurrency_spec.rb"
   end
 
   desc 'spec checks of Skill Analyzer'
   task :skill_analyzer do
-    sh 'RACK_ENV=test bundle exec ruby spec/skill_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/skill_spec.rb"
   end
 
   desc 'spec checks of the integration of gateway and database'
   task :gateway_database do
-    sh 'RACK_ENV=test bundle exec ruby spec/gateway_database_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/gateway_database_spec.rb"
   end
 
   desc 'spec checks of View Objects'
   task :view_objects do
-    sh 'RACK_ENV=test bundle exec ruby spec/view_objects_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/view_objects_spec.rb"
+  end
+
+  desc 'run acceptance tests with watir'
+  task :spec_acceptance do
+    puts 'NOTE: run app in test environment in another process'
+    sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
   end
 end
 
