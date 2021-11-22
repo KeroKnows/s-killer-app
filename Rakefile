@@ -57,9 +57,10 @@ namespace :spec do
   end
 
   desc 'run acceptance tests with watir'
-  task :spec_acceptance do
+  task :acceptance do
     puts 'NOTE: run app in test environment in another process'
-    sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
+    # sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
+    sh 'spec/acceptance_tests'
   end
 end
 
