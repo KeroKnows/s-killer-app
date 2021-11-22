@@ -32,16 +32,15 @@ module Skiller
         router.is do
           # GET /details?query=[query]
           router.get do
-
             # Examine the query
             begin
               query = router.params['query']
-              if query.empty?  # TODO: Use regex to avoid "   " inputs
-                flash[:error] = "This query is empty"
+              if query.empty? # TODO: Use regex to avoid "   " inputs
+                flash[:error] = 'This query is empty'
                 router.redirect('/')
               end
-            rescue exception  # router.params.exclude 'query', not sure what the error type is
-              flash[:error] = "Query is not detected"
+            rescue exception # router.params.exclude 'query', not sure what the error type is
+              flash[:error] = 'Query is not detected'
               router.redirect('/')
             end
 
@@ -54,7 +53,7 @@ module Skiller
             begin
               flash[:notice] = "Your last query is '#{query}'"
               view 'details', locals: { query: query, skilljob: skillset }
-            rescue NoMethodError => error
+            rescue NoMethodError => _e
               flash[:error] = "No skills extracted from '#{query}'"
               router.redirect('/')
             end

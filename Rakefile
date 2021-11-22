@@ -30,9 +30,7 @@ end
 namespace :spec do
   unit_test_path = 'spec/tests/unit'
   integration_test_path = 'spec/tests/integration'
-end
 
-namespace :spec do
   desc 'spec checks of Reed API'
   task :reed_api do
     sh "RACK_ENV=test bundle exec ruby #{unit_test_path}/reed_spec.rb"
@@ -65,7 +63,7 @@ namespace :spec do
   end
 end
 
-namespace :db do # rubocop:disable Metrics/BlockLength
+namespace :db do
   task :config do
     require 'sequel'
     require_relative 'config/environment' # load config info
