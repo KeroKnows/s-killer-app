@@ -6,6 +6,7 @@ require 'roda'
 require 'yaml'
 require 'figaro'
 require 'sequel'
+require 'delegate'
 
 module Skiller
   # Configuration for the App
@@ -36,5 +37,7 @@ module Skiller
         DB
       end
     end
+
+    use Rack::Session::Cookie, secret: config.SESSION_SECRET
   end
 end

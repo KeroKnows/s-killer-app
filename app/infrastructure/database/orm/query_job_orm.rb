@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/Timestamps.html
-
 require 'sequel'
 
 module Skiller
@@ -11,6 +9,10 @@ module Skiller
       many_to_one :job,
                   class: :'Skiller::Database::JobOrm',
                   key: :job_db_id
+
+      def self.find_or_create(query, job_db_id)
+        first(query: query, job_db_id: job_db_id) || create(query: query, job_db_id: job_db_id)
+      end
     end
   end
 end

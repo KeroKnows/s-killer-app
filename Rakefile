@@ -8,9 +8,6 @@ task :default do
   puts `rake -T`
 end
 
-desc 'run spec checks'
-task spec: 'spec:all'
-
 desc 'start the app with file chages watched'
 task :dev do
   sh "rerun -c 'bundle exec rackup -p 4001' --ignore 'coverage/*' --ignore 'spec/*' --ignore '*.slim'"
@@ -24,31 +21,50 @@ task :console do
   sh 'pry -r ./init.rb'
 end
 
+desc 'Run all tests at once'
+Rake::TestTask.new(:spec) do |t|
+  t.pattern = 'spec/tests/{integration,unit}/**/*_spec.rb'
+  t.warning = false
+end
+
 namespace :spec do
-  task all: %i[reed_api freecurrency_api skill_analyzer gateway_database]
+  unit_test_path = 'spec/tests/unit'
+  integration_test_path = 'spec/tests/integration'
 
   desc 'spec checks of Reed API'
   task :reed_api do
-    sh 'RACK_ENV=test bundle exec ruby spec/reed_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{unit_test_path}/reed_spec.rb"
   end
 
   desc 'spec checks of FreeCurrency API'
   task :freecurrency_api do
-    sh 'RACK_ENV=test bundle exec ruby spec/freecurrency_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{unit_test_path}/freecurrency_spec.rb"
   end
 
   desc 'spec checks of Skill Analyzer'
   task :skill_analyzer do
-    sh 'RACK_ENV=test bundle exec ruby spec/skill_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/skill_spec.rb"
   end
 
   desc 'spec checks of the integration of gateway and database'
   task :gateway_database do
-    sh 'RACK_ENV=test bundle exec ruby spec/gateway_database_spec.rb'
+    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/gateway_database_spec.rb"
+  end
+
+  desc 'spec checks of View Objects'
+  task :view_objects do
+    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/view_objects_spec.rb"
+  end
+
+  desc 'run acceptance tests with watir'
+  task :acceptance do
+    puts 'NOTE: run app in test environment in another process'
+    # sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
+    sh 'spec/acceptance_tests'
   end
 end
 
-namespace :db do # rubocop:disable Metrics/BlockLength
+namespace :db do
   task :config do
     require 'sequel'
     require_relative 'config/environment' # load config info

@@ -8,8 +8,7 @@ Sequel.migration do
       # Method name # Column
       primary_key :id
       foreign_key :job_db_id, :jobs, on_delete: :cascade
-
-      String      :skill
+      foreign_key :skill_id, :skills, on_delete: :cascade
     end
   end
 end

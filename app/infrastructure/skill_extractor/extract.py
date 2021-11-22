@@ -16,8 +16,10 @@ def extract_skillset(description):
 if __name__ == '__main__':
     import sys
     if len(sys.argv) != 2:
-        print(f'[ ERROR ] please specify the job description in command line')
+        print(f'[ ERROR ] please specify the file with job description in command line')
         exit(1)
     
-    skillset = extract_skillset(sys.argv[1])
+    with open(sys.argv[1], 'r') as f:
+        description = f.read().strip()
+    skillset = extract_skillset(description)
     print(skillset)

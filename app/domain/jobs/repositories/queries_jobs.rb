@@ -11,11 +11,10 @@ module Skiller
       end
 
       def self.find_skills_by_query(query)
-        skills = []
-        Database::QueryJobOrm.where(query: query).all.each do |query_job|
-          skills += JobsSkills.find_skills_by_job(query_job.job_db_id)
+        skill_list = Database::QueryJobOrm.where(query: query).all.map do |query_job|
+          JobsSkills.find_skills_by_job_id(query_job.job_db_id)
         end
-        skills
+        skill_list.reduce(:+)
       end
 
       def self.query_exist?(query)
@@ -26,11 +25,9 @@ module Skiller
         end
       end
 
-      def self.create(query, job_db_ids)
-        raise 'Query already exists' if query_exist?(query)
-
+      def self.find_or_create(query, job_db_ids)
         job_db_ids.map do |job_db_id|
-          Database::QueryJobOrm.create(query: query, job_db_id: job_db_id)
+          Database::QueryJobOrm.find_or_create(query, job_db_id)
         end
       end
     end

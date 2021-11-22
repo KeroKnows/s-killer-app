@@ -18,21 +18,22 @@ module Skiller
       end
 
       # Get job from Reed::API and make the job a DataMapper class
-      def job(job_id)
+      def job(job_id, inheritance = nil)
         data = @gateway.details(job_id)
-        DataMapper.new(data, true).build_entity
+        DataMapper.new(data, true, inheritance).build_entity
       end
 
       # Extracts entity specific elements from data structure
       class DataMapper
-        def initialize(data, isfull)
+        def initialize(data, is_full, inheritance = nil)
           @data = data
-          @isfull = isfull
+          @inheritance = inheritance
+          @is_full = is_full
         end
 
         def build_entity # rubocop:disable Metrics/MethodLength
           Entity::Job.new(
-            db_id: nil,
+            db_id: @inheritance&.db_id,
             job_id: @data['jobId'],
             title: @data['jobTitle'],
             description: @data['jobDescription'],
@@ -43,7 +44,7 @@ module Skiller
               currency: @data['currency']
             },
             url: @data['jobUrl'],
-            isfull: @isfull
+            is_full: @is_full
           )
         end
       end
