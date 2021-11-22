@@ -18,6 +18,7 @@ describe 'Enter Job Query' do
   index_url = 'http://127.0.0.1:4001/'
   valid_request = 'frontend engineer'
   invalid_request = 'asdf'
+  valid_request_url = valid_request.sub(' ', '+')
 
   it '(HAPPY) should be able to request a job query' do
     # Given: index page
@@ -32,7 +33,7 @@ describe 'Enter Job Query' do
     @browser.button(type: 'submit').click
 
     # Then: user jumps to the correct details url
-    @browser.url.include? valid_request.sub! ' ', '+'
+    @browser.url.include? valid_request_url
   end
 
   it '(BAD) should not be able to request an invalid query' do
@@ -77,9 +78,11 @@ describe 'View Job Details' do
 
   job_title = 'frontend engineer'
   required_skills = %w[TypeScript AWS JavaScript]
+  job_title_url = job_title.sub(' ', '+')
 
   index_url = 'http://127.0.0.1:4001/'
-  details_url = "http://127.0.0.1:4001/details?query=#{job_title.sub! ' ', '+'}"
+  # details_url = "http://127.0.0.1:4001/details?query=#{job_title.sub! ' ', '+'}"
+  details_url = "http://127.0.0.1:4001/details?query=#{job_title_url}"
 
   it '(HAPPY) should be able to read job details' do
     # Given: details page
