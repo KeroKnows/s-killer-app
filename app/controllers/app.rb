@@ -75,16 +75,15 @@ module Skiller
           @jobs = Repository::QueriesJobs.find_jobs_by_query(@query)
           @skills = Repository::QueriesJobs.find_skills_by_query(@query)
         else
-          @jobs = get_jobs_and_update_database
+          @jobs = request_jobs_and_update_database
           @skills = extract_skills_and_update_database
         end
         [@jobs, @skills]
       end
 
-      def get_jobs_and_update_database
-        job_list = @job_mapper.job_list(@query)
+      def request_jobs_and_update_database
         # [ TODO ] analyze skillset from more data
-        jobs = job_list[..10].map do |job|
+        jobs = @job_mapper.job_list(@query)[..10].map do |job|
           full_job = @job_mapper.job(job.job_id)
           Repository::Jobs.find_or_create(full_job)
         end
