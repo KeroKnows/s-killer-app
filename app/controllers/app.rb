@@ -47,7 +47,8 @@ module Skiller
             # Extract information and map to view object
             collector = DataCollector.new(App.config, query)
             jobs, skills = collector.collect_jobs_and_skills
-            skillset = Views::SkillJob.new(jobs, skills)
+            salary_distribution = Entity::SalaryDistribution.new(jobs.map(&:salary))
+            skillset = Views::SkillJob.new(jobs, skills, salary_distribution)
 
             begin
               flash[:notice] = "Your last query is '#{query}'"
