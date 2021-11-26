@@ -15,14 +15,16 @@ module Skiller
         @minimum = calculate_minimum
       end
 
+      # :reek:FeatureEnvy
       def calculate_maximum
         salaries = @salaries.filter(&:year_max)
-        salaries.length > 0 ? salaries.max_by(&:year_max).year_max : nil
+        salaries.length.positive? ? salaries.max_by(&:year_max).year_max : nil
       end
 
+      # :reek:FeatureEnvy
       def calculate_minimum
         salaries = @salaries.filter(&:year_min)
-        salaries.length > 0 ? salaries.min_by(&:year_min).year_min : nil
+        salaries.length.positive? ? salaries.min_by(&:year_min).year_min : nil
       end
     end
   end
