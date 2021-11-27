@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 # require 'minitest/autorun'
-require_relative '../../helpers/acceptance_helper.rb'
+require_relative '../../helpers/acceptance_helper'
 require_relative 'pages/details_page'
-
 
 describe 'Details Page Acceptance Tests' do
   include PageObject::PageFactory
@@ -27,6 +26,7 @@ describe 'Details Page Acceptance Tests' do
   it '(HAPPY) should be able to read job details' do
     # Given: details page
     visit(DetailsPage, using_params: { query: job_title_url }) do |page|
+      _(@browser.url).must_match details_url
       # When: user wants to see the details of a job
       # User is able to see the title
       _(page.title_element.present?).must_equal true
@@ -37,7 +37,7 @@ describe 'Details Page Acceptance Tests' do
       # Skills are properly presented
       skills = page.skills
       required_skills.map do |required_skill|
-        _(skills.include? required_skill).must_equal true
+        _(skills.include?(required_skill)).must_equal true
       end
 
       # Then: user clicked search for other jobs

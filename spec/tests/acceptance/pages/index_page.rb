@@ -14,6 +14,6 @@ class IndexPage
 
   def query_job(job_title)
     self.query = job_title
-    self.submit
+    submit
   end
 end

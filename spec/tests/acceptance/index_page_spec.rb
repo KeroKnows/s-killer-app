@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # require 'minitest/autorun'
-require_relative '../../helpers/acceptance_helper.rb'
+require_relative '../../helpers/acceptance_helper'
 require_relative 'pages/index_page'
 
 describe 'Indexpage Acceptance Tests' do
@@ -68,7 +68,6 @@ describe 'Indexpage Acceptance Tests' do
         _(page.warning_message_element.present?).must_equal true
         _(page.warning_message_element.text).must_match invalid_query_warning
       end
-  
     end
 
     it '(SAD) should not be able to request blank query' do

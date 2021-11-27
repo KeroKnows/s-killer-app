@@ -1,11 +1,10 @@
 # frozen_string_literal: true
 
-# Page object for index page
+# Page object for details page
 class DetailsPage
   include PageObject
 
-  page_url Skiller::App.config.APP_HOST +
-           '/details?query=<%=params[:query]%>'
+  page_url "#{Skiller::App.config.APP_HOST}/details?query=<%=params[:query]%>"
 
   div(:warning_message, id: 'flash_bar_danger')
   div(:success_message, id: 'flash_bar_success')
