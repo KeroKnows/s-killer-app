@@ -56,11 +56,9 @@ namespace :spec do
     sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/view_objects_spec.rb"
   end
 
-  desc 'run acceptance tests with watir'
+  desc 'spec checks of acceptance'
   task :acceptance do
-    puts 'NOTE: run app in test environment in another process'
-    # sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
-    sh 'spec/acceptance_tests'
+    sh 'RACK_ENV=test sh spec/acceptance_tests'
   end
 end
 
