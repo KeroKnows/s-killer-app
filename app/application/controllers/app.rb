@@ -4,7 +4,7 @@ require 'roda'
 require 'slim'
 require 'slim/include'
 
-require_relative '../presentation/view_objects/skilljob'
+require_relative '../../presentation/view_objects/skilljob'
 
 module Skiller
   # Web Application for S-killer
