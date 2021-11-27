@@ -9,6 +9,9 @@ GEM
     concurrent-ruby (1.1.9)
     crack (0.4.5)
       rexml
+    data_magic (1.2)
+      faker (>= 1.1.2)
+      yml_reader (>= 0.6)
     docile (1.4.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
@@ -48,6 +51,8 @@ GEM
       dry-core (~> 0.5, >= 0.5)
       dry-initializer (~> 3.0)
       dry-schema (~> 1.8, >= 1.8.0)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.4)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -71,6 +76,8 @@ GEM
     http-cookie (1.0.4)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
+    i18n (1.8.11)
+      concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     kwalify (0.7.2)
     listen (3.7.0)
@@ -92,6 +99,11 @@ GEM
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
+    page-object (2.3.1)
+      page_navigation (>= 0.10)
+      watir (>= 6.10.3)
+    page_navigation (0.10)
+      data_magic (>= 0.22)
     parser (3.0.2.0)
       ast (~> 2.4.1)
     path_expander (1.1.0)
@@ -161,6 +173,7 @@ GEM
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
+    yml_reader (0.7)
 
 PLATFORMS
   arm64-darwin-20
@@ -179,6 +192,7 @@ DEPENDENCIES
   minitest (~> 5.0)
   minitest-rg (~> 5.0)
   nokogiri (~> 1.12)
+  page-object (~> 2.3)
   pg
   pry (~> 0.13.1)
   puma (~> 5.5)

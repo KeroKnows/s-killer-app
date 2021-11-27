@@ -38,6 +38,7 @@ gem 'http', '~> 5.0'
 group :test do
   gem 'minitest', '~> 5.0'
   gem 'minitest-rg', '~> 5.0'
+  gem 'page-object', '~> 2.3'
   gem 'simplecov', '~> 0'
   gem 'vcr', '~> 6.0'
   gem 'watir', '~> 7.0'
