@@ -7,12 +7,11 @@ require_relative 'pages/details_page'
 describe 'Details Page Acceptance Tests' do
   include PageObject::PageFactory
   before do
-    @browser ||= Watir::Browser.new :chrome
+    @browser ||= Watir::Browser.new :chrome, headless: true
   end
 
   after do
     @browser.close
-    # @headless.destroy
   end
 
   job_title = 'frontend engineer'

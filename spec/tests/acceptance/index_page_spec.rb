@@ -8,12 +8,11 @@ describe 'Indexpage Acceptance Tests' do
   include PageObject::PageFactory
 
   before do
-    @browser ||= Watir::Browser.new :chrome
+    @browser ||= Watir::Browser.new :chrome, headless: true
   end
 
   after do
     @browser.close
-    # @headless.destroy
   end
 
   index_url = CONFIG.APP_HOST
