@@ -44,7 +44,7 @@
           null,
           null,
           1,
-          2,
+          3,
           null,
           null,
           1,
@@ -1184,8 +1184,56 @@
           null,
           null
         ]
+      },
+      "/Users/simon/s-killer/spec/helpers/database_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/simon/s-killer/spec/tests/acceptance/pages/details_page.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1637973678
+    "timestamp": 1637977380
   }
 }
