@@ -29,6 +29,7 @@ end
 # Validation
 gem 'dry-struct', '~> 1.4'
 gem 'dry-types', '~> 1.5'
+gem 'dry-validation'
 
 # Networking
 gem 'http', '~> 5.0'
