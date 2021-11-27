@@ -58,7 +58,7 @@ namespace :spec do
 
   desc 'spec checks of acceptance'
   task :acceptance do
-    sh "RACK_ENV=test sh spec/acceptance_tests"
+    sh 'RACK_ENV=test sh spec/acceptance_tests'
   end
 end
 
