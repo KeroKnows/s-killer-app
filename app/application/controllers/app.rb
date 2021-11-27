@@ -33,7 +33,7 @@ module Skiller
         router.is do #no condition, may be duplicate?
           router.post do
             query_form = Forms::Query.new.call(router.params)
-            // TODO: passing query_form to service object
+            # TODO: passing query_form to service object
 
             # Examine the query
             begin
