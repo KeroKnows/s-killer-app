@@ -1,4 +1,4 @@
 trap "kill 0" EXIT
 RACK_ENV=test rackup -p 4001 &
-ruby spec/tests/acceptance/home_page_spec.rb
+ruby spec/tests/acceptance/index_page_spec.rb
 ruby spec/tests/acceptance/details_page_spec.rb

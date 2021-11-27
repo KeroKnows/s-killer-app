@@ -2,9 +2,9 @@
 
 # require 'minitest/autorun'
 require_relative '../../helpers/acceptance_helper.rb'
-require_relative 'pages/home_page'
+require_relative 'pages/index_page'
 
-describe 'Homepage Acceptance Tests' do
+describe 'Indexpage Acceptance Tests' do
   include PageObject::PageFactory
 
   before do
@@ -25,10 +25,10 @@ describe 'Homepage Acceptance Tests' do
   invalid_query_warning = "No skills extracted from '#{invalid_request}'"
   empty_query_warning = 'This query is empty'
 
-  describe 'Visit Home Page' do
+  describe 'Visit Index Page' do
     it '(HAPPY) should present an input box and a submit button' do
       # Given: index page
-      visit HomePage do |page|
+      visit IndexPage do |page|
         # When: user wants to send a request
         # User is able to locate where to input and send query
         _(page.query_element.present?).must_equal true
@@ -38,7 +38,7 @@ describe 'Homepage Acceptance Tests' do
 
     it '(HAPPY) should be able to request a job query' do
       # Given: index page
-      visit HomePage do |page|
+      visit IndexPage do |page|
         # Input a valid request
         page.query_job(valid_request)
 
@@ -56,7 +56,7 @@ describe 'Homepage Acceptance Tests' do
 
     it '(BAD) should not be able to request an invalid query' do
       # Given: index page
-      visit HomePage do |page|
+      visit IndexPage do |page|
         # When: user wants to send an invalid request
         # Input an invalid request
         page.query_job(invalid_request)
@@ -73,7 +73,7 @@ describe 'Homepage Acceptance Tests' do
 
     it '(SAD) should not be able to request blank query' do
       # Given: index page
-      visit HomePage do |page|
+      visit IndexPage do |page|
         # Input an empty request
         page.query_job('')
 

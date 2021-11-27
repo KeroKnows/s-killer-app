@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-# Page object for home page
-class HomePage
+# Page object for index page
+class IndexPage
   include PageObject
 
   page_url Skiller::App.config.APP_HOST
