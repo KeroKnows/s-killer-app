@@ -28,10 +28,10 @@ module Skiller
         end
       end
 
+      # GET /details
       router.on 'details' do
-        router.is do
-          # GET /details?query=[query]
-          router.get do
+        router.is do #no condition, may be duplicate?
+          router.post do
             # Examine the query
             begin
               query = router.params['query']
