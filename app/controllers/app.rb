@@ -71,6 +71,10 @@ module Skiller
         @skills = nil
       end
 
+      # Collect job entities and skill entities from database
+      # if the query has been searched
+      # otherwise collect the entites with gateways and mappers
+      # and update the related database tables
       def collect_jobs_and_skills
         if Repository::QueriesJobs.query_exist?(@query)
           @jobs = Repository::QueriesJobs.find_jobs_by_query(@query)
