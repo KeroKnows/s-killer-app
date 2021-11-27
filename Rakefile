@@ -27,13 +27,6 @@ Rake::TestTask.new(:spec) do |t|
   t.warning = false
 end
 
-# NOTE: run `rake run:test` in another process
-desc 'Run acceptance tests'
-Rake::TestTask.new(:spec_accept) do |t|
-  t.pattern = 'spec/tests/acceptance/*_spec.rb'
-  t.warning = false
-end
-
 namespace :spec do
   unit_test_path = 'spec/tests/unit'
   integration_test_path = 'spec/tests/integration'
@@ -61,6 +54,11 @@ namespace :spec do
   desc 'spec checks of View Objects'
   task :view_objects do
     sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/view_objects_spec.rb"
+  end
+
+  desc 'spec checks of acceptance'
+  task :acceptance do
+    sh "RACK_ENV=test sh spec/acceptance_tests"
   end
 end
 
