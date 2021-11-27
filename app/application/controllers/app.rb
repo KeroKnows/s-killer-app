@@ -32,6 +32,9 @@ module Skiller
       router.on 'details' do
         router.is do #no condition, may be duplicate?
           router.post do
+            query_form = Forms::Query.new.call(router.params)
+            // TODO: passing query_form to service object
+
             # Examine the query
             begin
               query = router.params['query']
