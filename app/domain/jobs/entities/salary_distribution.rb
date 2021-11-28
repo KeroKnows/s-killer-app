@@ -8,9 +8,10 @@ module Skiller
 
       def initialize(salaries, currency = 'TWD')
         @currency = currency
-        @salaries = salaries.map do |salary|
-          salary.exchange_currency(@currency)
-        end
+        # @salaries = salaries.map do |salary|
+        #   salary.exchange_currency(@currency)
+        # end
+        @salaries = salaries
         @maximum = calculate_maximum
         @minimum = calculate_minimum
       end
