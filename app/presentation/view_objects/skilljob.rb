@@ -6,14 +6,17 @@ require_relative 'job'
 module  Views
   # A view object that holds all data about Skillset
   class SkillJob
-    def initialize(jobs, skills, salary_distribution)
+    attr_reader :query
+    
+    def initialize(query, jobs, skills, salary_distribution)
+      @query = query
       @jobs = jobs
       @skills = skills
       @salary_distribution = salary_distribution
       @skillset = nil
     end
 
-    def skillset
+    def skills
       analyze_skillset
       @skillset
     end
