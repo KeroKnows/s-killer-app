@@ -28,6 +28,7 @@ module Skiller
 
       # Collect jobs from database if the query has been searched;
       # otherwise, the entites will be created by mappers stored into the database
+      # :reek:UncommunicativeVariableName for rescued error
       def collect_jobs(input)
         input[:jobs] = search_jobs(input)
 
@@ -42,6 +43,7 @@ module Skiller
 
       # Collect skills from database if the query has been searched;
       # otherwise, the entities will be created by mappers and stored into the database
+      # :reek:UncommunicativeVariableName for rescued error
       def collect_skills(input)
         input[:skills] = search_skills(input)
 
@@ -55,6 +57,7 @@ module Skiller
       end
 
       # Analyze the salary distribution from all related jobs
+      # :reek:UncommunicativeVariableName for rescued error
       def calculate_salary_distribution(input)
         all_salary = input[:jobs].map(&:salary)
         input[:salary_dist] = Entity::SalaryDistribution.new(all_salary)
@@ -67,6 +70,7 @@ module Skiller
       # Note that this MUST be executed as the last step,
       #   when the jobs and skills are all correctly extracted,
       #   or the skills of new jobs will not be analyzed forever
+      # :reek:UncommunicativeVariableName for rescued error
       def store_query_to_db(input)
         Repository::QueriesJobs.find_or_create(input[:query],
                                                input[:jobs].map(&:db_id))
