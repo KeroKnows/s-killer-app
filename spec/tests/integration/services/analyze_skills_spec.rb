@@ -17,23 +17,29 @@ describe 'Integration Test for AnalyzeSkills Service' do
 
   describe 'Data validation' do
     it 'BAD: should fail empty query' do
-      skip 'not implemented'
       # GIVEN: an empty query
+      empty_query = ''
+      query_form = Skiller::Forms::Query.new.call(query: empty_query)
 
       # WHEN: the service is called
+      jobskill = Skiller::Service::AnalyzeSkills.new.call(query_form)
 
       # THEN: the service should fail
-      
+      _(jobskill.failure?).must_equal true
+      _(jobskill.failure.downcase).must_include 'invalid'
     end
 
     it 'SAD: should fail with invalid request' do
-      skip 'not implemented'
       # GIVEN: an invalid query
+      invalid_query = '  '
+      query_form = Skiller::Forms::Query.new.call(query: invalid_query)
 
       # WHEN: the service is called
+      jobskill = Skiller::Service::AnalyzeSkills.new.call(query_form)
 
       # THEN: the service should fail
-      
+      _(jobskill.failure?).must_equal true
+      _(jobskill.failure.downcase).must_include 'invalid'
     end
   end
 
