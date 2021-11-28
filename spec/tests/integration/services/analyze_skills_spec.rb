@@ -8,7 +8,7 @@ describe 'Integration Test for AnalyzeSkills Service' do
   Skiller::VcrHelper.setup_vcr
 
   before do
-    Skiller::VcrHelper.configure_vcr_for_reed(GATEWAY_DATABASE_CASSETTE_FILE)
+    Skiller::VcrHelper.configure_vcr_for_reed(SERVICE_CASSETTE_FILE)
   end
 
   after do
