@@ -3,11 +3,6 @@
 source 'https://rubygems.org'
 ruby File.read('.ruby-version').strip
 
-# Production
-group :production do
-  gem 'pg'
-end
-
 # Developing tools
 gem 'pry', '~> 0.13.1'
 
@@ -26,10 +21,16 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
 end
 
+# Production
+group :production do
+  gem 'pg'
+end
+
 # Validation
 gem 'dry-struct', '~> 1.4'
+gem 'dry-transaction', '~> 0.13'
 gem 'dry-types', '~> 1.5'
-gem 'dry-validation'
+gem 'dry-validation', '~> 1.7'
 
 # Networking
 gem 'http', '~> 5.0'

@@ -4,8 +4,6 @@ require 'roda'
 require 'slim'
 require 'slim/include'
 
-require_relative '../../presentation/view_objects/skilljob'
-
 module Skiller
   # Web Application for S-killer
   class App < Roda
@@ -48,10 +46,18 @@ module Skiller
             end
 
             # Extract information and map to view object
-            collector = DataCollector.new(App.config, query)
-            jobs, skills = collector.collect_jobs_and_skills
-            salary_distribution = Entity::SalaryDistribution.new(jobs.map(&:salary))
-            skillset = Views::SkillJob.new(jobs, skills, salary_distribution)
+            # collector = DataCollector.new(App.config, query)
+            # jobs, skills = collector.collect_jobs_and_skills
+            # salary_distribution = Entity::SalaryDistribution.new(jobs.map(&:salary))
+            skill_analysis = Service::AnalyzeSkills.new.call(query_form)
+            if skill_analysis.failure?
+              puts 'failure'
+            else
+              puts 'success'
+            end
+            skills = skill_analysis.value!
+
+            skillset = Views::SkillJob.new(skills[:jobs], skills[:skills], skills[:salary_dist])
 
             begin
               flash[:notice] = "Your last query is '#{query}'"
@@ -74,10 +80,6 @@ module Skiller
         @skills = nil
       end
 
-      # Collect job entities and skill entities from database
-      # if the query has been searched
-      # otherwise collect the entites with gateways and mappers
-      # and update the related database tables
       def collect_jobs_and_skills
         if Repository::QueriesJobs.query_exist?(@query)
           @jobs = Repository::QueriesJobs.find_jobs_by_query(@query)
