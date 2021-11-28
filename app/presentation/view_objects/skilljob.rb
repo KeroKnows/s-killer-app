@@ -6,13 +6,17 @@ require_relative 'job'
 module  Views
   # A view object that holds all data about Skillset
   class SkillJob
-    def initialize(jobs, skills)
+    attr_reader :query
+
+    def initialize(query, jobs, skills, salary_distribution)
+      @query = query
       @jobs = jobs
       @skills = skills
+      @salary_distribution = salary_distribution
       @skillset = nil
     end
 
-    def skillset
+    def skills
       analyze_skillset
       @skillset
     end
@@ -22,15 +26,19 @@ module  Views
     end
 
     def max_salary
-      analyze_skillset
-      @skillset.max_by(&:max_salary)
-               .max_salary_str
+      maximum = @salary_distribution.maximum
+      maximum = maximum ? maximum.to_i : Float::INFINITY
+      return 'None' if maximum.infinite?
+
+      "#{@salary_distribution.currency}$ #{maximum}"
     end
 
     def min_salary
-      analyze_skillset
-      @skillset.min_by(&:min_salary)
-               .min_salary_str
+      minimum = @salary_distribution.minimum
+      minimum = minimum ? minimum.to_i : -Float::INFINITY
+      return 'None' if minimum.infinite?
+
+      "#{@salary_distribution.currency}$ #{minimum}"
     end
 
     # UTILITIES

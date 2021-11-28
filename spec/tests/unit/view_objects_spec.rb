@@ -3,6 +3,16 @@
 require_relative '../../spec_helper'
 
 describe 'Test View Objects' do
+  Skiller::VcrHelper.setup_vcr
+
+  before do
+    Skiller::VcrHelper.configure_vcr_for_reed(FREECURRENCY_CASSETTE_FILE)
+  end
+
+  after do
+    Skiller::VcrHelper.eject_vcr
+  end
+
   describe 'Test Job Object' do
     before do
       salary = Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil)
@@ -43,42 +53,6 @@ describe 'Test View Objects' do
       _(skill_object.count).must_equal count
     end
 
-    it 'HAPPY: should not return nil with salary' do
-      salary = Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil)
-      skill = Skiller::Entity::Skill.new(id: nil,
-                                         job_db_id: nil,
-                                         name: 'Python',
-                                         salary: salary)
-      skill_object = Views::Skill.new(skill, 0)
-      _(skill_object.min_salary).wont_be_nil
-      _(skill_object.max_salary).wont_be_nil
-    end
-
-    it 'HAPPY: should transform salary to string' do
-      currency = 'USD'
-      min_salary = 10.0
-      max_salary = 10_000.0
-      salary = Skiller::Value::Salary.new(year_min: min_salary,
-                                          year_max: max_salary,
-                                          currency: currency)
-      skill = Skiller::Entity::Skill.new(id: nil,
-                                         job_db_id: nil,
-                                         name: 'Python',
-                                         salary: salary)
-      skill_object = Views::Skill.new(skill, 0)
-      _(skill_object.min_salary_str).must_equal "#{currency}$ #{min_salary.to_i}"
-      _(skill_object.max_salary_str).must_equal "#{currency}$ #{max_salary.to_i}"
-
-      nil_salary = Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil)
-      nil_skill = Skiller::Entity::Skill.new(id: nil,
-                                             job_db_id: nil,
-                                             name: 'Python',
-                                             salary: nil_salary)
-      nil_skill_object = Views::Skill.new(nil_skill, 0)
-      _(nil_skill_object.min_salary_str).must_equal 'None'
-      _(nil_skill_object.max_salary_str).must_equal 'None'
-    end
-
     it 'HAPPY: should return the relating jobs' do
       skip 'NOT IMPLEMENTED'
     end
@@ -91,8 +65,8 @@ describe 'Test View Objects' do
         Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'AWS', salary: salary),
         Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'Python', salary: salary)
       ]
-      skilljob = Views::SkillJob.new(nil, skills)
-      skilljob.skillset.each do |skill|
+      skilljob = Views::SkillJob.new(nil, nil, skills, nil)
+      skilljob.skills.each do |skill|
         _(skill).must_be_instance_of Views::Skill
       end
     end
@@ -109,8 +83,8 @@ describe 'Test View Objects' do
         Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'JavaScript', salary: salary),
         Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'JavaScript', salary: salary)
       ]
-      skilljob = Views::SkillJob.new(nil, skills)
-      count = skilljob.skillset.map(&:count)
+      skilljob = Views::SkillJob.new(nil, nil, skills, nil)
+      count = skilljob.skills.map(&:count)
       _(count).must_equal count.sort.reverse!
     end
 
@@ -133,7 +107,7 @@ describe 'Test View Objects' do
                                        url: 'URL',
                                        is_full: true)]
 
-      skilljob = Views::SkillJob.new(jobs, nil)
+      skilljob = Views::SkillJob.new(nil, jobs, nil, nil)
       skilljob.jobs.each do |job|
         _(job).must_be_instance_of Views::Job
       end
@@ -143,16 +117,11 @@ describe 'Test View Objects' do
       max_salary = Skiller::Value::Salary.new(year_min: 10.0, year_max: 1000.0, currency: 'USD')
       min_salary = Skiller::Value::Salary.new(year_min: 1.0, year_max: 100.0, currency: 'USD')
       nil_salary = Skiller::Value::Salary.new(year_min: nil, year_max: nil, currency: nil)
-      skills = [
-        Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'Ruby', salary: max_salary),
-        Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'JavaScript', salary: min_salary),
-        Skiller::Entity::Skill.new(id: nil, job_db_id: nil, name: 'Python', salary: nil_salary)
-      ]
-      max_salary_skill = Views::Skill.new(skills[0], 0)
-      min_salary_skill = Views::Skill.new(skills[1], 0)
-      skilljob = Views::SkillJob.new(nil, skills)
-      _(skilljob.max_salary).must_equal max_salary_skill.max_salary_str
-      _(skilljob.min_salary).must_equal min_salary_skill.min_salary_str
+      salaries = [max_salary, min_salary, nil_salary]
+      salary_distribution = Skiller::Entity::SalaryDistribution.new(salaries, 'TWD')
+      skilljob = Views::SkillJob.new(nil, nil, nil, salary_distribution)
+      _(skilljob.max_salary).must_equal "TWD$ #{max_salary.exchange_currency('TWD').year_max.to_i}"
+      _(skilljob.min_salary).must_equal "TWD$ #{min_salary.exchange_currency('TWD').year_min.to_i}"
     end
   end
 end

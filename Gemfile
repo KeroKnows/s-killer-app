@@ -3,11 +3,6 @@
 source 'https://rubygems.org'
 ruby File.read('.ruby-version').strip
 
-# Production
-group :production do
-  gem 'pg'
-end
-
 # Developing tools
 gem 'pry', '~> 0.13.1'
 
@@ -26,9 +21,16 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
 end
 
+# Production
+group :production do
+  gem 'pg'
+end
+
 # Validation
 gem 'dry-struct', '~> 1.4'
+gem 'dry-transaction', '~> 0.13'
 gem 'dry-types', '~> 1.5'
+gem 'dry-validation', '~> 1.7'
 
 # Networking
 gem 'http', '~> 5.0'
@@ -37,6 +39,7 @@ gem 'http', '~> 5.0'
 group :test do
   gem 'minitest', '~> 5.0'
   gem 'minitest-rg', '~> 5.0'
+  gem 'page-object', '~> 2.3'
   gem 'simplecov', '~> 0'
   gem 'vcr', '~> 6.0'
   gem 'watir', '~> 7.0'

@@ -1,3 +1,5 @@
-trap "kill 0" EXIT
-RACK_ENV=test rackup -p 4001 &
-ruby spec/tests/acceptance/acceptance_spec.rb
+RACK_ENV=test rackup -o 127.0.0.1 -p 4001 &
+for test in spec/tests/acceptance/*.rb; do
+    bundle exec ruby $test
+done
+kill %1

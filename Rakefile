@@ -43,24 +43,27 @@ namespace :spec do
 
   desc 'spec checks of Skill Analyzer'
   task :skill_analyzer do
-    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/skill_spec.rb"
-  end
-
-  desc 'spec checks of the integration of gateway and database'
-  task :gateway_database do
-    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/gateway_database_spec.rb"
+    sh "RACK_ENV=test bundle exec ruby #{unit_test_path}/skill_spec.rb"
   end
 
   desc 'spec checks of View Objects'
   task :view_objects do
-    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/view_objects_spec.rb"
+    sh "RACK_ENV=test bundle exec ruby #{unit_test_path}/view_objects_spec.rb"
   end
 
-  desc 'run acceptance tests with watir'
+  desc 'spec checks of the integration of gateway and database'
+  task :gateway_database do
+    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/layers/gateway_database_spec.rb"
+  end
+
+  desc 'spec checks of the integration of service'
+  task :service_analyzeskill do
+    sh "RACK_ENV=test bundle exec ruby #{integration_test_path}/services/analyze_skills_spec.rb"
+  end
+
+  desc 'spec checks of acceptance'
   task :acceptance do
-    puts 'NOTE: run app in test environment in another process'
-    # sh 'ruby spec/tests/acceptance/acceptance_spec.rb'
-    sh 'spec/acceptance_tests'
+    sh 'RACK_ENV=test sh spec/acceptance_tests'
   end
 end
 

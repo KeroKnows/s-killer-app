@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:33 GMT
+      - Sun, 28 Nov 2021 10:02:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -35,12 +35,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=sdj9GOR1-SG1B82DLLAO06sxb1u1oXVswbPaWgdWSWiCecONDsXYmqxru6Al01R2l3y8Sx-hrbVLLlHd6U42dLZ-Lw24EZu_wWm-cBAsKQtDUe2G1V9irvOkUy76q0MX6JMisg2;
-        expires=Sun, 28-Nov-2021 10:10:32 GMT; path=/; HttpOnly"
-      - __cf_bm=udxl1JvfE5Ho2INLwC58iUAK7ZdspMnV9PCl3Pl14Nk-1638088833-0-Ae7O8q3jaQmiY8RH7/57eHGkkfMX6r0H0ma2apSp+uT9J86vXLmwsiF9yVWC+0Dj4RM8KqWCJsjXpbowjRcCjrY=;
-        path=/; expires=Sun, 28-Nov-21 09:10:33 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=kQ5jot453uIonlsQLo71vH_V6A3U4eTuMqcevJHQ4S_MKWkSro1PmmbPpeDRokIEhFPHi5cfoAvksWGkXDz8FprL3fT1xNf9DrJZcZglJFLiC1EixvLKhRNe0vtMYd3K5v6frg2;
+        expires=Sun, 28-Nov-2021 11:32:32 GMT; path=/; HttpOnly"
+      - __cf_bm=QHvOYq1uPNBtTkeMTnSODcMclTTe6W0q5m9PESlHqFQ-1638093753-0-Af1/p2uWyStluMIxyh3JJ3Ft82uBoFGOGYX1DxL8WwpvLMvW4Z0LImsDO+QtFteXJY3XtBFUcl0M2W56n+oJEBg=;
+        path=/; expires=Sun, 28-Nov-21 10:32:33 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=aac3ee5f39f205354f5d2c5e5c653484f1e6a556-1638088833; path=/; domain=.reed.co.uk;
+      - __cfruid=43fa17d5e3410e368540c7236756fbbde7b1898e-1638093753; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -68,10 +68,18 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524abc694d6b60-TPE
+      - 6b52c2d93d526b6f-TPE
     body:
       encoding: UTF-8
-      string: '{"results":[{"jobId":44792847,"employerId":300264,"employerName":"Client
+      string: '{"results":[{"jobId":44710222,"employerId":300264,"employerName":"Client
+        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
+        Web Developer Python Django","locationName":"London","minimumSalary":55000.00,"maximumSalary":65000.00,"currency":"GBP","expirationDate":"14/12/2021","date":"16/11/2021","jobDescription":"Backend
+        Web Developer / Software Engineer (Python Django) *Hybrid WfH*. Do you have
+        a good knowledge of Computer Science and Python development skills? You could
+        be progressing your career at a high growth tech start-up within the digital
+        marketing space. As a Backend Web Developer you will focus on a web based
+        application, working across the full development lifecycle with a focus on
+        Python and Django / Flask backend development.<br... ","applications":8,"jobUrl":"https://www.reed.co.uk/jobs/backend-web-developer-python-django/44710222"},{"jobId":44792847,"employerId":300264,"employerName":"Client
         Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
         Web Developer JavaScript Node.js API","locationName":"Camden","minimumSalary":65000.00,"maximumSalary":75000.00,"currency":"GBP","expirationDate":"22/12/2021","date":"24/11/2021","jobDescription":"Backend
         Web Developer (JavaScript Node.js API) *Hybrid WfH*. Would you like to progress
@@ -317,7 +325,7 @@ http_interactions:
         independent thinking and self-motivation• No micro-managing every task• Love
         “crazy” ideas, and giving our people the time and resources needed to make
         those ideas real• Follow a very agile mindset• A flat hierarchy - enjoy meeting
-        up in... ","applications":2,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer/44774030"},{"jobId":44773559,"employerId":497095,"employerName":"RJC
+        up in... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer/44774030"},{"jobId":44773559,"employerId":497095,"employerName":"RJC
         Group LTD","employerProfileId":null,"employerProfileName":null,"jobTitle":"Software
         Developer - Java, Spring Boot, REST, Kafka - London","locationName":"London","minimumSalary":75000.00,"maximumSalary":110000.00,"currency":"GBP","expirationDate":"03/01/2022","date":"22/11/2021","jobDescription":"
         Senior Backend Developer - &#163;110k salary Our London based FinTech client
@@ -547,15 +555,7 @@ http_interactions:
         great success? As a Backend Software Engineer you''ll collaborate with a small,
         highly  talented team to design and develop new features and services for
         the core product as it scales; an adventure travel booking eCommerce site.
-        You''ll be using the latest .Net techno... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-c-net-core-aws/44681796"},{"jobId":44710222,"employerId":300264,"employerName":"Client
-        Server Ltd.","employerProfileId":null,"employerProfileName":null,"jobTitle":"Backend
-        Web Developer Python Django","locationName":"London","minimumSalary":55000.00,"maximumSalary":65000.00,"currency":"GBP","expirationDate":"14/12/2021","date":"16/11/2021","jobDescription":"Backend
-        Web Developer / Software Engineer (Python Django) *Hybrid WfH*. Do you have
-        a good knowledge of Computer Science and Python development skills? You could
-        be progressing your career at a high growth tech start-up within the digital
-        marketing space. As a Backend Web Developer you will focus on a web based
-        application, working across the full development lifecycle with a focus on
-        Python and Django / Flask backend development.<br... ","applications":7,"jobUrl":"https://www.reed.co.uk/jobs/backend-web-developer-python-django/44710222"},{"jobId":44677663,"employerId":415711,"employerName":"Explore
+        You''ll be using the latest .Net techno... ","applications":1,"jobUrl":"https://www.reed.co.uk/jobs/backend-software-engineer-c-net-core-aws/44681796"},{"jobId":44677663,"employerId":415711,"employerName":"Explore
         Group","employerProfileId":null,"employerProfileName":null,"jobTitle":"Senior
         Backend Developer","locationName":"London","minimumSalary":50000.00,"maximumSalary":80000.00,"currency":"GBP","expirationDate":"23/12/2021","date":"11/11/2021","jobDescription":"
         Backend Developer (PHP with Symfony/Laravel) Salary: &#163;50,000 - &#163;80,000
@@ -825,11 +825,11 @@ http_interactions:
         with one of the UK''s fastest growing online marketplace''s who are in need
         of a Backend Developer specialising in Node.js. This is a fantastic opportunity
         to work for a very tech focused start-up with great financial backing, now
-        in scale-up mode ... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer-nodejs-contract/44581151"}],"ambiguousLocations":[],"totalResults":833}'
-  recorded_at: Sun, 28 Nov 2021 08:40:33 GMT
+        in scale-up mode ... ","applications":3,"jobUrl":"https://www.reed.co.uk/jobs/backend-developer-nodejs-contract/44581151"}],"ambiguousLocations":[],"totalResults":834}'
+  recorded_at: Sun, 28 Nov 2021 10:02:33 GMT
 - request:
     method: get
-    uri: https://www.reed.co.uk/api/1.0/jobs/44792847
+    uri: https://www.reed.co.uk/api/1.0/jobs/44710222
     body:
       encoding: UTF-8
       string: ''
@@ -848,11 +848,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:33 GMT
+      - Sun, 28 Nov 2021 10:02:35 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '2255'
+      - '2146'
       Connection:
       - close
       Cache-Control:
@@ -862,12 +862,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=4Nkia_nLFK3haG6-Bv72wxYn2zaxdh0IkRNV5yEbAEE_marNfXU_mAW72V0p89NKALQYRXHFwGZzFyRl4jIb1uljDQUsaFgaufSwQ7upDHpZZfC55nBZpB8AN9r3865R5CvWaw2;
-        expires=Sun, 28-Nov-2021 10:10:33 GMT; path=/; HttpOnly"
-      - __cf_bm=tsPcsOJS4kmJ6fSx.GNF8GpUbdVAUoGbJTK4zziBq8Q-1638088833-0-AaYer+GYLRX7lBBvm8rwuEKvjGK3QK6zvYswhwrJDzLssOrRdLh+d/QlMff3cQEtEGpCSji/3Kq7/KSvA69v2Bc=;
-        path=/; expires=Sun, 28-Nov-21 09:10:33 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=WOp4CEy4WfwYkmhDke2BT3PAEoMg0zObXiH8v1m7m3Xp_RHK_UDecjJClOFI4X-RRmMM4HM5mUSh6gUS2x8LmjDHwFg7wQwQHvnXh5l5pYbrTn4vmrBcx6VIaxrpJHXX_-fGjQ2;
+        expires=Sun, 28-Nov-2021 11:32:35 GMT; path=/; HttpOnly"
+      - __cf_bm=Qa5QLHI8WzXiogGjojRXshiihnhHM1pqm6oF5wGUjVI-1638093755-0-Ad6efBneZWramMxe3X/aoR7YHitgfPq742hU6s/LCLaVMTRzjO3dYUzVeujgu8nUAjdIFdXeJzwljz3FJLTpdd8=;
+        path=/; expires=Sun, 28-Nov-21 10:32:35 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=aac3ee5f39f205354f5d2c5e5c653484f1e6a556-1638088833; path=/; domain=.reed.co.uk;
+      - __cfruid=7a90f27861d3d6e98a2e9e3636280fbcf3b6ffe6-1638093755; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -895,7 +895,102 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524ac9b9856a80-TPE
+      - 6b52c2ea5f575706-TPE
+    body:
+      encoding: UTF-8
+      string: '{"employerId":300264,"employerName":"Client Server Ltd.","jobId":44710222,"jobTitle":"Backend
+        Web Developer Python Django","locationName":"London","minimumSalary":55000.0000,"maximumSalary":65000.0000,"yearlyMinimumSalary":55000.0000,"yearlyMaximumSalary":65000.0000,"currency":"GBP","salaryType":"per
+        annum","salary":"£55,000 - £65,000 per annum","datePosted":"16/11/2021","expirationDate":"14/12/2021","externalUrl":null,"jobUrl":"https://www.reed.co.uk/jobs/backend-web-developer-python-django/44710222","partTime":false,"fullTime":true,"contractType":"Permanent","jobDescription":"Backend
+        Web Developer / Software Engineer (Python Django) *Hybrid WfH*. Do you have
+        a good knowledge of Computer Science and Python development skills? You could
+        be progressing your career at a high growth tech start-up within the digital
+        marketing space. <br /><br />As a Backend Web Developer you will focus on
+        a web based application, working across the full development lifecycle with
+        a focus on Python and Django / Flask backend development.<br />The company
+        has received significant funding and has ambitious growth plans, this is a
+        great time to get on board with share options as part of the package. <br
+        /><br />There''s a remote interview and onboarding process as well as the
+        ability to work from home; you''ll join the team in the London office for
+        around two days a month for meet-ups with the remaining work from home (or
+        more office time if desired).<br /><br />Requirements:<br />*You have strong
+        Python coding skills including Django (or Flask)<br />*You have full lifecycle
+        development experience<br />*You have TDD / unit testing experience and a
+        good understanding of CI/CD pipelines <br />*You''re keen to work in a start-up
+        environment where you can influence the tech strategy <br />*You''re collaborative
+        and pragmatic with great communication skills<br /><br />As a Backend Web
+        Developer / Software Engineer you will earn a competitive salary (to &#163;65k)
+        plus bonus and share options.<br /><br />Apply now or call to find out more
+        about this Backend Web Developer / Software Engineer (Python Django) opportunity.","applicationCount":8}'
+  recorded_at: Sun, 28 Nov 2021 10:02:35 GMT
+- request:
+    method: get
+    uri: https://www.reed.co.uk/api/1.0/jobs/44792847
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Authorization:
+      - Basic <REED_TOKEN>
+      Connection:
+      - close
+      Host:
+      - www.reed.co.uk
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '2255'
+      Connection:
+      - close
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      Set-Cookie:
+      - ".ASPXANONYMOUS=s1k6SlHOg_nWtn5otQ4p9dgdu2Qr5apGzHKuT4KTebU1lYPVe66hro72Ja7cw-bDMj7wJpdqAg5anxrLOybYXNn1eC4IVk_ErYXM73fDDNEQPJvQLqpdZ5nX3VXO7eL6sq1b6g2;
+        expires=Sun, 28-Nov-2021 11:32:36 GMT; path=/; HttpOnly"
+      - __cf_bm=eZZnYd4dw2NHoj6bZgf3I781sZyzKmiZy0KrU2Q2BF4-1638093756-0-AZx6CUBi0sxz0g5VAvTuJTfHsQfd3TJIDMrU7+Cxby97bW7gCTBNLvScmaambDs1QXudPwV/OXLZd23kKGGTEtM=;
+        path=/; expires=Sun, 28-Nov-21 10:32:36 GMT; domain=.reed.co.uk; HttpOnly;
+        Secure; SameSite=None
+      - __cfruid=b43a053c4d3e6ddc5d13ceecc0c3bd0c938bd1f2-1638093756; path=/; domain=.reed.co.uk;
+        HttpOnly; Secure; SameSite=None
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS, PUT, DELETE
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=15768000; includeSubDomains
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - frame-src 'self' 'unsafe-eval' 'unsafe-inline' player.vimeo.com *.vimeo.com
+        googletagmanager.com *.googletagmanager.com youtube.com *.youtube.com facebook.com
+        *.facebook.com google.com *.google.com *.googlesyndication.com ff.doubleclick.net
+        *.doubleclick.net *.criteo.com *.hotjar.com;
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c2f2cfe93138-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":300264,"employerName":"Client Server Ltd.","jobId":44792847,"jobTitle":"Backend
@@ -922,7 +1017,7 @@ http_interactions:
         /><br />As a Backend Web Developer you will earn a competitive salary (to
         &#163;75k) plus benefits.<br /><br />Apply now or call to find out more about
         this Backend Web Developer (JavaScript Node.js API) opportunity.","applicationCount":3}'
-  recorded_at: Sun, 28 Nov 2021 08:40:33 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:36 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44708450
@@ -944,7 +1039,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:35 GMT
+      - Sun, 28 Nov 2021 10:02:37 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -958,12 +1053,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=ujGimbmmwCrrbBt84qLiTaVTCJ-RFZE3evIwOqzZ8DS5BQkFZz3im8qzg8Dgx3fGTk62zQPwjhpjOkoN945dVLza9dO32CA8Fe_r_1nLhqSjYkENJhIMeQ5iunvmsF8jrBpwDw2;
-        expires=Sun, 28-Nov-2021 10:10:35 GMT; path=/; HttpOnly"
-      - __cf_bm=XDWSGjN4sPF4bahWeLYirTmtX.G_7.pMH5NdVYyLuok-1638088835-0-AaH4F2OstS4Qee+x4UTGjrKyHAkG5pZYq+MbMMwHqZvgDblFvfpMMFvjndbyaN9iTnQEKDfz7G/8obkpyByqLCI=;
-        path=/; expires=Sun, 28-Nov-21 09:10:35 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=PvAiGWArVd8kf-QXQrLQ54DOqDKVo96tBiZiAfHlNucd2mGNjao-23lDY4rQwv-0xDAMbX3Q_ay9EqZoXcdeA-jY9SYS3pbRnRmgTojtwKA8UObdkrWMFmXTGPg8gr5eZdRCsA2;
+        expires=Sun, 28-Nov-2021 11:32:37 GMT; path=/; HttpOnly"
+      - __cf_bm=O.5dsgW_S6sI4A3GApYbGNPSx24Bqq11_eK8N1L3yPQ-1638093757-0-AVkrW+uJONKfbpin9RA6r4DcHsSmkhLV3+hf0Em/khfB/rvfKvqz+WLw417d51E63xYZTIIQ98jgV6Lvw6LvEEo=;
+        path=/; expires=Sun, 28-Nov-21 10:32:37 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=79ba010c0c64ca3c02ff277a3980c2bc7739147f-1638088835; path=/; domain=.reed.co.uk;
+      - __cfruid=aa0190eba1aaf4f9dc6bdd7bea2b5de8e7a50160-1638093757; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -991,7 +1086,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524accad806a99-TPE
+      - 6b52c2fa88e06a93-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":247035,"employerName":"CORECRUITMENT","jobId":44708450,"jobTitle":"Backend
@@ -1019,7 +1114,7 @@ http_interactions:
         details further, please apply today or send your cv to </em></p> <p>Get social…….</p>
         <p>http://</p> <p>https://COREcruitmentDOTcom/</p> <p>Tweet us @COREcruitment&nbsp;</p>
         ","applicationCount":6}'
-  recorded_at: Sun, 28 Nov 2021 08:40:35 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:37 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44791392
@@ -1041,7 +1136,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:36 GMT
+      - Sun, 28 Nov 2021 10:02:39 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1055,12 +1150,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=mG-PIxLdFhQmQ56rpY63JLptFWlIuISywh6RjOxuExgYMKPkGwrV6TQA0EZ9NRKg3lhkj7vZXhheRPB7b589bDuvT_MmBINg4ob-43rqnkGte5HpQlfJhaHVRwlpCs1VsuRQcg2;
-        expires=Sun, 28-Nov-2021 10:10:36 GMT; path=/; HttpOnly"
-      - __cf_bm=bpZu4N1G67DJM_jaI6gRsZKsGTnC.SQ6kJSP0Hc0QBs-1638088836-0-AZqLvWEtQoE1dQVcxJ8IxdqLtgXajPWcwupb9dfpMfr5Z53cwJ0hezbugY73ZNyYQ9zwPSuAE3LU1mGBMk0uoig=;
-        path=/; expires=Sun, 28-Nov-21 09:10:36 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=6Ht2tfWKSAltKhwm6CU0ynQq_iC0Hf_NgM54ksb3kQF8LvGNzSeL7R0C9KiWHdJjZ0ZAFzZkojf4jomYOZFepUTp7xTNwgVMrXzq0nroc7yaNPX0jaxRNhQSNrDe-_2k-NgFWg2;
+        expires=Sun, 28-Nov-2021 11:32:38 GMT; path=/; HttpOnly"
+      - __cf_bm=8Qb55u8.dsPDyqnqxkjm5tRDfL2J4v._pIdX_sEGPHY-1638093759-0-AQN1yeveVy9zNjsLA+8UJlV9shvEKDcvvSdZj0oAy27W+KP1YB2mxzOlBXsX7efYDAEUYYQxZpcD1W/Cvyxa5rA=;
+        path=/; expires=Sun, 28-Nov-21 10:32:39 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=629d69a3df1af9dc1f1e1e3aae968c847cd58917-1638088836; path=/; domain=.reed.co.uk;
+      - __cfruid=870ef5383d5f01c54c62573ea8f1f2c0ba11ea14-1638093759; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1088,7 +1183,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524ad4e91c6a92-TPE
+      - 6b52c302d9c640ff-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":415711,"employerName":"Explore Group","jobId":44791392,"jobTitle":"Senior
@@ -1107,7 +1202,7 @@ http_interactions:
         social media experience</li><li>AWS</li><li>Sequelize</li><li>Event driven
         architecture</li></ul> <p><strong>How To Apply</strong></p> <p>Please email
         your resume CV to </p> <p>Look forward to hearing from you!</p> ","applicationCount":3}'
-  recorded_at: Sun, 28 Nov 2021 08:40:36 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:39 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44708120
@@ -1129,7 +1224,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:37 GMT
+      - Sun, 28 Nov 2021 10:02:40 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1143,12 +1238,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=n4ckXd0tzuxUQ8KUPgNuZkXELKdErTosVtWlOHFoyn0NcyJp9L0n7WxI2e9ZYeRz6Z4n-s459DySWFsf9vKfuHyKd3-0Uk4nBFiYNdH8F0WQoQ0u6cNZ2MrENGE0BQlY-NZe2g2;
-        expires=Sun, 28-Nov-2021 10:10:37 GMT; path=/; HttpOnly"
-      - __cf_bm=w9DaoSNz7QGcjBF18XJNmqNM_ldwlrwi21yyW35Rwrs-1638088837-0-Afr7I4IRkmsyhlK4ZyESEqhe7hbhRylo+KrB13u4QBRSTmz+8bQoN0Dy5Y4xfqZ5OCxRrmfaigW5IzJvtswwq88=;
-        path=/; expires=Sun, 28-Nov-21 09:10:37 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=UwV5wO10RiIbm22eEGlI67Xye3YwWKwEu_sypGz2hop1Cy6hd4NprhobnPzMePfU8u7YIuWZihVSML_oLf02gt1omzHIcw-xLmi5_-uv2Sro43T2O6PrK94N2gODN276cn9lTQ2;
+        expires=Sun, 28-Nov-2021 11:32:40 GMT; path=/; HttpOnly"
+      - __cf_bm=fzF.1AS7QM81axy8Xb5xKaPDMoyfF6Hi4rNfxDels8E-1638093760-0-Acl0wozoYL2wHINuVy43AMvX6Bww4CvsfKpTm/fk5OP9ju8Um9p7lWs/IHDE6udhhSZ8bbrcMCEubLz9nEYabQE=;
+        path=/; expires=Sun, 28-Nov-21 10:32:40 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=ec11d056e834d0ece7cc76d0ab00f336eb813681-1638088837; path=/; domain=.reed.co.uk;
+      - __cfruid=8a4b3a3c105396cbc9678b99b32e1d2c60f11dc2-1638093760; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1176,7 +1271,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524adc8a3b6a98-TPE
+      - 6b52c30b2ee70758-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":247035,"employerName":"CORECRUITMENT","jobId":44708120,"jobTitle":"Backend
@@ -1204,7 +1299,7 @@ http_interactions:
         details further, please apply today or send your cv to </em></p> <p>Get social…….</p>
         <p>http://</p> <p>https://COREcruitmentDOTcom/</p> <p>Tweet us @COREcruitment&nbsp;</p>
         ","applicationCount":5}'
-  recorded_at: Sun, 28 Nov 2021 08:40:37 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:40 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44791173
@@ -1226,7 +1321,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:38 GMT
+      - Sun, 28 Nov 2021 10:02:41 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1240,12 +1335,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=TUC5lYSFSBIRbJeii06xlpfvDaQmw8SyyLpA7AVPFiMxiS92GOQryFbv0e8u8O2rgGP63RXsGWW3DAYLTYre2C8p64GprlQx5EpU57UsHamNYQnjBEIa6fqF4YR1myq7LQt9cw2;
-        expires=Sun, 28-Nov-2021 10:10:38 GMT; path=/; HttpOnly"
-      - __cf_bm=JkiMM2B_2BkeEbwBfQYAHVRAs6yRCrq_kEBD.5O3fMI-1638088838-0-AUY7LNhugIT6p54TfepTqT5iV4D/9zB2jtLCSDA/x6lI08lURuThTCWaDPqh/osDGCMS27JnJp+C2VE8C1oRtoU=;
-        path=/; expires=Sun, 28-Nov-21 09:10:38 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=tSWRhPER2DyuDYKEFpcBYm8ZlSPSZI7KoLmbxx-avVhImcO4uPJYp71ESvFZaOJKx5SRV--Ye7LvtSvYqa7JBYGvyEPk9Wy8P2ObuwVRji2DZdYBdMMuLu3QuTU3ky20V06OMw2;
+        expires=Sun, 28-Nov-2021 11:32:41 GMT; path=/; HttpOnly"
+      - __cf_bm=LUEIaJYQlRjXOtB0zkeiCgRT2o30KD7ONJVkmNkS7zM-1638093761-0-ARpgEtrO0kJ8TpPcO4SKHa/cjIPK4XKQDfWtJBnY/5bV0N3u+2b0Yxm9r/A6K8dv1LmHBLHdRl7xtLnT2uLTKJs=;
+        path=/; expires=Sun, 28-Nov-21 10:32:41 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=d899a9b503ff033e1253772c20d6aa198f510e3b-1638088838; path=/; domain=.reed.co.uk;
+      - __cfruid=6f340477a9aa36728a37127685f58a98b00d80cb-1638093761; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1273,7 +1368,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524ae3f9286a9e-TPE
+      - 6b52c312da066a99-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":429392,"employerName":"Searchability","jobId":44791173,"jobTitle":"Contract
@@ -1312,7 +1407,7 @@ http_interactions:
         DEVELOPER / DV CLEARED / DV CLEARANCE / DEVELOPPED VETTING /  DEVELOPED VETTED
         / DEEP VETTING / DEEP VETTED / SC CLEARED / SC CLEARANCE / SECURITY CLEARED
         / SECURITY CLEARANCE</strong></p> ","applicationCount":1}'
-  recorded_at: Sun, 28 Nov 2021 08:40:38 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:41 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44316958
@@ -1334,7 +1429,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:40 GMT
+      - Sun, 28 Nov 2021 10:02:42 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1348,12 +1443,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=GyGRWr53c9UlVmAu1drpCQjbVccfnP6g7q7t-vBxcROjQCWDpot9GoUDHxLkVRVV_zVnYlYqyfOntt0EQ7gDiH0MagXwP_vCDddh6so7WXukSBHWOZWbMKwqb_mZQVrUHjrV4A2;
-        expires=Sun, 28-Nov-2021 10:10:40 GMT; path=/; HttpOnly"
-      - __cf_bm=5Yp51Mx4aKm4sLVsSSr5Ql09bUMPlETEB_MEMFiYTF4-1638088840-0-AWvSvpx6OQjnumR+rhUX6ciYmuVSKPlj9HUei0AnZTS0MKHi3SMZyMfduCS9ywk/n9opD3S4U1sTniAsA3JXIfc=;
-        path=/; expires=Sun, 28-Nov-21 09:10:40 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=5pyQvazZYsUBvHrriRdL_Ggg9Khb15esTkUiM--RXo0jpQC1Sb71wnqcVzK_CG29ZmcPnK2NvOseNGZvDciSIB0UBIZ88-SO187jbn67d_7ZdN5ZHm9Z9ohqibD_eLvSY1G-LQ2;
+        expires=Sun, 28-Nov-2021 11:32:42 GMT; path=/; HttpOnly"
+      - __cf_bm=cEygHzRQ52yexWvOq2M8ajCKhmpi9_9zYH8TIEYfSvk-1638093762-0-AbVhTcB75m18lXyzC1LJpubAfxHXsZGI06iR6fRdjdxJGB2VtA8yzn67dPf49kds7iOaP2ZBQ5g7U5A6bGZUZl8=;
+        path=/; expires=Sun, 28-Nov-21 10:32:42 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=4a2b08765dbe73d9140a695616bd29cf84305d93-1638088840; path=/; domain=.reed.co.uk;
+      - __cfruid=6debaa34c076985c6fb508cae2589cc817f00d60-1638093762; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1381,7 +1476,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524aec0dfb6b68-TPE
+      - 6b52c31acd816a9e-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":637421,"employerName":"Zealous Agency","jobId":44316958,"jobTitle":"Backend
@@ -1413,7 +1508,7 @@ http_interactions:
         experience, and want to be a part of an innovative development team in an
         uber exciting environment, we want to hear from you! Get in touch today for
         more details.</p> ","applicationCount":4}'
-  recorded_at: Sun, 28 Nov 2021 08:40:40 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:42 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44756521
@@ -1435,7 +1530,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:41 GMT
+      - Sun, 28 Nov 2021 10:02:44 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1449,12 +1544,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=EJyGCmMu2rcP2sIVcUqxx2l6YqDc53cSjOhUzGYHG6sxgSBIv9lvWV7jI0yWClsLGE_DyqKouCZPXXHFAOWglslAVmCL26h1uMwyAx9ICLhGTz5cr0HcXxQojaiESenclNb97Q2;
-        expires=Sun, 28-Nov-2021 10:10:41 GMT; path=/; HttpOnly"
-      - __cf_bm=gv2vdUlHIRnXnU0g1CjddB4gOVp4RcsapdRGMOfxD8g-1638088841-0-Ad92MPZ5GXvvdZsvWpEA6DzUHfPejXaA62xDGK1KI98FewM9z2DlYXrZBtsTh7Na6p1NdA4gE6HMtVCVa1ubKyw=;
-        path=/; expires=Sun, 28-Nov-21 09:10:41 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=e0KGSIo_8W6u68F5XKLR69CI91Mbh5SDEba6YbhkVZjYTL9r85NU2reQhZACU87wzkYW_XkRYAvBKAn0P8D_jzgONvBpXoPrX7pWxVUl-8wUghbNibcfii2AJ4T0rSRWqFqvzg2;
+        expires=Sun, 28-Nov-2021 11:32:44 GMT; path=/; HttpOnly"
+      - __cf_bm=E4Cd091tR0ohmrnvZgfgG5WQGyXB7UdTsOH7xx5I5IE-1638093764-0-AaPb2mkfjMZ639PzALLmYETbQ1GH5Opoa0t9BlJz8/KHg7lJrE+q42jEMPDWl76pGjWAT5h4BAnsotTDvQoF3nM=;
+        path=/; expires=Sun, 28-Nov-21 10:32:44 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=8dd65346f7f5b720c19d3670296f55d0c2c080c4-1638088841; path=/; domain=.reed.co.uk;
+      - __cfruid=2138a45e4125c829af79bc7625ce0cb4f66b8bce-1638093764; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1482,7 +1577,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524af3aead6b6f-TPE
+      - 6b52c322ef166b6c-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":375315,"employerName":"Spectrum IT Recruitment","jobId":44756521,"jobTitle":"Senior
@@ -1507,7 +1602,7 @@ http_interactions:
         position is paying up to <strong>&#163;90,000</strong> plus share options,
         24 days holiday and more</p> <p>To apply for this role, please forward your
         CV to or call Chris on </p> ","applicationCount":2}'
-  recorded_at: Sun, 28 Nov 2021 08:40:41 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:44 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44754978
@@ -1529,7 +1624,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:41 GMT
+      - Sun, 28 Nov 2021 10:02:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1543,12 +1638,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=hNvo92ZFD4IHzVBMDn0_IJb5UKkJwBlxc7UjmWMTAgaP__-WJ3MZCct16ZaKtjfbVuR8TuAs3cxcFpbKDP4bBdsJEZuvvCNB6ZHI-RQeexywncwMIxvHdZSoclujkIhch7WgZA2;
-        expires=Sun, 28-Nov-2021 10:10:41 GMT; path=/; HttpOnly"
-      - __cf_bm=NICh31u1Dk.HbQtnhWfcL5.IH.u.xGc5M5GP2Aqz_pw-1638088841-0-AUdSJF1VzrHjaMCt2hEDPcWG3/SCygQbucvExtt7lGVwffgTHGhn1PTIhLLbYOVkfcbR6mV4WHO8z0hhZgFxGRo=;
-        path=/; expires=Sun, 28-Nov-21 09:10:41 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=quBbi8xoifAPHZTaNMqMvbPmXXrvV04QZPIdXY4JBMTGXTtxRRTzfVp5IdTJTuoQ_9lgayB6jSCYAlCzfBXOUmlQjGe_RIEn-7UUHlwAhWIMmcPLy3BBgsq8O-qK6flk3g9kQw2;
+        expires=Sun, 28-Nov-2021 11:32:45 GMT; path=/; HttpOnly"
+      - __cf_bm=gJ2CdyO04s0h.nneaRChO_u8j9YvYvYuzf6IABR5d7g-1638093765-0-AbRVNzU/uXXY7MAFlogegT07T1BcYqf69+W7In+3f2JCt40COYdSO/c+HWFEU/3px/x/1Fc56/uXlYMj7TUY+Ss=;
+        path=/; expires=Sun, 28-Nov-21 10:32:45 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=8dd65346f7f5b720c19d3670296f55d0c2c080c4-1638088841; path=/; domain=.reed.co.uk;
+      - __cfruid=0d0a4fa18e97629b3159c0e6c8e9f8961c59b215-1638093765; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1576,7 +1671,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524afb5b643138-TPE
+      - 6b52c32a8d016a9c-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":436122,"employerName":"Salt Search","jobId":44754978,"jobTitle":"Node
@@ -1600,7 +1695,7 @@ http_interactions:
         <p>&#55356;? Salary - &#163;90k &#43; stock options</p> <p>If this sounds
         like something you would be interested in please reach out to me on my email
         at .</p> ","applicationCount":1}'
-  recorded_at: Sun, 28 Nov 2021 08:40:41 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:45 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44785123
@@ -1622,7 +1717,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:43 GMT
+      - Sun, 28 Nov 2021 10:02:45 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1636,12 +1731,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=rQk_STxkR34oM_-vJsF1nPQg9QRrMOyYc5U-n74B24aObc5End7vaAMgFXSsJrTixb4bceOCOy4zM6-cRQvA9rs4Mn_Ancn6cGIaQCM7nuG-IuyfvB9oKYBzOiSVjdBAGU1eSw2;
-        expires=Sun, 28-Nov-2021 10:10:42 GMT; path=/; HttpOnly"
-      - __cf_bm=R5q8Tyu8B7152eD6jLGtqJx23nhg7uOtMAbYLtiw1mQ-1638088843-0-ATUjdlqXunF27IPiDBv/1PnkoHoDDxSqE+ukbOS9XR/F5zGQKflQmwvXvDvpaYA4+TIwEoSvirBXZp8YLo2MsEA=;
-        path=/; expires=Sun, 28-Nov-21 09:10:43 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=I-RA_yc0YtTH2yyPrE9XdHi2lgpdhrjhKnNcv3IG-tdG4jCpCf3Sx3temejjYZrvHSQCB4O9KBUils4hOIUyqbBF2_bbP0Q-PzMyla-caIdFlDwZzzTFqGRyerinTQUa8eVFFQ2;
+        expires=Sun, 28-Nov-2021 11:32:45 GMT; path=/; HttpOnly"
+      - __cf_bm=z0ZU.a89xHe_2m0lRgEBhfQxIvmBD5uG5rQ8m49jZSg-1638093765-0-AT+qwIeMa+Hgf58lDxv1a94glCB6R3RwfTkduC7LdorqmaBk8Vi9M230u6yooi2PDwNB+ckArsFcoCKdofj56v8=;
+        path=/; expires=Sun, 28-Nov-21 10:32:45 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=91df78ed4024761579fad82b769791dacf461721-1638088843; path=/; domain=.reed.co.uk;
+      - __cfruid=0d0a4fa18e97629b3159c0e6c8e9f8961c59b215-1638093765; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1669,7 +1764,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524afdbf8a6b69-TPE
+      - 6b52c3326a810748-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":618637,"employerName":"Amazing Prospects Ltd","jobId":44785123,"jobTitle":"Backend
@@ -1696,7 +1791,7 @@ http_interactions:
         through problems are as valuable as specific experience. The details above
         provide a steer, but we are open to receiving applications from candidates,
         even if you do not match all of them. </strong></p> ","applicationCount":3}'
-  recorded_at: Sun, 28 Nov 2021 08:40:42 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:45 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44753042
@@ -1718,7 +1813,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:44 GMT
+      - Sun, 28 Nov 2021 10:02:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1732,12 +1827,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=ggt0-6NCiogrdm1fdciZVBrg4LWPr51PEh7ikEZQQR37KrHt1PYuivx5uXhtM6SAVQBt-Oz-UKzf711MmIsTmAgkwsGhISveJu_It1fp0CFFL-n7UCed9zNTvshJa6BgpO9qWA2;
-        expires=Sun, 28-Nov-2021 10:10:44 GMT; path=/; HttpOnly"
-      - __cf_bm=BT8CaQ.TXbPdDvuX3ashYZBQnQ8kA7fyHkoa8o.OSh4-1638088844-0-AS3dGRm7aL3IfFfJLsLbZ4uBV8fPC/TSGkA5SgmAknxwMXVDuwtmNnkjdYurt6+IeMQvJB26QJ4g3p7mMsTY4Ks=;
-        path=/; expires=Sun, 28-Nov-21 09:10:44 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=pb10Pd79Tu62fHBWubsafc7R6dRhMgfgIXYxT7XnUj0If2v-hSH0sbUJRY8RePar14PLUrmVIYI96JtE30SmciCwLf3p0vPwRwixRhYdoQ64MKGRt1I_5dpQOQHat6acty0Zsw2;
+        expires=Sun, 28-Nov-2021 11:32:46 GMT; path=/; HttpOnly"
+      - __cf_bm=sRIvGREjQl_WiU0mscYzljsRENIjo1UVAJ5ecX9sDBA-1638093767-0-Adt4GW4T00tnhAFfB3KLYWltxKednmfmm14JVrLPdM3Z5QaNzmQAqB1qmkIVooWB1XfvnkOL9Asy9V1kBQJO4GE=;
+        path=/; expires=Sun, 28-Nov-21 10:32:47 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=f31e6cf28b894ff6e2009c32ee4c1df56fb93a76-1638088844; path=/; domain=.reed.co.uk;
+      - __cfruid=ab9c031e5f3ccfd98079082c41ffff4ef8938b6b-1638093767; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1765,7 +1860,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b055d0f6a81-TPE
+      - 6b52c334b9a26a8d-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":306165,"employerName":"Propel London","jobId":44753042,"jobTitle":"Senior
@@ -1791,10 +1886,1352 @@ http_interactions:
         being highly collaborative with others at all stages in the organization.</p>
         <p>This opportunity offers a competitive salary of &#163;65,000 to &#163;80,000
         plus benefits.</p> <p>This role is remote UK only. </p> ","applicationCount":2}'
-  recorded_at: Sun, 28 Nov 2021 08:40:44 GMT
+  recorded_at: Sun, 28 Nov 2021 10:02:47 GMT
 - request:
     method: get
-    uri: https://www.reed.co.uk/api/1.0/jobs/44702250
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:48 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4453'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hLZcMWg17RRPYLqdZsS%2FrZ%2BcZ3CdGlxdYpePc0NmN8ynXB7JxdeKs3HjOf%2Fc3RqPmZL9AeBjujPGhLfGTNkKvlLCkvJglbY2e5Sz%2BHihms4OM1ZvEOkRvJ6uqhrDTsuTtPf9f0cm"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c33f189234b7-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093768},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:48 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:49 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4452'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=XjDmS%2BF%2BDnWUuRvKVFDZLvZCEf4wL%2FFhqzaEZQEVO%2B97PdwRaZXHa0JF05r7yAwe2mRkhg4mumktIqE%2BcCeKJWOUwP1fEDQZkOHMtDKsJOTTBWrPuSzFPYpjUsYCUDza2riVPkTj"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c3475bf61f93-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093769},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:49 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:49 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4451'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=b0H8FUwnGkiWDfP7PyqtROdMxZ3wHBy28GtxLPpXWtuwqQs4m8DdtR%2F5BF6spzxl2fst%2BXDJnO%2BmzXnUHS7RyqkKVfMmbB5WFbmZWewt7ZPaCCTHZ5AbSRe3lIFXvkoiyUyZRiCM"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c34a8d592083-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093769},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:49 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:51 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4450'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=HNF4wN79a82V9exlKYyYlnymjuP279iwJ2mt7w6F4Ae2HQLchLAMD89EBYmrpA7BaWOxAKvTWF%2FUatyQd2UGFfWz%2FUHg%2FKDyZ%2FVFGV2fZKT2aBEHbr1%2F5PbIAaOgtnnxbUW%2FC0my"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c34dcfa234c9-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093770},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:51 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4449'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=63LBjcxAV8p8sQ1ktjnMCbZbE9ktTrXJi9sfoZHN1iovdNN%2FeN3cIKDNAbwAFwhmS%2FbFJvYtvHCXzY%2B%2B7K3lAU3A4xomn7ZLPmUestb%2FSpAPttC%2FYFe6YDnVeuoXPeUvWeLnlH2X"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c356197bf8c3-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093772},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:52 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4448'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=3NU%2Filem82tunsccE81kSogLiRaLDbGvMcWCwzcdeq1Ss3MAmfEa0tJZDl89Y66hXydNbfs%2FJv5cRAIR08aVGA5T8wwaf7z47o8X5sl4kq0TY2UVxe7uv5MqR9mZeWRf%2F0Mcch9S"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c35e4ba13451-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093772},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:52 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4447'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7h1n%2BuDRRZexw%2BBf7a%2FZh4mqgPi0ckaTQ8Ywlz7BrQZ4L9dZknc7nuPJ6m7l6LB9BZ%2BXkpDRLsIAUyaEz5K7tVMXSeyplgniYNJL31i7RzXkJGgDigp%2FUuNn%2F2IorL99dELexeux"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c3619e5f0e76-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093773},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:53 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4446'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gPfDkF9jX6pCEmvW%2FKcKF321u0gTh03vZF3ep01b9zO82zP1r2Y5qiSJdGDmwRz2zInqJBdz%2FUCRcaayp5Pi2XzRWrHS8MC3ZBB3BHPvjxjVHG8k2GaRK%2FgXEcl6SthzHLo%2BkMCE"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c364c8b234ff-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093773},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:53 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4445'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2UHTSdOssATDBmHVk%2Bv7LWIzukMfaZWp9choVJZJH1LavSswxLcUCl%2F%2B4vgCG5ZVwunxmS6IlJO%2Fw34M8y%2BOZma1yEjOllKqxXFDeGxkamkodDW7O8JcG8pgXFcZVMLhDl5Lfyln"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c367da8414d0-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093774},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:55 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:55 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4444'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=FSjuwYkwsmaAIXHW%2BGhzPra7cr%2BTg1N4%2BO3KmvnEFMTLIiHQ9dHue%2FycjXxJKTIgxXLrZp9bqn9go0hm8eQX6PNIJL6klN40T4hP4jX%2FyL6HkPjv50n1cgqzQf%2B2xWwOhwYBdCFK"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c36fc98b34ed-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093775},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:55 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4443'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vvRW5awA0jcJOZWh37C38sLX6GZz%2FvzrMQc2H5E5w%2FgNkw3WuVMdQ8gg%2FmuzsQ6eRIzrJCKlHSAfgqufMW2XzsRYjLUS1IEIk4T4Rxy3AN4kHkqzLgRcsa0z9lxefhHD%2B7Iy3FQm"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c372f9c61ec0-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093775},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:56 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:56 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4442'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xknPynM4MH5Q9VoNYhYbJ9uixK9BUqdtd3TiGRxsyGC72G1HORXRyOPcDzZP0lvYaBicqB78rjD7vOlAEQvbntqj68z1rATyYWZxNalxEPvfi%2Bwq5wbFsAkJSOCWAJet2ZAslBxl"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c37658d22035-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093776},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:56 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:58 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4441'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6WK0B3N9gIatLDNsbfWa%2BjA4Rid9Z36V5KRAEamwiAMzuYYT2lASLtxeY145PPUGzU2L03j6ZM5fVPHhgb%2Fg5sfj3yrsPaisKpspK%2F0xxvrLs%2FxpimxZ0aSvBzYeGxTAl1YdQ2pI"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c379efb73463-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093777},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:58 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:02:59 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4440'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kAY%2BTMiqDLmX5PV2hjPwm2q5n8%2Fp7is6zqcmEdMyDXLQQdoQBmjnFkU7zl8zgIjdYoO5HuEvm%2BojT2NDiuoJEkzyagTwPi6aPd7qWZuJ7nhgllexKse5%2FM6DtRVWTU7Ej8bqgWNy"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c3826b592065-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093779},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:02:59 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:03:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4439'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=slinV%2BW9GmXBo%2F3swXqHBPN2JwiDclPTv1U4CDchltOs9PmaZzPiT3T5KMLigErIDhlvz4dod%2F4uGYpU%2BFjNaQgP0lq%2FK5WaLIkcOoLyeXTasEJPo7Rmk6AoxHQ4yRCCVofaqdZ3"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c38b3bd91d6b-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093779},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:03:00 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:03:00 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4438'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gPjUwfngEc0LKh3wXmuOolkQ5Zsbvk3poyO0p4%2FYWrBmyPmGh6pXRsZu4BZyvOma7Z7YsoAcgqt8KuyL9CXzCU9XnTBqFJGQPmzBynl2OHRbjn5SB5ys2G3ZnthjbeeUouY3VzLh"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c38e6e8414cc-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093780},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:03:00 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:03:01 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4437'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SUPhJqCdKwAUjaPEhnCKIIvuO05aJknENZ2s711DaKSoHFi1UtdhCBpYKJA4eivFKb72QOSjxBb87f8oOWGjnJHZ%2FCRlW7gS1bPDD0VjiIDlrfFbqeKgzmE2rylfgXrGmSzKCBxP"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c3919c3df8af-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093780},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:03:01 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:03:01 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4436'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Vs4HwvdP2oh6Cw2oTS2vMUyiaLZ%2BoIDbzX9yqOnHrZYlCnUsykugGjk4cN9njbPH%2B9SudtjM8COE3XlQsqtgZ%2FuiFpMfTbUMhtFgfTTAiHYtiYvSb%2F5Dme4lLIeMT3OoOyu%2FlZkf"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c394da433523-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093781},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:03:01 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:03:02 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4435'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dJHNwG5V2FM0xngfTqc%2FjoD4auQEvX7ZgpPCXUx%2BYhEy7cRqsOXS3LE9LlzUYlgc2lGi4jtJbeHChcq%2BsBeDudp2eKVM84v9GNMC09IsWHdAQAFbRAP5KvEmdxT%2Fj%2BpNw781PZeL"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c39819af1fc6-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093782},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:03:02 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:03:03 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4434'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=2CGz%2FCrIASZ93aNTew5aH0UN3cELdN5Mrl161IOxMa1UopieJLMDLx1%2F0fektBbW6QcZH7chtP5bd%2FEzN1vZrjhSvxA6BXu%2FeLmkFbTIXCX9ldRPUu6Vf32x7APi5ZG3hzkfRf4y"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c3a05f3e1fc9-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093783},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:03:03 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:03:03 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4433'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2F7FoV1QwUWPsCv%2BupXrwO7Lgbr9eVpgfzDuWCvmDUQnORYk9m6sROZQRQ6gBpip%2BU%2F5XY6scHwsD9cfHpTCcvZNY4cfxpcwWU1XymbVmmdfDiewoKLY0N510EOXnp38aCm6%2FUlFF"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c3a37ddc1da3-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093783},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:03:03 GMT
+- request:
+    method: get
+    uri: https://freecurrencyapi.net/api/v2/latest?apikey=<FREECURRENCY_API_KEY>&base_currency=GBP
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - freecurrencyapi.net
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 28 Nov 2021 10:03:04 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      Charset:
+      - utf-8
+      Cache-Control:
+      - no-cache, private
+      X-Ratelimit-Remaining:
+      - '4432'
+      X-Ratelimit-Limit:
+      - '4500'
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Frame-Options:
+      - DENY
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=C72v9HsZFM2KbYGipKUnp%2B3uEYzUA0xPQwX4eenfptmTBUINLdstw8l%2B3TvEskxHNC2TcH52TqC6BGiWv46eassVBcsl%2FqqrYyLoTcGAdyJRr1dLjRMIoAzp%2FetEs7bwv%2F%2Bi0lWt"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6b52c3a6bd0d347b-NRT
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"query":{"apikey":"<FREECURRENCY_API_KEY>","base_currency":"GBP","timestamp":1638093784},"data":{"USD":1.334739,"JPY":151.108314,"CNY":8.537219,"CHF":1.230963,"CAD":1.706891,"MXN":29.207485,"INR":100.161597,"BRL":7.483469,"RUB":100.475394,"KRW":1588.628409,"IDR":19087.238131,"TRY":15.956741,"SAR":5.006941,"SEK":12.204268,"NGN":546.77894,"PLN":5.532748,"ARS":134.476956,"NOK":12.074759,"TWD":37.1772,"IRR":56059.92755,"AED":4.902217,"COP":5340.631652,"THB":45.062105,"ZAR":21.688485,"DKK":8.764979,"MYR":5.655437,"SGD":1.828673,"ILS":4.24973,"HKD":10.409805,"EGP":20.929072,"PHP":67.366132,"CLP":1109.687057,"PKR":233.985571,"IQD":1946.093285,"DZD":184.731317,"KZT":581.792902,"QAR":4.882583,"CZK":30.251104,"PEN":5.389677,"RON":5.832624,"VND":30269.852191,"BDT":114.309793,"HUF":434.064842,"UAH":36.199196,"AOA":782.167229,"MAD":12.330708,"OMR":0.513754,"CUC":32.034249,"BYR":4.004338,"AZN":2.259754,"LKR":269.624124,"SDG":582.436313,"SYP":3351.604717,"MMK":2378.569587,"DOP":75.414076,"UZS":14348.660856,"KES":150.093632,"GTQ":10.309646,"URY":58.970409,"HRV":8.87647,"MOP":10.722174,"ETB":63.822853,"CRC":835.558535,"TZS":3067.266227,"TMT":4.65832,"TND":3.844503,"PAB":1.334766,"LBP":2007.50325,"RSD":138.507775,"LYD":6.144979,"GHS":7.981981,"YER":333.328933,"BOB":9.103189,"BHD":0.50321,"CDF":2648.99972,"PYG":9100.452103,"UGX":4753.113373,"SVC":11.666862,"TTD":8.989335,"AFN":128.150879,"NPR":159.891606,"HNL":32.127775,"BIH":2.305415,"BND":1.829701,"ISK":173.131712,"KHR":5419.182526,"GEL":4.100306,"MZN":84.356536,"BWP":15.777619,"PGK":4.682399,"JMD":206.0884,"XAF":773.757825,"NAD":21.627127,"ALL":142.420002,"SSP":531.233032,"MUR":57.15495,"MNT":3790.77192,"NIO":46.99717,"LAK":14440.887481,"MKD":72.638339,"AMD":642.692089,"MGA":5301.179069,"XPF":140.323247,"TJS":15.042925,"HTG":130.807891,"BSD":1.334766,"MDL":23.604477,"RWF":1362.91726,"KGS":112.788003,"GNF":12465.487527,"SRD":28.60413,"SLL":14675.68655,"XOF":775.499233,"MWK":1077.833264,"FJD":2.834626,"ERN":20.02169,"SZL":21.750604,"GYD":277.752953,"BIF":2647.798534,"KYD":1.101173,"MVR":20.58192,"LSL":21.750791,"LRD":188.467639,"CVE":130.005286,"DJF":236.92121,"SCR":19.287223,"SOS":767.489142,"GMD":69.874775,"KMF":580.484804,"STD":28.884412,"XRP":1.401503,"AUD":1.875762,"BGN":2.305962,"BTC":0.024693,"JOD":0.945022,"GBP":1,"ETH":0.00032,"EUR":1.180457,"LTC":0.013347,"NZD":1.958503}}'
+  recorded_at: Sun, 28 Nov 2021 10:03:04 GMT
+- request:
+    method: get
+    uri: https://www.reed.co.uk/api/1.0/jobs/44710222
     body:
       encoding: UTF-8
       string: ''
@@ -1813,11 +3250,11 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:44 GMT
+      - Sun, 28 Nov 2021 10:03:06 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '1905'
+      - '2146'
       Connection:
       - close
       Cache-Control:
@@ -1827,12 +3264,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=upcLbgozdsp_WiVZ0E-moy-d7jnGIcvtBSOcUsQeMIyFuNQKc2EzGD_iUbuMhW0Jm--ULCptft-wdQrjZX8BiQFbOFoIafHO-Iborn9PBtvfTv4JglRwgeWWr4q51C0WiO6tpw2;
-        expires=Sun, 28-Nov-2021 10:10:44 GMT; path=/; HttpOnly"
-      - __cf_bm=hU7J0zYSUf2CXmDxunaa2lNIJMM6pnlyWnDefnaAF5o-1638088844-0-AcOMmVHRAkKk4VqaCFOJYf9wLPHPwn25OqPr7HMs3NrlHdhtIP4UuZyxojYkgu0J0oLMU7+A7k0kXmiGek0Bs5g=;
-        path=/; expires=Sun, 28-Nov-21 09:10:44 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=PwryXDzVYdjwaSBVIBX7be2WXpXDh0EtsKFtqqO8ynLCNstQXZNRV3kuQOh5m1QFhNLarbURbAbFih8PuvffmGkONh7pUqSV25USUtdeWyybdcn7j9SHVl2o5yvsZ6SZEUbJPg2;
+        expires=Sun, 28-Nov-2021 11:33:05 GMT; path=/; HttpOnly"
+      - __cf_bm=GXlH_ri_PW.a0xmOSfKvLATsJ4tzd8p6UxuBb3s19pI-1638093786-0-AWAwDGE/TkrsGg3oamRwkOHTfwJBG8PShkd6Q4r8MQc7ZzuzdvEsRgmNntTI3tLVPWCMLKH9iOPj8uqd3Eor6bY=;
+        path=/; expires=Sun, 28-Nov-21 10:33:06 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=f31e6cf28b894ff6e2009c32ee4c1df56fb93a76-1638088844; path=/; domain=.reed.co.uk;
+      - __cfruid=8f8b191de7f36a1c81925553955a377f75ebaf25-1638093786; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1860,31 +3297,33 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b0d38e556fb-TPE
+      - 6b52c3ab8d0f6a86-TPE
     body:
       encoding: UTF-8
-      string: '{"employerId":149525,"employerName":"Certus Recruitment Group","jobId":44702250,"jobTitle":"Backend
-        Staff Engineer","locationName":"Germany","minimumSalary":null,"maximumSalary":null,"yearlyMinimumSalary":null,"yearlyMaximumSalary":null,"currency":null,"salaryType":"per
-        annum","salary":null,"datePosted":"15/11/2021","expirationDate":"14/12/2021","externalUrl":null,"jobUrl":"https://www.reed.co.uk/jobs/backend-staff-engineer/44702250","partTime":false,"fullTime":true,"contractType":"Permanent","jobDescription":"Backend
-        Staff Engineer<br />Germany - Remote<br />80-100k &#43; Great Benefits<br
-        /><br />Our information technology and services company designs and delivers
-        intuitive tools to the business community. To build upon their enviable position,
-        they have an immediate opening for a Backend Staff Engineer to be based in
-        Germany.<br /><br />As a Backend Staff Engineer, you will: <br /><br />* Lead
-        backend architecture<br />* Oversee ongoing projects and integrations<br />*
-        Align and unify the backend stack<br />* Lead research and experiments with
-        new technologies<br />* Improve engineering standards<br />* Mentor team members<br
-        />* Deliver automated frontend QA<br />* Report directly to a Head of Engineering<br
-        /><br />To be successful in this Backend Staff Engineer role, you will possess
-        the following skills and traits: <br /><br />* Strong backend architecture
-        experience<br />* Kotlin<br />* Node.JS<br />* Python, Java, PHP and Golang
-        would be advantageous<br />* CI/CD, AWS<br />* Technical leadership (external
-        teams)<br />* DNS/Domains<br />* Accountability and urgency<br />* Technically
-        curious<br />* EU Citizenship<br /><br />The Certus Recruitment Group is an
-        established and experienced specialist consultancy providing sales, marketing
-        and IT recruitment services to the business community throughout Europe, the
-        UK, North America and Australia.","applicationCount":1}'
-  recorded_at: Sun, 28 Nov 2021 08:40:44 GMT
+      string: '{"employerId":300264,"employerName":"Client Server Ltd.","jobId":44710222,"jobTitle":"Backend
+        Web Developer Python Django","locationName":"London","minimumSalary":55000.0000,"maximumSalary":65000.0000,"yearlyMinimumSalary":55000.0000,"yearlyMaximumSalary":65000.0000,"currency":"GBP","salaryType":"per
+        annum","salary":"£55,000 - £65,000 per annum","datePosted":"16/11/2021","expirationDate":"14/12/2021","externalUrl":null,"jobUrl":"https://www.reed.co.uk/jobs/backend-web-developer-python-django/44710222","partTime":false,"fullTime":true,"contractType":"Permanent","jobDescription":"Backend
+        Web Developer / Software Engineer (Python Django) *Hybrid WfH*. Do you have
+        a good knowledge of Computer Science and Python development skills? You could
+        be progressing your career at a high growth tech start-up within the digital
+        marketing space. <br /><br />As a Backend Web Developer you will focus on
+        a web based application, working across the full development lifecycle with
+        a focus on Python and Django / Flask backend development.<br />The company
+        has received significant funding and has ambitious growth plans, this is a
+        great time to get on board with share options as part of the package. <br
+        /><br />There''s a remote interview and onboarding process as well as the
+        ability to work from home; you''ll join the team in the London office for
+        around two days a month for meet-ups with the remaining work from home (or
+        more office time if desired).<br /><br />Requirements:<br />*You have strong
+        Python coding skills including Django (or Flask)<br />*You have full lifecycle
+        development experience<br />*You have TDD / unit testing experience and a
+        good understanding of CI/CD pipelines <br />*You''re keen to work in a start-up
+        environment where you can influence the tech strategy <br />*You''re collaborative
+        and pragmatic with great communication skills<br /><br />As a Backend Web
+        Developer / Software Engineer you will earn a competitive salary (to &#163;65k)
+        plus bonus and share options.<br /><br />Apply now or call to find out more
+        about this Backend Web Developer / Software Engineer (Python Django) opportunity.","applicationCount":8}'
+  recorded_at: Sun, 28 Nov 2021 10:03:06 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44792847
@@ -1906,7 +3345,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:45 GMT
+      - Sun, 28 Nov 2021 10:03:07 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -1920,12 +3359,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=nw6ZEpdqC_RDwTaxClsBRP2HcbjF9wrg5yPDGvUCibf1fMsEt-lmQNxHTui7sr8g3dsO5jaXE9TmdxpSUVw7eDM2I95TofniAyHhVDDcmj-A0Dlh9Yimtm_fKAEmwuN4Wg5_bg2;
-        expires=Sun, 28-Nov-2021 10:10:44 GMT; path=/; HttpOnly"
-      - __cf_bm=p.mnK5.DoFagzPNEhTENCHRWLdAJaBA9r5LVO5ILFn8-1638088845-0-AfnKU3JAx3luZ/aG4GZqlP0u3DOO8GwNzw849xQWAUMhYwZi70bwAhbMu3wW8czvpORP+vBif6QqiUfqL77zgDM=;
-        path=/; expires=Sun, 28-Nov-21 09:10:45 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=vjuDqcopea_KyJJbBiiFMyUIEK1VUDQJ3hWYUUHT1yQBFmL7fKECyUxUOLPHvZ4o0HyxVTnfUbBT4vIAWZnJnK-NQmYTRaPNhliULlz9BLm18hzwvDq--GVGtxX0g3L693Ouaw2;
+        expires=Sun, 28-Nov-2021 11:33:07 GMT; path=/; HttpOnly"
+      - __cf_bm=4UwGXYHTqpqnK10pRLVTQnSdWMRcvy8d5EmiKj_cUDY-1638093787-0-ARefZRSm0xYLDtHVX8Z7S5ts9SRC45xlGPGpm/7NxKVnGo6wXQz2oQbq2eRARjys7swrIFm7w0RMsh28hKMYQBw=;
+        path=/; expires=Sun, 28-Nov-21 10:33:07 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=b423b33e0d59297682f92d6a24adc4af4f22efaf-1638088845; path=/; domain=.reed.co.uk;
+      - __cfruid=9e06c01e2ef956d7be316358828078b460a941d8-1638093787; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -1953,7 +3392,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b0fafcc0738-TPE
+      - 6b52c3b35afb6b63-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":300264,"employerName":"Client Server Ltd.","jobId":44792847,"jobTitle":"Backend
@@ -1980,7 +3419,7 @@ http_interactions:
         /><br />As a Backend Web Developer you will earn a competitive salary (to
         &#163;75k) plus benefits.<br /><br />Apply now or call to find out more about
         this Backend Web Developer (JavaScript Node.js API) opportunity.","applicationCount":3}'
-  recorded_at: Sun, 28 Nov 2021 08:40:45 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:07 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44708450
@@ -2002,7 +3441,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:46 GMT
+      - Sun, 28 Nov 2021 10:03:07 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2016,12 +3455,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=PBVfcQQR2nzyfyL0aHMSETn4NWCtEvQxdztS9Ai8Wwgy9vOIGtBy1K2MKeNfGXtjCvCtUv65JTt4FUb46Cw6fp1PFx7KCAUIuZ3u-EuDBcqV7oFxegLCFHuOLdQCbtnIkAXp2A2;
-        expires=Sun, 28-Nov-2021 10:10:46 GMT; path=/; HttpOnly"
-      - __cf_bm=FauMY4LGkegqnSzlgl18I1EO6jIdougWhLiDlSgOORI-1638088846-0-AZgBH7cWpeHKZ1MasEcvTGrmKy8+UC8x1Lo/TbxULMBtGBHnqm7/yyhlMt9+KR7G44njxdtw5XpAfZBleL0X/7g=;
-        path=/; expires=Sun, 28-Nov-21 09:10:46 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=4qxY_FqxzPxLO27G1Z4P6ZuV2SnFBsOmaLkVgtyzE-Y1L49h_pWwHUCgknMzXeLWVkQAxadDy27_NXD0JW9GC-0RNYAcvDc-taIissvqJQkDgx_eE6FfC3vFyRhvc7WnxGL6ng2;
+        expires=Sun, 28-Nov-2021 11:33:07 GMT; path=/; HttpOnly"
+      - __cf_bm=dDu3mIY94Rx.3oav0wjG5iR3LXbDOX8Pe4UgdMplrdU-1638093787-0-AcDORuEAWis97fHWinZE94v4UeEByBsXcnBSNB66CjAw4H66Dqro/nOkPtg6amIaz/jNKtW506IpKu/zrcVR7uM=;
+        path=/; expires=Sun, 28-Nov-21 10:33:07 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=d09738ee24daec9d7ade8c669658c12dbb5f99d6-1638088846; path=/; domain=.reed.co.uk;
+      - __cfruid=9e06c01e2ef956d7be316358828078b460a941d8-1638093787; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2049,7 +3488,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b1259d26a99-TPE
+      - 6b52c3bb2c353138-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":247035,"employerName":"CORECRUITMENT","jobId":44708450,"jobTitle":"Backend
@@ -2077,7 +3516,7 @@ http_interactions:
         details further, please apply today or send your cv to </em></p> <p>Get social…….</p>
         <p>http://</p> <p>https://COREcruitmentDOTcom/</p> <p>Tweet us @COREcruitment&nbsp;</p>
         ","applicationCount":6}'
-  recorded_at: Sun, 28 Nov 2021 08:40:46 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:07 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44791392
@@ -2099,7 +3538,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:47 GMT
+      - Sun, 28 Nov 2021 10:03:08 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2113,12 +3552,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=MAkswcsVJzdoJx1LvQIg0v1C88YyFV0bnANmNnGTGe3pXKlvImmD7R8_A98fODUhnnlCrvQ-BBsoGqgvm-tPl3_YH5Hl7kZoZseYd9izdku-88S6x_mUJF7UMhAH0ZQgIjRJfg2;
-        expires=Sun, 28-Nov-2021 10:10:47 GMT; path=/; HttpOnly"
-      - __cf_bm=AU2lfZra_vuWCi2AFnJV3joEda52XqwN5RPChfYdxGc-1638088847-0-AXqxEs6rQ4yvElEQ/mfXLCbZkr9xWdv6FEBu1YEjYRSk2bD/yatLO/iQRj9gZFGS+PgY/LxvLWZJB974ZVJX8M8=;
-        path=/; expires=Sun, 28-Nov-21 09:10:47 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=t2Kyw5hDtjPy1SRezKaYHYJo9lfIwN1A60kKdDpmKN9njeUIvMNSVhe-9i6dQQy2IcECGrYCzvjLGtwzD4Nls8gfKqVpvborJkiWH_WUiguEmToaPvi-SANP_CcBTHDx3EI54Q2;
+        expires=Sun, 28-Nov-2021 11:33:08 GMT; path=/; HttpOnly"
+      - __cf_bm=0QXwqbFuieU.4N3Rtj.nr0d5c5tmX0FnoqYZuCJs9s8-1638093788-0-AUOjJf28HnGzoPpti23NdbrqUGTKRTw5ABXfj/n8ZJhrEYu2m6fFF5NqF0fuPq6NpW+US27KscovTq9NCY24xtE=;
+        path=/; expires=Sun, 28-Nov-21 10:33:08 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=35b1ebb43c1fb600e7c4dfbfdee1d95b661f7b79-1638088847; path=/; domain=.reed.co.uk;
+      - __cfruid=55be02f2bb22c2671b40e522a071c4f6df7b6b52-1638093788; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2146,7 +3585,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b1a0fad56f4-TPE
+      - 6b52c3bdbc2f6b62-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":415711,"employerName":"Explore Group","jobId":44791392,"jobTitle":"Senior
@@ -2165,7 +3604,7 @@ http_interactions:
         social media experience</li><li>AWS</li><li>Sequelize</li><li>Event driven
         architecture</li></ul> <p><strong>How To Apply</strong></p> <p>Please email
         your resume CV to </p> <p>Look forward to hearing from you!</p> ","applicationCount":3}'
-  recorded_at: Sun, 28 Nov 2021 08:40:47 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:09 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44708120
@@ -2187,7 +3626,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:48 GMT
+      - Sun, 28 Nov 2021 10:03:10 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2201,12 +3640,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=0AqoSUjAjZmkdn9MM7z0NmF-W9Fzmqt7BwiDRNIZPFW4qaKwsNpzPWYAk1K60rwrrLK_SprZEsT2C2bTsHisyOsmH1_5A2gLpC5KgLmvjj0Wsr5KLjzOnkj07twBr2E8kQfS6Q2;
-        expires=Sun, 28-Nov-2021 10:10:48 GMT; path=/; HttpOnly"
-      - __cf_bm=umjNwK17ekvGZ2iIAZwWQMXCPnZwcDkx_20ym_Am9yo-1638088848-0-ATD1/3xR42nvaS7mw7AH2TZKN142DEjgU9fRL31VCj4YcXQZRlPBaQKWpmlI7y/UQvK9nMFTavAHX8WN0G8ntVo=;
-        path=/; expires=Sun, 28-Nov-21 09:10:48 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=PxPywExYWjyUrjz6tO32xt0qFtX0P-1VoLhKETMjrmwNnlW5UItEXxFpwCJSXtMYUz6zkjyc3wJKcra1jQxYfkfN6_2vorDZdbhFuDoFH_7U4Muk6aR-ArqUYQzXdseH3hcRyw2;
+        expires=Sun, 28-Nov-2021 11:33:10 GMT; path=/; HttpOnly"
+      - __cf_bm=TLja5kbgb1apuicSK4xQRRUmHRuL5fWecl2xcwmankA-1638093790-0-AfmSHtTcEoiDsf8IEkrLZ6JJyu1CmN0eORACAQt1gzhVu9sXSW4YVWkoZrwlXEcL5rgvQg/7WAxVzT/IGRU1w7o=;
+        path=/; expires=Sun, 28-Nov-21 10:33:10 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=41edb4e3ce053f7d306f35b2e060f4a34ccbdf00-1638088848; path=/; domain=.reed.co.uk;
+      - __cfruid=8d4999a9a70854492fa3e31fef7fd359d52e6e54-1638093790; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2234,7 +3673,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b21dad96a84-TPE
+      - 6b52c3c5c8456b74-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":247035,"employerName":"CORECRUITMENT","jobId":44708120,"jobTitle":"Backend
@@ -2262,7 +3701,7 @@ http_interactions:
         details further, please apply today or send your cv to </em></p> <p>Get social…….</p>
         <p>http://</p> <p>https://COREcruitmentDOTcom/</p> <p>Tweet us @COREcruitment&nbsp;</p>
         ","applicationCount":5}'
-  recorded_at: Sun, 28 Nov 2021 08:40:48 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:10 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44791173
@@ -2284,7 +3723,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:50 GMT
+      - Sun, 28 Nov 2021 10:03:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2298,12 +3737,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=a7sglxwylUO_CdUcBTRh_SmGG9Jpj6OfqMGKF3Ol5WyDaNQIOtzxYQv3TPiQqBqDGkj2PJh6gw-Rnghcfu4JbRKspQGtxUGL9nOpRXL7v9c09T0MxsN0BTQAp1OGFT8VJYcvaw2;
-        expires=Sun, 28-Nov-2021 10:10:49 GMT; path=/; HttpOnly"
-      - __cf_bm=PHD33isYMfNgvhRPTS72JQTAysNdYIcM00mHCsVdCXg-1638088850-0-AaysWJawMWkaTGKiDEzMIQN1BwmCw6tSCiub3NEgMOTh36GLsJ8q0adGlRg5fjpU1YNJhcJu6LEBPJSzP7Q/m48=;
-        path=/; expires=Sun, 28-Nov-21 09:10:50 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=COUshSaCC-K5V2AfBsmCrAjV6xgGW6Mjp_XeD5IWqBi-uBfImjDZkzD8-qd1-QfddTTgwpBKNklR6xupnxcr-kRsjO7U6w0mDXUnX_g7nOsQdPvIaoxY42EiyFnb0OJM1ZRKnQ2;
+        expires=Sun, 28-Nov-2021 11:33:11 GMT; path=/; HttpOnly"
+      - __cf_bm=bLU.sfs_xwf_6YhxMvywZ_AfcWbu8LifDjSt7qW2gQY-1638093791-0-Ad8oEjO6wfH0d/NiNRfkUCElCZ+mlzApbczLaPUisYXUfGi/s29PhXasq3jIEKn6NI1rpI7KGo/J4ibN25ANjwo=;
+        path=/; expires=Sun, 28-Nov-21 10:33:11 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=7a549d14dfcc126304ef10a3354de8cad6d6980a-1638088850; path=/; domain=.reed.co.uk;
+      - __cfruid=4f0662ecce211174c2a4f3991aa985359fd85535-1638093791; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2331,7 +3770,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b2958936a99-TPE
+      - 6b52c3cdaef06a99-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":429392,"employerName":"Searchability","jobId":44791173,"jobTitle":"Contract
@@ -2370,7 +3809,7 @@ http_interactions:
         DEVELOPER / DV CLEARED / DV CLEARANCE / DEVELOPPED VETTING /  DEVELOPED VETTED
         / DEEP VETTING / DEEP VETTED / SC CLEARED / SC CLEARANCE / SECURITY CLEARED
         / SECURITY CLEARANCE</strong></p> ","applicationCount":1}'
-  recorded_at: Sun, 28 Nov 2021 08:40:50 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:11 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44316958
@@ -2392,7 +3831,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:51 GMT
+      - Sun, 28 Nov 2021 10:03:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2406,12 +3845,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=cO0B24crV94LGR3UDsVdLyMwrXun3yRfUbMxiHHH9WRxOJmneFfcdSEf6TleuFPP8DWjlKONfIn9cvE8SAoqo5EDp2WKJdfvLddRj3Vgtj2EVYRUQotugZuuIWhYRncbecKfGA2;
-        expires=Sun, 28-Nov-2021 10:10:51 GMT; path=/; HttpOnly"
-      - __cf_bm=QU7jHqFsNMAjYe5mRfHkkHvMOZd8QGp09cQ1wbKrMpE-1638088851-0-AXFubMZ02X0CAUykGQMcGWoX0DkB46hm+HMddZGmQgGmA5f40tBxGjBEb3SiQYQlS+sxBLpaFJvoOc8z079lgug=;
-        path=/; expires=Sun, 28-Nov-21 09:10:51 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=e_D5_1wzaPmoNtSLDQYTjrbRH42QQW3b44-amM_HjCobUL1Ze-nWQlMXYmu2wTDCMRQuI304Pr4Nto6ovUhErcwl7n-_jVDVB7mrUbOQqGuW_TBW0ddyzPpHe7jr05NS82EUNg2;
+        expires=Sun, 28-Nov-2021 11:33:11 GMT; path=/; HttpOnly"
+      - __cf_bm=xvyVlwKQjXgdtyOQFNclcdsDZ0CO.IIQ8i_ZR.MOx2E-1638093791-0-AXjTCU/hjm1CM0kxPShtykgKTl+eiyrdvJtsnOq2MN3iSPs7Ry7rPT0P0tyZaqRLAsVnwIFjQ4Fh/Vxkgnv8P2A=;
+        path=/; expires=Sun, 28-Nov-21 10:33:11 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=2025dfa6ab2fe2ef5bc1c5ab43d4de3c43d87ccc-1638088851; path=/; domain=.reed.co.uk;
+      - __cfruid=4f0662ecce211174c2a4f3991aa985359fd85535-1638093791; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2439,7 +3878,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b330bc356ef-TPE
+      - 6b52c3d53f270760-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":637421,"employerName":"Zealous Agency","jobId":44316958,"jobTitle":"Backend
@@ -2471,7 +3910,7 @@ http_interactions:
         experience, and want to be a part of an innovative development team in an
         uber exciting environment, we want to hear from you! Get in touch today for
         more details.</p> ","applicationCount":4}'
-  recorded_at: Sun, 28 Nov 2021 08:40:51 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:11 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44756521
@@ -2493,7 +3932,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:52 GMT
+      - Sun, 28 Nov 2021 10:03:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2507,12 +3946,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=DZAuA5O-XFXVsgz2mcnFy810ZC8KJAa5YVl-oyaiMvNdswv6FHTFjCa-wbtvu0Fl3YVMA5koSh7pY7fXZ-VzTciHAg9mfwYEDUGRnrere1laNLx1zcHwC1cepOSjls2lNcpHuA2;
-        expires=Sun, 28-Nov-2021 10:10:52 GMT; path=/; HttpOnly"
-      - __cf_bm=Rg8dygsaUDXv4iGXgrAQm28iU8MLSEzLzeanOs.cgw8-1638088852-0-AfPl7fknQApFLHmIPXZbwtGARwnVz6Uj2nofMizqYPlAc0A1LEm9dzIGP8sNL33pUMDGaBn2hWAxgQodvrBR2Vk=;
-        path=/; expires=Sun, 28-Nov-21 09:10:52 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=A55uHis_g0BSXaVYeWlkfZvCDGRTVSA9ZOMK5_yww1rbcymAnnfufp9iBET3XaJaiPj05xUEyDykpdyVWL_EAnXdW3b1u5Wab9iAU3_YuMfw5pjjCT3hPpwj8BLuaJ7LdZaxvQ2;
+        expires=Sun, 28-Nov-2021 11:33:13 GMT; path=/; HttpOnly"
+      - __cf_bm=RglnPH0HLF.NDO8VOE6Hc2I15lcobSFdTlWEX3.U4PM-1638093793-0-ATBzJfX0kc+VQ8Pyn2NlWMdwjpg1LjC/9695D3jJXCOzhPeS5hRb7u2DerNiMns/wNyXV3Abw7MAsZkr7HocYBE=;
+        path=/; expires=Sun, 28-Nov-21 10:33:13 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=f2639f2615f7b13210950c6111b8ca1280b58fe0-1638088852; path=/; domain=.reed.co.uk;
+      - __cfruid=be091e269b3a4cc87fc730a0f861ee7a9f86adc2-1638093793; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2540,7 +3979,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b3afaca56fb-TPE
+      - 6b52c3d7fa9d6a8a-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":375315,"employerName":"Spectrum IT Recruitment","jobId":44756521,"jobTitle":"Senior
@@ -2565,7 +4004,7 @@ http_interactions:
         position is paying up to <strong>&#163;90,000</strong> plus share options,
         24 days holiday and more</p> <p>To apply for this role, please forward your
         CV to or call Chris on </p> ","applicationCount":2}'
-  recorded_at: Sun, 28 Nov 2021 08:40:52 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:13 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44754978
@@ -2587,7 +4026,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:54 GMT
+      - Sun, 28 Nov 2021 10:03:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2601,12 +4040,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=7WBzE6yVYgzyAyfUKKlTU9hdLJ9mc6yDceYRX-5lt-mcwh13TIAlE7_R_QB9H9g2dCHBUylYfz975ghz8oy_EKhrbfDwd5tXv8F8OBnam3bb4-W8VXp_SmPCVeedu2z7WegL7g2;
-        expires=Sun, 28-Nov-2021 10:10:54 GMT; path=/; HttpOnly"
-      - __cf_bm=hhOsYVkU2JfvgxOV756DTu5FzsB1fL.yZ0Ne3LGFzFI-1638088854-0-AUs0kJX/6W6lru0p1kvp63p1s2stKaF+w/ikxNoExvq1TsWXNPMaasElvRgVDYmvgWL+dniWXkymVeKGf09OWpY=;
-        path=/; expires=Sun, 28-Nov-21 09:10:54 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=hTCC9Ip-xDId9b07Kurrb4XSLzXKuapLNt4xEdhBrTjwYy-bPrsrRKLr2M0J9hGVOVWWQA01gRWT7EEP4zMUeBf9ABBwhGcZSdKgAIJJMvIh_2FS7w5qzL3daBUIepECMEcyfA2;
+        expires=Sun, 28-Nov-2021 11:33:13 GMT; path=/; HttpOnly"
+      - __cf_bm=F3_HxJ3_pAsz6Ig.91hJsDGz84FE8kdVzYJX3DypkjM-1638093793-0-AW8Og4BLLFph+KFunHKX5Zq0/6h8Cg5kDBseNYZq7v+1FYwIdQJjaWfyhA7Xw8G/4g0N4u12yJGdV3q5vZB7x+0=;
+        path=/; expires=Sun, 28-Nov-21 10:33:13 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=9a533e5b085e0ea7cb953de7f5d551bfebdf1361-1638088854; path=/; domain=.reed.co.uk;
+      - __cfruid=be091e269b3a4cc87fc730a0f861ee7a9f86adc2-1638093793; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2634,7 +4073,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b4949ec6a96-TPE
+      - 6b52c3e099186b7a-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":436122,"employerName":"Salt Search","jobId":44754978,"jobTitle":"Node
@@ -2658,7 +4097,7 @@ http_interactions:
         <p>&#55356;? Salary - &#163;90k &#43; stock options</p> <p>If this sounds
         like something you would be interested in please reach out to me on my email
         at .</p> ","applicationCount":1}'
-  recorded_at: Sun, 28 Nov 2021 08:40:54 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:13 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44785123
@@ -2680,7 +4119,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:55 GMT
+      - Sun, 28 Nov 2021 10:03:14 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2694,12 +4133,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=9IiKcIeIKGe0Fq6qULBfTBSxsyUqzsd8MGdGtdbckE-Xjp2iazzSvq3XA66VQ6yDNglgkujoPNB1BYj4IEoYx6NajJcRqgYGLBxyEut3UKwo3UQbMal3OIk_wZeKrvlimW2ODg2;
-        expires=Sun, 28-Nov-2021 10:10:55 GMT; path=/; HttpOnly"
-      - __cf_bm=OJfusjUW4aU8u5gLQk_zmQdj19kpSJuKpezBjed6nng-1638088855-0-AWZ6ZtAtgobRg1jpyDoaX4RSgWaeGJhwKshBjqNGdqTVf5m08OqSDaFF2ZpUMEcPluybU9HaBrGs9iV75BT38lg=;
-        path=/; expires=Sun, 28-Nov-21 09:10:55 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=1--C78mt9mO1aHT9uWJEsawn_zuu7Ndq-zJDryEesFu683ucaBkCK9WmneXn2lDFRjS9KqkDaU2ugn7T3BcPo5QJSkNDna5tFfvcBYJv7G728dQIwbWiFmKQu8GrgZSF0N0tkw2;
+        expires=Sun, 28-Nov-2021 11:33:14 GMT; path=/; HttpOnly"
+      - __cf_bm=HHyEYsFZcO_geClKvMIWRKG.VPuXvbO2Vkfp3ytTkYY-1638093794-0-AR1uschXy7L6Tl43PdlWw5ZRnSBSxV+Cw0HSf3V8YsxjR/hZ6ItZzSagoBJxskcJZV29Ie2V0f0KoX4Gm1MyQ0s=;
+        path=/; expires=Sun, 28-Nov-21 10:33:14 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=10d52e1dfc3cd3bd076e5d86f554b20647f1d810-1638088855; path=/; domain=.reed.co.uk;
+      - __cfruid=89fbe99c19b42a36778edaf700fcaa0defafb6cd-1638093794; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2727,7 +4166,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b4c0b7a6a9e-TPE
+      - 6b52c3e3799e0740-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":618637,"employerName":"Amazing Prospects Ltd","jobId":44785123,"jobTitle":"Backend
@@ -2754,7 +4193,7 @@ http_interactions:
         through problems are as valuable as specific experience. The details above
         provide a steer, but we are open to receiving applications from candidates,
         even if you do not match all of them. </strong></p> ","applicationCount":3}'
-  recorded_at: Sun, 28 Nov 2021 08:40:55 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:14 GMT
 - request:
     method: get
     uri: https://www.reed.co.uk/api/1.0/jobs/44753042
@@ -2776,7 +4215,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sun, 28 Nov 2021 08:40:56 GMT
+      - Sun, 28 Nov 2021 10:03:16 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -2790,12 +4229,12 @@ http_interactions:
       Expires:
       - "-1"
       Set-Cookie:
-      - ".ASPXANONYMOUS=T2lIlWM0D6-V6aV3yjjqlWLudJIW7nGyx-L-J9-Qio7xfg6Ez2M9PI_efXU3sSV1YbRSGbD3fLIptdw-69iMt3-JsSYFWGJiydW4drIlPKxDcIr_waRQdYhIffsEAHDSPfeyZQ2;
-        expires=Sun, 28-Nov-2021 10:10:56 GMT; path=/; HttpOnly"
-      - __cf_bm=tpPvG.lyNZc.ahHTp4AM40e6oouH47T.OOlinsl.N.U-1638088856-0-AU4kE4YZsHBgnm33hqOHD0rxTqeqvnhjzVwmTdGhBySRY7ANMAkLLnr6+Ff+pExPh3TOmrVMT8EXq5Uns0hm/YM=;
-        path=/; expires=Sun, 28-Nov-21 09:10:56 GMT; domain=.reed.co.uk; HttpOnly;
+      - ".ASPXANONYMOUS=eFYnR9YLdYhIDli_2uhJDb4E9xkQIJgnJPh6fzDfPUyCStNIp0AZ2O7e4uNbupDxvSCszqQZHAAMsuuiX8fj4FJHwWMD3jPMFBdyBYqn5qWZGewzau_uycoWPKc4AnJ1F2svcQ2;
+        expires=Sun, 28-Nov-2021 11:33:16 GMT; path=/; HttpOnly"
+      - __cf_bm=E1AfR0gYVWRQFEp57yNatnadvwiuLSB8HuKxu9IGlaM-1638093796-0-AZjZ9UWJr98ypEdR/Dwzvq3rj326VImDuWspnQT5NbhVKF/7u+jJuse9FSRHlQTfbHBRw6dYUNB/mBBSHSxkJ1I=;
+        path=/; expires=Sun, 28-Nov-21 10:33:16 GMT; domain=.reed.co.uk; HttpOnly;
         Secure; SameSite=None
-      - __cfruid=2b13fb1a12602239ec2036028c52b8ece2770a23-1638088856; path=/; domain=.reed.co.uk;
+      - __cfruid=6d151d8586395f0acb8f58254ba950d6b70ea8e4-1638093796; path=/; domain=.reed.co.uk;
         HttpOnly; Secure; SameSite=None
       X-Ua-Compatible:
       - IE=Edge,chrome=1
@@ -2823,7 +4262,7 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 6b524b536f836a84-TPE
+      - 6b52c3eb18f456fa-TPE
     body:
       encoding: UTF-8
       string: '{"employerId":306165,"employerName":"Propel London","jobId":44753042,"jobTitle":"Senior
@@ -2849,98 +4288,5 @@ http_interactions:
         being highly collaborative with others at all stages in the organization.</p>
         <p>This opportunity offers a competitive salary of &#163;65,000 to &#163;80,000
         plus benefits.</p> <p>This role is remote UK only. </p> ","applicationCount":2}'
-  recorded_at: Sun, 28 Nov 2021 08:40:56 GMT
-- request:
-    method: get
-    uri: https://www.reed.co.uk/api/1.0/jobs/44702250
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      Authorization:
-      - Basic <REED_TOKEN>
-      Connection:
-      - close
-      Host:
-      - www.reed.co.uk
-      User-Agent:
-      - http.rb/5.0.4
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Sun, 28 Nov 2021 08:40:57 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '1905'
-      Connection:
-      - close
-      Cache-Control:
-      - no-cache
-      Pragma:
-      - no-cache
-      Expires:
-      - "-1"
-      Set-Cookie:
-      - ".ASPXANONYMOUS=hM41QgUNf4TlHlJhynWkhtra4DgGwTBDDIVHfgby660OHRDtbIr1q88HpRerQlDxay9qghcWSjNGA68gDG2qq3_JPwQdcpOzhiLIZgRobEdZjmdaJP-EsSNOBxbLhiq-d1LcNA2;
-        expires=Sun, 28-Nov-2021 10:10:57 GMT; path=/; HttpOnly"
-      - __cf_bm=nidtVXFDAYbVE4qhN0QVL9BNYQvZz_WhAqXxqwBD4vk-1638088857-0-AeGAWFUv31Ywmjla9Ya4YKuYFTT+He8fTcDCsF4QKnYgTYfnffO1OzpdOMPh7p7a+UNT4YKfWwisbthVvQehwUo=;
-        path=/; expires=Sun, 28-Nov-21 09:10:57 GMT; domain=.reed.co.uk; HttpOnly;
-        Secure; SameSite=None
-      - __cfruid=04b70edd7821d855e518dfeb677c267a632d96a6-1638088857; path=/; domain=.reed.co.uk;
-        HttpOnly; Secure; SameSite=None
-      X-Ua-Compatible:
-      - IE=Edge,chrome=1
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Authorization
-      Access-Control-Allow-Methods:
-      - POST, GET, OPTIONS, PUT, DELETE
-      X-Content-Type-Options:
-      - nosniff
-      Strict-Transport-Security:
-      - max-age=15768000; includeSubDomains
-      X-Xss-Protection:
-      - 1; mode=block
-      Content-Security-Policy:
-      - frame-src 'self' 'unsafe-eval' 'unsafe-inline' player.vimeo.com *.vimeo.com
-        googletagmanager.com *.googletagmanager.com youtube.com *.youtube.com facebook.com
-        *.facebook.com google.com *.google.com *.googlesyndication.com ff.doubleclick.net
-        *.doubleclick.net *.criteo.com *.hotjar.com;
-      Cf-Cache-Status:
-      - DYNAMIC
-      Expect-Ct:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Server:
-      - cloudflare
-      Cf-Ray:
-      - 6b524b5b5a4a6b72-TPE
-    body:
-      encoding: UTF-8
-      string: '{"employerId":149525,"employerName":"Certus Recruitment Group","jobId":44702250,"jobTitle":"Backend
-        Staff Engineer","locationName":"Germany","minimumSalary":null,"maximumSalary":null,"yearlyMinimumSalary":null,"yearlyMaximumSalary":null,"currency":null,"salaryType":"per
-        annum","salary":null,"datePosted":"15/11/2021","expirationDate":"14/12/2021","externalUrl":null,"jobUrl":"https://www.reed.co.uk/jobs/backend-staff-engineer/44702250","partTime":false,"fullTime":true,"contractType":"Permanent","jobDescription":"Backend
-        Staff Engineer<br />Germany - Remote<br />80-100k &#43; Great Benefits<br
-        /><br />Our information technology and services company designs and delivers
-        intuitive tools to the business community. To build upon their enviable position,
-        they have an immediate opening for a Backend Staff Engineer to be based in
-        Germany.<br /><br />As a Backend Staff Engineer, you will: <br /><br />* Lead
-        backend architecture<br />* Oversee ongoing projects and integrations<br />*
-        Align and unify the backend stack<br />* Lead research and experiments with
-        new technologies<br />* Improve engineering standards<br />* Mentor team members<br
-        />* Deliver automated frontend QA<br />* Report directly to a Head of Engineering<br
-        /><br />To be successful in this Backend Staff Engineer role, you will possess
-        the following skills and traits: <br /><br />* Strong backend architecture
-        experience<br />* Kotlin<br />* Node.JS<br />* Python, Java, PHP and Golang
-        would be advantageous<br />* CI/CD, AWS<br />* Technical leadership (external
-        teams)<br />* DNS/Domains<br />* Accountability and urgency<br />* Technically
-        curious<br />* EU Citizenship<br /><br />The Certus Recruitment Group is an
-        established and experienced specialist consultancy providing sales, marketing
-        and IT recruitment services to the business community throughout Europe, the
-        UK, North America and Australia.","applicationCount":1}'
-  recorded_at: Sun, 28 Nov 2021 08:40:57 GMT
+  recorded_at: Sun, 28 Nov 2021 10:03:16 GMT
 recorded_with: VCR 6.0.0
