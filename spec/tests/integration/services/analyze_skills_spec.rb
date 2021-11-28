@@ -75,8 +75,7 @@ describe 'Integration Test for AnalyzeSkills Service' do
     it 'HAPPY: should collect jobs from database' do
       # GIVEN: a keyword that has been searched
       query_form = Skiller::Forms::Query.new.call(query: TEST_KEYWORD)
-      db_jobs = Skiller::Service::AnalyzeSkills.new.call(query_form)
-                                                   .value![:jobs]
+      db_jobs = Skiller::Service::AnalyzeSkills.new.call(query_form).value![:jobs]
 
       # WHEN: the service is called with the form object
       jobskill = Skiller::Service::AnalyzeSkills.new.call(query_form)
@@ -160,8 +159,7 @@ describe 'Integration Test for AnalyzeSkills Service' do
     it 'HAPPY: should collect skills from database' do
       # GIVEN: a keyword that has been searched
       query_form = Skiller::Forms::Query.new.call(query: TEST_KEYWORD)
-      db_skills = Skiller::Service::AnalyzeSkills.new.call(query_form)
-                                                     .value![:skills]
+      db_skills = Skiller::Service::AnalyzeSkills.new.call(query_form).value![:skills]
       db_skills = db_skills.sort_by(&:name)
 
       # WHEN: the service is called

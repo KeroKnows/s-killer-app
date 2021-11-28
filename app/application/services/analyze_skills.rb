@@ -18,41 +18,40 @@ module Skiller
 
       # check if the previous form validation passes
       def parse_request(input)
+        query = input[:query]
         if input.success?
-          Success(query: input[:query])
+          Success(query: query)
         else
-          Failure("Invalid query: '#{input[:query]}'")
+          Failure("Invalid query: '#{query}'")
         end
       end
 
       # Collect jobs from database if the query has been searched;
       # otherwise, the entites will be created by mappers stored into the database
       def collect_jobs(input)
-        query = input[:query]
-        if Repository::QueriesJobs.query_exist?(query)
-          input[:jobs] = Repository::QueriesJobs.find_jobs_by_query(query)
+        input[:jobs] = search_jobs(input)
+
+        if input[:jobs].length.zero?
+          Failure("No job is found with query #{input[:query]}")
         else
-          input[:jobs] = request_jobs_and_update_database(query)
+          Success(input)
         end
-        input[:jobs].length.zero? ? Failure("No job is found with query #{input[:query]}")
-                                  : Success(input)
-      rescue StandardError => error
-        Failure("Fail to collect jobs: #{error.to_s}")
+      rescue StandardError => e
+        Failure("Fail to collect jobs: #{e}")
       end
 
       # Collect skills from database if the query has been searched;
       # otherwise, the entities will be created by mappers and stored into the database
       def collect_skills(input)
-        query = input[:query]
-        if Repository::QueriesJobs.query_exist?(query)
-          input[:skills] = Repository::QueriesJobs.find_skills_by_query(query)
+        input[:skills] = search_skills(input)
+
+        if input[:skills].length.zero?
+          Failure("No skills are extracted from #{input[:query]}")
         else
-          input[:skills] = extract_skills_and_update_database(input[:jobs])
+          Success(input)
         end
-        input[:skills].length.zero? ? Failure("No skills are extracted from #{input[:query]}")
-                                    : Success(input)
-      rescue StandardError => error
-        Failure("Fail to extract skills: #{error.to_s}")
+      rescue StandardError => e
+        Failure("Fail to extract skills: #{e}")
       end
 
       # Analyze the salary distribution from all related jobs
@@ -60,8 +59,8 @@ module Skiller
         all_salary = input[:jobs].map(&:salary)
         input[:salary_dist] = Entity::SalaryDistribution.new(all_salary)
         Success(input)
-      rescue StandardError => error
-        Failure("Fail to analyze salary distribution: #{error.to_s}")
+      rescue StandardError => e
+        Failure("Fail to analyze salary distribution: #{e}")
       end
 
       # Store the query-job
@@ -69,14 +68,37 @@ module Skiller
       #   when the jobs and skills are all correctly extracted,
       #   or the skills of new jobs will not be analyzed forever
       def store_query_to_db(input)
-        Repository::QueriesJobs.find_or_create(input[:query], 
+        Repository::QueriesJobs.find_or_create(input[:query],
                                                input[:jobs].map(&:db_id))
         Success(input)
-      rescue StandardError => error
-        Failure("Fail to store query result: #{error.to_s}")
+      rescue StandardError => e
+        Failure("Fail to store query result: #{e}")
       end
 
       # ------ UTILITIES ------ #
+
+      # search corresponding jobs in database first,
+      # or request it through JobMapper
+      def search_jobs(input)
+        query = input[:query]
+        if Repository::QueriesJobs.query_exist?(query)
+          Repository::QueriesJobs.find_jobs_by_query(query)
+        else
+          request_jobs_and_update_database(query)
+        end
+      end
+
+      # search corresponding skills in database first,
+      # or extract it through SkillMapper
+      def search_skills(input)
+        query = input[:query]
+        jobs = input[:jobs]
+        if Repository::QueriesJobs.query_exist?(query)
+          Repository::QueriesJobs.find_skills_by_query(query)
+        else
+          extract_skills_and_update_database(jobs)
+        end
+      end
 
       # request full job description from API and store into the database
       def request_jobs_and_update_database(query)

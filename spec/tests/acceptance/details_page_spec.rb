@@ -16,16 +16,13 @@ describe 'Details Page Acceptance Tests' do
     @browser.close
   end
 
-  job_title = TEST_KEYWORD
-  job_title_url = job_title.sub(' ', '+')
-
   index_url = CONFIG.APP_HOST
   details_url = "#{CONFIG.APP_HOST}/details"
 
   it '(HAPPY) should be able to read job details' do
     # GIVEN: user searches a query
     visit(IndexPage) do |page|
-       page.query_job(TEST_KEYWORD)
+      page.query_job(TEST_KEYWORD)
     end
 
     # WHEN: jumping to the detail page
@@ -50,13 +47,13 @@ describe 'Details Page Acceptance Tests' do
   it '(HAPPY) should be able to return home' do
     # GIVEN: user is on the detail page
     visit(IndexPage) do |page|
-       page.query_job(TEST_KEYWORD)
+      page.query_job(TEST_KEYWORD)
     end
-    
+
     on_page(DetailsPage) do |page|
       # WHEN: user try to return to index page
       page.return_to_index
-      
+
       # THEN: index page should show
       _(@browser.url).must_match index_url
     end

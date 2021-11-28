@@ -23,7 +23,6 @@ describe 'Indexpage Acceptance Tests' do
   valid_query_notice = "Your last query is '#{valid_request}'"
   empty_query_warning = 'invalid query'
   empty_job_warning = 'no job is found'
-  empty_skill_warning = 'no skills are extracted'
 
   describe 'Visit Index Page' do
     it '(HAPPY) should present an input box and a submit button' do

@@ -7,7 +7,7 @@ module  Views
   # A view object that holds all data about Skillset
   class SkillJob
     attr_reader :query
-    
+
     def initialize(query, jobs, skills, salary_distribution)
       @query = query
       @jobs = jobs
