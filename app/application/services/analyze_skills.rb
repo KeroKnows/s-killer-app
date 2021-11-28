@@ -21,7 +21,7 @@ module Skiller
         if input.success?
           Success(query: input[:query])
         else
-          Failure('Invalid query format')
+          Failure("Invalid query: '#{input[:query]}'")
         end
       end
 
@@ -34,9 +34,10 @@ module Skiller
         else
           input[:jobs] = request_jobs_and_update_database(query)
         end
-        Success(input)
+        input[:jobs].length.zero? ? Failure("No job is found with query #{input[:query]}")
+                                  : Success(input)
       rescue StandardError => error
-        Failure(error.to_s)
+        Failure("Fail to collect jobs: #{error.to_s}")
       end
 
       # Collect skills from database if the query has been searched;
@@ -48,9 +49,10 @@ module Skiller
         else
           input[:skills] = extract_skills_and_update_database(input[:jobs])
         end
-        Success(input)
+        input[:skills].length.zero? ? Failure("No skills are extracted from #{input[:query]}")
+                                    : Success(input)
       rescue StandardError => error
-        Failure(error.to_s)
+        Failure("Fail to extract skills: #{error.to_s}")
       end
 
       # Analyze the salary distribution from all related jobs
@@ -59,7 +61,7 @@ module Skiller
         input[:salary_dist] = Entity::SalaryDistribution.new(all_salary)
         Success(input)
       rescue StandardError => error
-        Failure(error.to_s)
+        Failure("Fail to analyze salary distribution: #{error.to_s}")
       end
 
       # Store the query-job
@@ -71,7 +73,7 @@ module Skiller
                                                input[:jobs].map(&:db_id))
         Success(input)
       rescue StandardError => error
-        Failure(error.to_s)
+        Failure("Fail to store query result: #{error.to_s}")
       end
 
       # ------ UTILITIES ------ #

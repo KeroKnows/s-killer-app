@@ -21,8 +21,9 @@ describe 'Indexpage Acceptance Tests' do
   valid_request_url = valid_request.sub(' ', '+')
 
   valid_query_notice = "Your last query is '#{valid_request}'"
-  invalid_query_warning = "No skills extracted from '#{invalid_request}'"
-  empty_query_warning = 'This query is empty'
+  empty_query_warning = 'invalid query'
+  empty_job_warning = 'no job is found'
+  empty_skill_warning = 'no skills are extracted'
 
   describe 'Visit Index Page' do
     it '(HAPPY) should present an input box and a submit button' do
@@ -65,7 +66,7 @@ describe 'Indexpage Acceptance Tests' do
 
         # Then: user sees flash bar
         _(page.warning_message_element.present?).must_equal true
-        _(page.warning_message_element.text).must_match invalid_query_warning
+        _(page.warning_message_element.text.downcase).must_include empty_job_warning
       end
     end
 
@@ -80,7 +81,7 @@ describe 'Indexpage Acceptance Tests' do
 
         # Then: user sees flash bar
         _(page.warning_message_element.present?).must_equal true
-        _(page.warning_message_element.text).must_match empty_query_warning
+        _(page.warning_message_element.text.downcase).must_match empty_query_warning
       end
     end
   end
