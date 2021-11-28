@@ -17,6 +17,7 @@ describe 'Integration Test for AnalyzeSkills Service' do
 
   describe 'Data validation' do
     it 'BAD: should fail empty query' do
+      skip 'not implemented'
       # GIVEN: an empty query
 
       # WHEN: the service is called
@@ -26,6 +27,7 @@ describe 'Integration Test for AnalyzeSkills Service' do
     end
 
     it 'SAD: should fail with invalid request' do
+      skip 'not implemented'
       # GIVEN: an invalid query
 
       # WHEN: the service is called
@@ -56,9 +58,9 @@ describe 'Integration Test for AnalyzeSkills Service' do
       ori_jobs = rebuilt_jobs.map { |job| job_mapper.job(job.job_id) }
 
       ori_jobs.zip(rebuilt_jobs).map do |orig, rebuilt|
-        _(orig.job_id).must_equal rebuilt.job_id
-        _(orig.title).must_equal rebuilt.title
-        _(orig.location).must_equal rebuilt.location
+        _(rebuilt.job_id).must_equal orig.job_id
+        _(rebuilt.title).must_equal orig.title
+        _(rebuilt.location).must_equal orig.location
       end
       # Did not test the description, because not all entities have full description
       # Did not test salary and url, because they may be nil
@@ -80,10 +82,10 @@ describe 'Integration Test for AnalyzeSkills Service' do
       rebuilt_jobs = jobskill.value![:jobs]
 
       db_jobs.zip(rebuilt_jobs).map do |db, rebuilt|
-        _(db.job_id).must_equal(rebuilt.job_id)
-        _(db.title).must_equal(rebuilt.title)
-        _(db.description).must_equal(rebuilt.description)
-        _(db.location).must_equal(rebuilt.location)
+        _(rebuilt.job_id).must_equal db.job_id
+        _(rebuilt.title).must_equal db.title
+        _(rebuilt.description).must_equal db.description
+        _(rebuilt.location).must_equal db.location
       end
       # Did not test salary and url, because they may be nil
     end
@@ -110,9 +112,9 @@ describe 'Integration Test for AnalyzeSkills Service' do
       rebuilt_salary = jobskill[:salary_dist]
 
       ## validate
-      _(ori_salary.maximum).must_equal rebuilt_salary.maximum
-      _(ori_salary.minimum).must_equal rebuilt_salary.minimum
-      _(ori_salary.currency).must_equal rebuilt_salary.currency
+      _(rebuilt_salary.maximum).must_equal ori_salary.maximum
+      _(rebuilt_salary.minimum).must_equal ori_salary.minimum
+      _(rebuilt_salary.currency).must_equal ori_salary.currency
     end
   end
 
@@ -122,25 +124,53 @@ describe 'Integration Test for AnalyzeSkills Service' do
     end
 
     it 'HAPPY: should analyze skills and store result into database' do
-      # GIVEN: a keyword that has been searched
+      # GIVEN: a keyword that has not been searched
+      query_form = Skiller::Forms::Query.new.call(query: TEST_KEYWORD)
 
       # WHEN: the service is called
+      jobskill = Skiller::Service::AnalyzeSkills.new.call(query_form)
 
       # THEN: the service whould succeed...
+      _(jobskill.success?).must_equal true
+      jobskill = jobskill.value!
 
       # ...with correct skills extracted
+      ## get correct skills
+      job_mapper = Skiller::Reed::JobMapper.new(CONFIG)
+      jobs = jobskill[:jobs].map { |job| job_mapper.job(job.job_id) }
+      skills_list = jobs.map { |job| Skiller::Skill::SkillMapper.new(job).skills }
+      ori_skills = skills_list.reduce(:+).sort_by(&:name)
 
+      ## get rebuilt skills
+      rebuilt_skills = jobskill[:skills].sort_by(&:name)
+
+      ## validate
+      ori_skills.zip(rebuilt_skills).each do |ori, rebuilt|
+        _(rebuilt.name).must_equal ori.name
+      end
+      # Did not test id and salary, because they may be nil
     end
 
     it 'HAPPY: should collect skills from database' do
       # GIVEN: a keyword that has been searched
+      query_form = Skiller::Forms::Query.new.call(query: TEST_KEYWORD)
+      db_skills = Skiller::Service::AnalyzeSkills.new.call(query_form)
+                                                     .value![:skills]
+      db_skills = db_skills.sort_by(&:name)
 
       # WHEN: the service is called
+      jobskill = Skiller::Service::AnalyzeSkills.new.call(query_form)
 
       # THEN: the service whould succeed...
+      _(jobskill.success?).must_equal true
+      jobskill = jobskill.value!
 
       # ...with correct skills rebuilt
-      
+      rebuilt_skills = jobskill[:skills].sort_by(&:name)
+      db_skills.zip(rebuilt_skills).each do |db, rebuilt|
+        _(rebuilt.name).must_equal db.name
+      end
+      # Did not test id and salary, because they may be nil
     end
   end
 end
