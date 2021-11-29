@@ -6,7 +6,7 @@ describe 'Test FreeCurrency library' do
   Skiller::VcrHelper.setup_vcr
 
   before do
-    Skiller::VcrHelper.configure_vcr_for_reed(FREECURRENCY_CASSETTE_FILE)
+    Skiller::VcrHelper.configure_currency
   end
 
   after do

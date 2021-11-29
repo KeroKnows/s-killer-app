@@ -1,18 +1,21 @@
 # frozen_string_literal: true
 
-# require 'minitest/autorun'
 require_relative '../../helpers/acceptance_helper'
+require_relative '../../helpers/vcr_helper'
 require_relative 'pages/index_page'
 
 describe 'Indexpage Acceptance Tests' do
   include PageObject::PageFactory
+  Skiller::VcrHelper.setup_vcr
 
   before do
+    Skiller::VcrHelper.configure_integration
     @browser ||= Watir::Browser.new :chrome, headless: true
   end
 
   after do
     @browser.close
+    Skiller::VcrHelper.eject_vcr
   end
 
   index_url = CONFIG.APP_HOST

@@ -5,4 +5,5 @@ require 'watir'
 require 'page-object'
 
 require_relative '../spec_helper'
+require_relative 'vcr_helper'
 require_relative 'database_helper'
