@@ -38,19 +38,21 @@ module Skiller
         @cache = nil
       end
 
-      # Send request to freecurrency API
+      # send request to freecurrency API
       def exchange_rates(currency)
         check_cache
         @cache ? @cache['data'] : request_rates(currency)
       end
 
+      # check if the the cache is valid
       def check_cache
         return unless File.exist?(CACHE_FILE)
 
         cache = YAML.safe_load(File.read(CACHE_FILE))
-        @cache = cache if Date.today - Date.parse(cache['date']) <= EXPIRE_TIME
+        @cache = cache if Date.today - Date.parse(cache['date']) < EXPIRE_TIME
       end
 
+      # request current currency rate from API
       def request_rates(currency)
         response = HTTP.get(API_PATH, params: { apikey: @api_key, base_currency: currency })
         result = HttpResponse.new(response, HTTP_ERROR).parse
