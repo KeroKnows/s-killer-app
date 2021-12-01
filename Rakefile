@@ -33,7 +33,7 @@ task :spec_accept do
   sh 'rake test_acceptance'
   begin
     sh 'pkill -f "127\.0\.0\.1:4001"'
-  rescue
+  rescue _e
     printf "\n\033[31m"
     puts 'Failed'
     puts 'Server not killed. please close it by yourself. (127.0.0.1:4001)'

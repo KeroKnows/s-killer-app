@@ -4,6 +4,7 @@ require_relative '../spec_helper'
 
 module Skiller
   # provide spec utility functions of VCR
+  # :reek:TooManyStatements for serial configuration
   module VcrHelper
     CASSETTES_FOLDER = 'spec/fixtures/cassettes'
     REED_CASSETTE = 'reed_api'
@@ -22,7 +23,7 @@ module Skiller
       VCR.configure do |config|
         config.filter_sensitive_data('<REED_TOKEN>') { CREDENTIALS }
         config.filter_sensitive_data('<REED_TOKEN_ESC>') { CGI.escape(CREDENTIALS) }
-        
+
         # This looks ridiculous but - yes, our reed tests depend on the frecurrency api.
         config.filter_sensitive_data('<FREECURRENCY_API_KEY>') { FREECURRENCY_API_KEY }
         config.filter_sensitive_data('<FREECURRENCY_API_KEY_ESC>') { CGI.escape(FREECURRENCY_API_KEY) }
