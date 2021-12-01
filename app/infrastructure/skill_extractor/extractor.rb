@@ -30,7 +30,7 @@ module Skiller
       end
 
       def analyze_skills
-        tmp_file = ".extractor.#{@random_seed}.tmp"
+        tmp_file = File.join(File.dirname(__FILE__), ".extractor.#{@random_seed}.tmp")
         File.write(tmp_file, description, mode: 'w')
         @script_result = `#{PYTHON} #{SCRIPT} "#{tmp_file}"`
         File.delete(tmp_file)
