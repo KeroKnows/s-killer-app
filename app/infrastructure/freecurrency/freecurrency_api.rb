@@ -2,6 +2,7 @@
 
 require 'http'
 require 'forwardable'
+require 'json'
 require_relative '../http_response'
 
 module Skiller
@@ -22,6 +23,7 @@ module Skiller
     # freecurrency API
     class Api
       API_PATH = 'https://freecurrencyapi.net/api/v2/latest'
+      CACHE_FILE = File.join(File.dirname(__FILE__), 'rate.cache')
 
       HTTP_ERROR = {
         429 => FreeCurrency::Errors::InvalidApiKey,
@@ -36,8 +38,22 @@ module Skiller
 
       # Send request to freecurrency API
       def exchange_rates(currency)
+        if File.exist? CACHE_FILE
+          JSON.parse(File.read(CACHE_FILE))
+        else
+          request_rates(currency)
+        end
+      end
+
+      def request_rates(currency)
         response = HTTP.get(API_PATH, params: { apikey: @api_key, base_currency: currency })
-        HttpResponse.new(response, HTTP_ERROR).parse
+        result = HttpResponse.new(response, HTTP_ERROR).parse
+        save_rates(result)
+      end
+
+      def save_rates(result)
+        File.write(CACHE_FILE, result.to_json, mode: 'w')
+        result
       end
     end
   end
