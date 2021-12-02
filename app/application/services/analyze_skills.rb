@@ -5,6 +5,7 @@ require 'dry/transaction'
 module Skiller
   module Service
     # request the jobs related to given query, and analyze the skillset from it
+    # :reek:TooManyStatements { max_statements: 7 } for Success/Failure and rescued statements
     class AnalyzeSkills
       include Dry::Transaction
 
@@ -48,7 +49,8 @@ module Skiller
       # Request full job description for future analysis
       # :reek:UncommunicativeVariableName for rescued error
       def process_jobs(input)
-        input[:jobs] = input[:jobs][..ANALYZE_LEN].map do |job|
+        jobs = input[:jobs]
+        jobs[..ANALYZE_LEN] = jobs[..ANALYZE_LEN].map do |job|
           request_and_update_full_job(job)
         end
         Success(input)
@@ -120,11 +122,10 @@ module Skiller
       # or extract it through SkillMapper
       def search_skills(input)
         query = input[:query]
-        jobs = input[:jobs]
         if Repository::QueriesJobs.query_exist?(query)
           Repository::QueriesJobs.find_skills_by_query(query)
         else
-          extract_skills_and_update_database(jobs)
+          extract_skills_and_update_database(input[:jobs][..ANALYZE_LEN])
         end
       end
 

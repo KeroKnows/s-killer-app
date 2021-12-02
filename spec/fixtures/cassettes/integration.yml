@@ -13427,4 +13427,66 @@ http_interactions:
         role sounds of interest to you don''t hesitate to apply or give Kane a call
         on </p> ","applicationCount":6}'
   recorded_at: Thu, 02 Dec 2021 05:29:26 GMT
+- request:
+    method: get
+    uri: https://chromedriver.storage.googleapis.com/LATEST_RELEASE_96.0.4664
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - chromedriver.storage.googleapis.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Guploader-Uploadid:
+      - ADPycdsz4j9lHq_-lbmMSEu_gOc3u3eCh1vrdO-XYD-lCqCYZ_F8mmOvZItm0EGzfwG5c3gRNObjrfMocrSEstBzm1s
+      Expires:
+      - Thu, 02 Dec 2021 09:50:59 GMT
+      Date:
+      - Thu, 02 Dec 2021 08:50:59 GMT
+      Last-Modified:
+      - Tue, 16 Nov 2021 09:36:02 GMT
+      Etag:
+      - '"2aa8941e6db48cc78e86089c7e9e9dfc"'
+      X-Goog-Generation:
+      - '1637055362140818'
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '12'
+      Content-Type:
+      - text/plain
+      X-Goog-Hash:
+      - crc32c=xQfrLQ==
+      - md5=KqiUHm20jMeOhgicfp6d/A==
+      X-Goog-Storage-Class:
+      - STANDARD
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '12'
+      Server:
+      - UploadServer
+      Age:
+      - '3195'
+      Cache-Control:
+      - public, max-age=3600
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+    body:
+      encoding: UTF-8
+      string: 96.0.4664.45
+  recorded_at: Thu, 02 Dec 2021 09:44:14 GMT
 recorded_with: VCR 6.0.0
