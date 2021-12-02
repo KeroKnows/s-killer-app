@@ -8,8 +8,12 @@ module Skiller
     class AnalyzeSkills
       include Dry::Transaction
 
+      # [ TODO ] analyze skillset from more data
+      ANALYZE_LEN = 10
+
       step :parse_request
       step :collect_jobs
+      step :process_jobs
       step :collect_skills
       step :calculate_salary_distribution
       step :store_query_to_db
@@ -39,6 +43,17 @@ module Skiller
         end
       rescue StandardError => e
         Failure("Fail to collect jobs: #{e}")
+      end
+
+      # Request full job description for future analysis
+      # :reek:UncommunicativeVariableName for rescued error
+      def process_jobs(input)
+        input[:jobs] = input[:jobs][..ANALYZE_LEN].map do |job|
+          request_and_update_full_job(job)
+        end
+        Success(input)
+      rescue StandardError => e
+        Failure("Fail to process jobs: #{e}")
       end
 
       # Collect skills from database if the query has been searched;
@@ -92,6 +107,15 @@ module Skiller
         end
       end
 
+      # request full job description and update the information in database
+      def request_and_update_full_job(job)
+        return job if job.is_full
+
+        full_job = Skiller::Reed::JobMapper.new(App.config).job(job.job_id, job)
+        Repository::Jobs.update(full_job)
+        Repository::Jobs.find(full_job)
+      end
+
       # search corresponding skills in database first,
       # or extract it through SkillMapper
       def search_skills(input)
@@ -108,10 +132,8 @@ module Skiller
       def request_jobs_and_update_database(query)
         job_mapper = Skiller::Reed::JobMapper.new(App.config)
         jobs = job_mapper.job_list(query)
-        # [ TODO ] analyze skillset from more data
-        jobs[..10].map do |job|
-          full_job = job_mapper.job(job.job_id)
-          Repository::Jobs.find_or_create(full_job)
+        jobs.map do |job|
+          Repository::Jobs.find_or_create(job)
         end
       end
 
