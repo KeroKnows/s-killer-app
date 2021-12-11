@@ -25,10 +25,10 @@ module Skiller
       class Request
         def initialize(config)
           @api_host = config.API_HOST
-          @api_root = config.API_HOST + '/api/v1'
+          @api_root = "#{config.API_HOST}/api/v1"
         end
 
-        def get_root
+        def get_root # rubocop:disable Naming/AccessorMethodName
           call_api('get')
         end
 
@@ -40,7 +40,7 @@ module Skiller
 
         def params_str(params)
           params.map { |key, value| "#{key}=#{value}" }.join('&')
-            .then { |str| str ? '?' + str : '' }
+                .then { |str| str ? "?#{str}" : '' }
         end
 
         # Send request to our api
@@ -48,7 +48,7 @@ module Skiller
           api_path = resources.empty? ? @api_host : @api_root
           url = [api_path, resources].flatten.join('/') + params_str(params)
           HTTP.headers('Accept' => 'application/json').send(method, url)
-            .then { |http_response| Response.new(http_response) }
+              .then { |http_response| Response.new(http_response) }
         rescue StandardError
           raise "Invalid URL request: #{url}"
         end
@@ -58,7 +58,7 @@ module Skiller
       class Response < SimpleDelegator
         NotFound = Class.new(StandardError)
 
-        SUCCESS = (200..299).freeze
+        SUCCESS = (200..299)
 
         def success?
           code.between?(SUCCESS.first, SUCCESS.last)
